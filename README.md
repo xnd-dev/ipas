@@ -1,5 +1,5 @@
 
-<h1 align="center">IPAS</h1>
+<h1 align="center">Instituto Profissionalizante e de Assistência Social</h1>
 
 <br />
 
@@ -11,7 +11,7 @@ on terminal, execute the command:
 npm install
 ```
 
-# :runner: running project
+# :runner: Running project
 on terminal, execute the command:
 ```bash
 npm run dev
