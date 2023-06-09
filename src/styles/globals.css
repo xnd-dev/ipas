@@ -1,23 +1,41 @@
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+*:{
+    'box-sizing': border-box;
+    'max-width': 100%;
+    margin: 0;
+    padding: 0;
+  },
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
   }
-}
+  
+  '@media (prefers-color-scheme: dark)': {
+    html: {
+      'color-scheme': dark;
+    },
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+    body: {
+      background: $black;
+      color: $white;
+    };
+  };
+  
+  body {
+    backgroundColor: $white;
+    color: $black;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  };
+
+  body, input, textarea, button: {
+    fontFamily: Roboto, sans-serif;
+    fontWeigt: 400;
+    border: none;
+  };
+
+  a: {
+    color: inherit, sans-serift;
+    text-decoration: none;
+  };
