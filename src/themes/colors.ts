@@ -1,17 +1,15 @@
 export const colors = {
-  white: '#FFFFFF',
-  black: '#000000',
+  pimary: '#1D67FC',
+  'primary-variant': '#6A9BFD',
 
-  pimary: '#0079B0',
-  'primary-variant': '#00ADF7',
+  secondary: '#05C7F2',
+  'secondary-variant': '#077CDB',
 
-  secondary: '#F9C301',
-  'secondary-variant': '#F2DF3A',
+  tertiary: '#FFE62E',
+  'tertiary-variant': '#FFF07A',
 
-  tertiary: '#F2227B',
-  'tertiary-variant': '#A61F59',
-
-  'neutral-1': '#FDFDFD',
+  'neutral-0': '#FDFDFD',
+  'neutral-1': '#BFBFBF',
   'neutral-2': '#808080',
   'neutral-3': '#404040',
   'neutral-4': '#333333',
