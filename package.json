@@ -23,10 +23,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-swipeable": "^7.0.1",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "tailwindcss": "3.3.2"
   },
   "devDependencies": {
-    "@rocketseat/eslint-config": "^1.2.0"
+    "@rocketseat/eslint-config": "^1.2.0",
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.1.3"
   }
 }

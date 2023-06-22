@@ -1,5 +1,8 @@
 export const colors = {
-  pimary: '#1D67FC',
+  black: '#000000',
+  white: '#FFFFFF',
+
+  primary: '#1D67FC',
   'primary-variant': '#6A9BFD',
 
   secondary: '#05C7F2',

@@ -3,23 +3,27 @@ import { styled } from '@/lib/stitches'
 export const HeaderContainer = styled('header', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: '100%',
+  width: '$360',
   height: '$20',
+  padding: '$4 $30',
+  gap: '$68.5',
   backgroundColor: '$neutral-0',
-  gap: '17.125rem',
-  padding: '$4 30 4 30',
-})
-
-export const HorizontalContainer = styled('div', {
-  display: 'flex',
-  gap: '22.875rem',
   alignItems: 'center',
   justifyContent: 'center',
 })
 
+export const HorizontalContainer = styled('div', {
+  display: 'flex',
+  boxSizing: 'border-box',
+  width: '$300',
+  height: '$12',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+})
+
 export const OptionsContainer = styled('div', {
   display: 'flex',
-  width: '39.875rem',
+  width: '$160',
   height: '$12',
   gap: '$6',
   alignItems: 'center',
@@ -27,29 +31,29 @@ export const OptionsContainer = styled('div', {
 })
 
 export const NavContainer = styled('a', {
+  color: '$primary',
   fontFamily: '$default',
   fontSize: '$sm',
   fontWeight: '$regular',
-  lineHeight: '$short',
-  color: '$pimary',
-  textDecoration: 'none',
+  lineHeight: '$base',
 })
 
 export const ButtonContainer = styled('button', {
   display: 'flex',
-  width: '9.25rem',
+  boxSizing: 'boder-box',
+  width: '$37',
   height: '$12',
-  padding: '$3 6 3 6',
-  gap: '$1',
-  borderRadius: '$full',
+  padding: '$3 $6',
+  gap: '$2',
+  border: 'none',
+  borderRadius: '$xl',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '$pimary',
-  borderColor: '$pimary',
-  borderStyle: 'none',
+  backgroundColor: '$primary',
   color: '$neutral-0',
   fontFamily: '$default',
   fontSize: '$sm',
   fontWeight: '$semibold',
   lineHeight: '$base',
+  whiteSpace: 'nowrap',
 })

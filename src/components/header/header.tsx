@@ -22,7 +22,8 @@ export function Header() {
           <NavContainer href="#">Seja um Voluntário</NavContainer>
           <NavContainer href="#">Contato</NavContainer>
           <ButtonContainer>
-            <HandCoins size={32} /> Doe agora
+            <HandCoins size={24} />
+            Doe agora
           </ButtonContainer>
         </OptionsContainer>
       </HorizontalContainer>
