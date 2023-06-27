@@ -25,15 +25,4 @@ export const globalStyles = globalCss({
     color: 'inherit, sans-serif',
     'text-decoration': 'none',
   },
-
-  '@media (prefers-color-scheme: dark)': {
-    html: {
-      'color-scheme': 'dark',
-    },
-
-    body: {
-      background: '$black',
-      color: '$white',
-    },
-  },
 })

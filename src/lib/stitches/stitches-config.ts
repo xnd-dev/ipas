@@ -8,8 +8,7 @@ import {
   lineHeights,
   radii,
   space,
-  fonts,
-  media
+  media,
 } from '../../themes'
 
 export const {
@@ -36,8 +35,7 @@ export const {
     lineHeights,
     radii,
     space,
-    fonts
   },
 
-  media
+  media,
 })

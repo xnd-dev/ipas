@@ -3,11 +3,11 @@ import { styled } from '@/lib/stitches'
 export const HeaderContainer = styled('header', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: '$360',
+  width: '100vw',
   height: '$20',
   padding: '$4 $30',
-  gap: '$68.5',
-  backgroundColor: '$neutral-0',
+  gap: '$72',
+  backgroundColor: '$primary',
   alignItems: 'center',
   justifyContent: 'center',
 })
@@ -31,7 +31,7 @@ export const OptionsContainer = styled('div', {
 })
 
 export const NavContainer = styled('a', {
-  color: '$primary',
+  color: '$neutral-0',
   fontFamily: '$default',
   fontSize: '$sm',
   fontWeight: '$regular',
@@ -41,19 +41,27 @@ export const NavContainer = styled('a', {
 export const ButtonContainer = styled('button', {
   display: 'flex',
   boxSizing: 'boder-box',
-  width: '$37',
-  height: '$12',
+  width: '$36',
+  height: '$10',
   padding: '$3 $6',
   gap: '$2',
   border: 'none',
   borderRadius: '$xl',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '$primary',
-  color: '$neutral-0',
+  backgroundColor: '$tertiary',
+  color: '$neutral-4',
   fontFamily: '$default',
   fontSize: '$sm',
   fontWeight: '$semibold',
   lineHeight: '$base',
   whiteSpace: 'nowrap',
+
+  '&:hover': {
+    backgroundColor: '$tertiary-variant',
+  },
+
+  '&:active': {
+    backgroundColor: '$tertiary',
+  },
 })

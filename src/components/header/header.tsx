@@ -17,13 +17,15 @@ export function Header() {
       <HorizontalContainer>
         <Image src={ipasLogo} alt="" />
         <OptionsContainer>
-          <NavContainer href="#">Nossos Projetos</NavContainer>
-          <NavContainer href="#">Como ajudar</NavContainer>
-          <NavContainer href="#">Seja um Voluntário</NavContainer>
-          <NavContainer href="#">Contato</NavContainer>
+          <NavContainer href="#nossos-projetos">Nossos Projetos</NavContainer>
+          <NavContainer href="#como-ajudar">Como ajudar</NavContainer>
+          <NavContainer href="#seja-um-voluntario">
+            Seja um Voluntário
+          </NavContainer>
+          <NavContainer href="#contato">Contato</NavContainer>
           <ButtonContainer>
-            <HandCoins size={24} />
             Doe agora
+            <HandCoins size={'2rem'} />
           </ButtonContainer>
         </OptionsContainer>
       </HorizontalContainer>
