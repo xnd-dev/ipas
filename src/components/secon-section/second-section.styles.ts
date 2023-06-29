@@ -7,9 +7,10 @@ const Card = styled('div', {
   padding: '$5',
   flexDirection: 'row',
   alignItems: 'center',
+  justifyContent: 'center',
   gap: '$3',
   flex: '1 0 0',
-  alignSelf: 'stretch',
+  // alignSelf: 'stretch',
 })
 
 export const SectionContainer = styled('section', {
@@ -18,11 +19,22 @@ export const SectionContainer = styled('section', {
   alignItems: 'center',
   justifyContent: 'center',
   textAlign: 'center',
-  height: '$80',
+  height: '$120',
   width: '100vw',
   backgroundColor: '$neutral-0',
   color: '$neutral-4',
   fontFamily: '$default',
+  border: '1px solid red',
+})
+
+export const ContentContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  width: '41.5rem',
+  height: '23.5rem',
+  alignItems: 'center',
+  gap: '2.5rem',
+  border: '1px solid blue',
 })
 
 export const TitleContainer = styled('div', {
