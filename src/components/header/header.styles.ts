@@ -10,6 +10,7 @@ export const HeaderContainer = styled('header', {
   backgroundColor: '$primary',
   alignItems: 'center',
   justifyContent: 'center',
+  position: 'fixed',
 })
 
 export const HorizontalContainer = styled('div', {
