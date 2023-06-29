@@ -1,6 +1,7 @@
 export const lineHeights = {
   shorter: '120%',
-  short: '130%',
-  base: '150%',
-  tall: '160%',
+  short: '140%',
+  base: '160%',
+  tall: '320%',
+  talle: '420%',
 }
