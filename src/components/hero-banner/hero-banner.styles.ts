@@ -3,8 +3,8 @@ import handsTogether from '../../../public/hands-together.svg'
 
 export const SectionContainer = styled('section', {
   display: 'flex',
-  height: '$160',
   width: '100vw',
+  height: '45rem',
   backgroundImage: `url(${handsTogether.src})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
@@ -17,23 +17,23 @@ export const SectionContainer = styled('section', {
 
 export const ContentContainer = styled('div', {
   display: 'flex',
-  width: '$176',
-  height: '$96',
+  width: '$44rem',
+  height: '24rem',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
   gap: '$10',
   textAlign: 'center',
-  // flexShrink: 0,
+  marginTop: '$20',
 })
 
-export const TitleContainer = styled('div', {
+export const TitleContainer = styled('h1', {
   fontSize: '$md',
   fontWeight: '$medium',
   lineHeight: '$shorter',
 })
 
-export const SubtitleContainer = styled('div', {
+export const SubtitleContainer = styled('h2', {
   fontSize: '$4xl',
   fontWeight: '$semibold',
   lineHeight: '$shorter',
@@ -43,16 +43,17 @@ export const SpanContainer = styled('span', {
   color: '$tertiary',
 })
 
-export const TextContainer = styled('div', {
-  width: '$144',
+export const TextContainer = styled('h3', {
+  width: '36rem',
   fontSize: '$xl',
+  fontWeight: '$regular',
   lineHeight: '$short',
 })
 
 export const ButtonContainer = styled('button', {
   display: 'flex',
-  width: '$40',
-  height: '$10',
+  width: '10rem',
+  height: '2.5rem',
   padding: '$3 $6',
   justifyContent: 'center',
   alignItems: 'center',

@@ -4,7 +4,7 @@ export const HeaderContainer = styled('header', {
   display: 'flex',
   boxSizing: 'border-box',
   width: '100vw',
-  height: '$20',
+  height: '5rem',
   padding: '$4 $30',
   gap: '$72',
   backgroundColor: '$primary',
@@ -16,16 +16,16 @@ export const HeaderContainer = styled('header', {
 export const HorizontalContainer = styled('div', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: '$300',
-  height: '$12',
+  width: '75rem',
+  height: '3rem',
   alignItems: 'center',
   justifyContent: 'space-between',
 })
 
 export const OptionsContainer = styled('div', {
   display: 'flex',
-  width: '$160',
-  height: '$12',
+  width: '40rem',
+  height: '3rem',
   gap: '$6',
   alignItems: 'center',
   justifyContent: 'center',
@@ -42,8 +42,8 @@ export const NavContainer = styled('a', {
 export const ButtonContainer = styled('button', {
   display: 'flex',
   boxSizing: 'boder-box',
-  width: '$36',
-  height: '$10',
+  width: '8.75rem',
+  height: '2.5rem',
   padding: '$3 $6',
   gap: '$2',
   border: 'none',
