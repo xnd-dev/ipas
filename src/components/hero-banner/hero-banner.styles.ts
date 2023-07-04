@@ -33,7 +33,7 @@ export const TitleContainer = styled('h1', {
 })
 
 export const SubtitleContainer = styled('h2', {
-  width: '41.4375rem',
+  width: '42.5rem',
   fontSize: '$4xl',
   fontWeight: '$semibold',
   lineHeight: '$shorter',
