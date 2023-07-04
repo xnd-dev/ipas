@@ -9,11 +9,8 @@ export function HeroBanner() {
           IPAS - Instituto Profissionalizante e de Assistência Social
         </S.TitleContainer>
         <S.SubtitleContainer>
-          Somos uma ONG responsável
-          <p>
-            por
-            <S.SpanContainer> promover projetos sociais</S.SpanContainer>
-          </p>
+          Somos uma ONG responsável por
+          <S.SpanContainer> promover projetos sociais</S.SpanContainer>
           para crianças, jovens e adultos
         </S.SubtitleContainer>
         <S.TextContainer>
