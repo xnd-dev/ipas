@@ -22,13 +22,13 @@ export function NumbersDisplay() {
             <S.StrongContainer> 6000 </S.StrongContainer>
             <S.InsideTextContainer> Pessoas impactadas </S.InsideTextContainer>
           </S.BlueContainer>
-          <S.YellowContainer>
+          <S.VariantContainer>
             <UsersThree size={'2rem'} />
             <S.StrongContainer>850</S.StrongContainer>
             <S.InsideTextContainer>
               Famílias atendidas mensalmente
             </S.InsideTextContainer>
-          </S.YellowContainer>
+          </S.VariantContainer>
           <S.BlueContainer>
             <HandHeart size={'2rem'} />
             <S.StrongContainer>1500</S.StrongContainer>
@@ -36,11 +36,11 @@ export function NumbersDisplay() {
               Pessoas ajudadas em abril de 2023
             </S.InsideTextContainer>
           </S.BlueContainer>
-          <S.YellowContainer>
+          <S.VariantContainer>
             <CalendarBlank size={'2rem'} />
             <S.StrongContainer>13</S.StrongContainer>
             <S.InsideTextContainer> Anos de história </S.InsideTextContainer>
-          </S.YellowContainer>
+          </S.VariantContainer>
         </S.CardsContainer>
       </S.ContentContainer>
     </S.SectionContainer>

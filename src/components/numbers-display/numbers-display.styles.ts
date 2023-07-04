@@ -71,8 +71,8 @@ export const BlueContainer = styled(Card, {
   backgroundColor: '$secondary',
 })
 
-export const YellowContainer = styled(Card, {
-  backgroundColor: '$tertiary-variant',
+export const VariantContainer = styled(Card, {
+  backgroundColor: '$secondary-variant',
 })
 
 export const StrongContainer = styled('strong', {
