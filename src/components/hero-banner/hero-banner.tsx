@@ -10,7 +10,7 @@ export function HeroBanner() {
         </S.TitleContainer>
         <S.SubtitleContainer>
           Somos uma ONG responsável por
-          <S.SpanContainer> promover projetos sociais</S.SpanContainer>
+          <S.SpanContainer> promover projetos sociais </S.SpanContainer>
           para crianças, jovens e adultos
         </S.SubtitleContainer>
         <S.TextContainer>
