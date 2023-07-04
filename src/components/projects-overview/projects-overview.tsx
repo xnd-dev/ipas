@@ -15,7 +15,7 @@ import Image from 'next/image'
 export function Section2() {
   return (
     <>
-      <SectionContainer id="02">
+      <SectionContainer id="03">
         <ContentContainer>
           <TitleContainer>
             <h1>Nossos Projetos Sociais:</h1>
