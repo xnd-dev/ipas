@@ -1,4 +1,4 @@
-import { globalCss } from '@stitches/react'
+import { globalCss } from '@/lib/stitches'
 
 export const globalStyles = globalCss({
   '*': {
@@ -17,7 +17,7 @@ export const globalStyles = globalCss({
   },
 
   'body, input, textarea, button': {
-    fontFamily: 'Roboto, sans-serif',
+    fontFamily: 'Poppins, sans-serif',
     fontWeight: 400,
     border: 'none',
   },
@@ -25,16 +25,5 @@ export const globalStyles = globalCss({
   a: {
     color: 'inherit, sans-serif',
     'text-decoration': 'none',
-  },
-
-  '@media (prefers-color-scheme: dark)': {
-    html: {
-      'color-scheme': 'dark',
-    },
-
-    body: {
-      background: '$black',
-      color: '$white',
-    },
   },
 })
