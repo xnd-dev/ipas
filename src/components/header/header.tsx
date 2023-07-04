@@ -2,6 +2,7 @@ import {
   ButtonContainer,
   HeaderContainer,
   HorizontalContainer,
+  InsideTextContainer,
   NavContainer,
   OptionsContainer,
 } from './header.styles'
@@ -24,8 +25,8 @@ export function Header() {
           </NavContainer>
           <NavContainer href="#contato">Contato</NavContainer>
           <ButtonContainer>
-            Doe agora
-            <HandCoins size={'2rem'} />
+            <InsideTextContainer> Doe agora </InsideTextContainer>
+            <HandCoins size={'1rem'} />
           </ButtonContainer>
         </OptionsContainer>
       </HorizontalContainer>

@@ -22,7 +22,7 @@ export function HeroBanner() {
           vulneráveis.
         </S.TextContainer>
         <S.ButtonContainer>
-          Doe agora <HandCoins size={16} />
+          Doe agora <HandCoins size={'1rem'} />
         </S.ButtonContainer>
       </S.ContentContainer>
     </S.SectionContainer>
