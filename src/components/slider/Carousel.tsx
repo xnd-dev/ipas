@@ -19,13 +19,26 @@ const slidesData: SlideData[] = [
   },
   {
     avatar: avatar1,
-    description: '...',
-    name: '...',
+    description:
+      'Como doadora do IPAS, testemunhei de perto a transformação que ele é capaz de realizar.',
+    name: '— Mariana Souza 2',
+  },
+  {
+    avatar: avatar1,
+    description:
+      'Ver as crianças, os jovens e os adultos vulneráveis sendo beneficiados pelos projetos de educação, cultura e assistência social é verdadeiramente inspirador.',
+    name: '— Mariana Souza 3',
+  },
+  {
+    avatar: avatar1,
+    description:
+      'Estou orgulhosa de fazer parte desse movimento que combate a desigualdade e promove oportunidades para todos.',
+    name: '— Mariana Souza 4',
   },
 ]
 
 export function Carousel() {
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex, setActiveIndex] = useState<number>(0)
 
   const handleSwipe = (delta: number) => {
     if (delta < 0 && activeIndex < slidesData.length - 1) {
@@ -44,27 +57,33 @@ export function Carousel() {
 
   return (
     <S.SectionContainer id="carousel" {...swipeHandlers}>
-      <S.SectionContainer>
+      <S.CarouselContainer>
+        <S.TitleContainer>Porque ajudar o IPAS:</S.TitleContainer>
         <S.CarouselContent>
-          <div className="carousel-slide active">
-            <Image src={currentItem.avatar} alt="avatar" />
-            <h2>Porque ajudar o IPAS:</h2>
-            <h3>{currentItem.description}</h3>
-            <h4>— {currentItem.name}, doadora do IPAS.</h4>
-          </div>
+          <S.SlideContainer>
+            <Image
+              src={currentItem.avatar}
+              alt="avatar"
+              width={160}
+              height={160}
+            />
+            <S.SpanContainer>
+              <S.SubtitleContainer>
+                {currentItem.description}
+              </S.SubtitleContainer>
+              <S.SignatureContainer>{currentItem.name}</S.SignatureContainer>
+            </S.SpanContainer>
+          </S.SlideContainer>
+          <S.NavigationContainer>
+            {slidesData.map((_, index) => (
+              <S.DotContainer
+                key={index}
+                onClick={() => setActiveIndex(index)}
+              ></S.DotContainer>
+            ))}
+          </S.NavigationContainer>
         </S.CarouselContent>
-        <div className="carousel-navigation">
-          {slidesData.map((_, index) => (
-            <div
-              className={`carousel-dot ${
-                index === activeIndex ? 'active' : ''
-              }`}
-              key={index}
-              onClick={() => setActiveIndex(index)}
-            ></div>
-          ))}
-        </div>
-      </S.SectionContainer>
+      </S.CarouselContainer>
     </S.SectionContainer>
   )
 }
