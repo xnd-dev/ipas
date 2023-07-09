@@ -3,8 +3,8 @@ import handsTogether from '../../../public/hands-together.svg'
 
 export const SectionContainer = styled('section', {
   display: 'flex',
-  height: '40rem',
   width: '100vw',
+  height: '45rem',
   backgroundImage: `url(${handsTogether.src})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
@@ -24,6 +24,7 @@ export const ContentContainer = styled('div', {
   justifyContent: 'center',
   gap: '$10',
   textAlign: 'center',
+  marginTop: '$20',
 })
 
 export const TitleContainer = styled('h1', {
@@ -46,6 +47,7 @@ export const SpanContainer = styled('span', {
 export const TextContainer = styled('h3', {
   width: '36rem',
   fontSize: '$xl',
+  fontWeight: '$regular',
   lineHeight: '$short',
 })
 
