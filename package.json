@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
+    "file-loader": "^6.2.0",
     "ts-loader": "^9.4.3",
     "typescript": "^5.1.3"
   }
