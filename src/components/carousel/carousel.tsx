@@ -2,7 +2,7 @@ import Image from 'next/image'
 import avatar1 from '../../../public/avatar-1.svg'
 import { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
-import * as S from './Carousel.styles'
+import * as S from './carousel.styles'
 
 type SlideData = {
   avatar: string
