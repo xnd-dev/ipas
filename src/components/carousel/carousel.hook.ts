@@ -2,22 +2,28 @@ import { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { SlideData } from './carousel.types'
 
+enum UPDATE_COUNT {
+  INCREMENT,
+  DECREMENT,
+}
+
 export function useCarousel(slidesData: SlideData[]) {
   const [activeIndex, setActiveIndex] = useState<number>(0)
 
-  const handleSwipe = (direction: number) => {
+  const handleSwipe = (updateCount: UPDATE_COUNT) => {
     if (
-      (direction === -1 && activeIndex > 0) ||
-      (direction === 1 && activeIndex < slidesData.length - 1)
+      (updateCount === UPDATE_COUNT.DECREMENT && activeIndex > 0) ||
+      (updateCount === UPDATE_COUNT.INCREMENT &&
+        activeIndex < slidesData.length - 1)
     ) {
-      const newActiveIndex = activeIndex + direction
+      const newActiveIndex = activeIndex + updateCount
       setActiveIndex(newActiveIndex)
     }
   }
 
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => handleSwipe(1),
-    onSwipedRight: () => handleSwipe(-1),
+    onSwipedLeft: () => handleSwipe(UPDATE_COUNT.INCREMENT),
+    onSwipedRight: () => handleSwipe(UPDATE_COUNT.DECREMENT),
   })
 
   const currentItem = slidesData[activeIndex]
