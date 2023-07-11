@@ -1,14 +1,10 @@
 import { styled } from '@/lib/stitches'
-import ImageBackground from '../../../public/background2section.png'
 
 export const SectionContainer = styled('section', {
   display: 'flex',
   width: '100vw',
-  Height: '$160',
-  backgroundImage: `url(${ImageBackground.src})`,
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
+  Height: '100vh',
+  backgroundColor: '$tertiary-variant',
   color: '$neutral-0',
   alignItems: 'center',
   justifyContent: 'center',
@@ -29,25 +25,26 @@ export const TitleContainer = styled('div', {
   display: 'flex',
   width: 'fit-content',
   margin: '0 auto',
-  padding: '0.625rem',
+  marginBottom: '1.5rem',
   flexDirection: 'column',
-  gap: '1rem',
-  h1: {
-    textAlign: 'center',
-    justifyItems: 'center',
+  gap: '0.75rem',
+  textAlign: 'center',
+  alignItems: 'center',
+  h2: {
+    height: '3rem',
     fontFamily: '$default',
     fontWeight: '$semibold',
-    fontSize: '3rem',
+    fontSize: '2rem',
     lineHeight: '$short',
-    color: 'White',
+    color: '$neutral-4',
   },
   h4: {
-    textAlign: 'center',
+    height: '1.875rem',
     fontFamily: '$default',
     fontWeight: '$regular',
-    fontSize: '2rem',
+    fontSize: '1.25rem',
     lineHeight: '$base',
-    color: 'White',
+    color: '$neutral-4',
   },
 })
 
@@ -58,7 +55,7 @@ export const OverviewContainer = styled('div', {
   alignItems: 'center',
   width: '100%',
   padding: '5rem',
-  gap: '10rem',
+  gap: '1.5rem',
 })
 
 export const CardContainer = styled('div', {
@@ -67,7 +64,10 @@ export const CardContainer = styled('div', {
   width: '100%',
   height: '60%',
   padding: '0 4px',
-  gap: '2.5rem',
+  gap: '1.5rem',
+  backgroundColor: '$neutral-0',
+  boxShadow: '4px 4px 4px 0px rgba(64, 64, 64, 0.1)',
+  borderRadius: '1.5rem',
 })
 
 export const ImageContainer = styled('div', {
@@ -78,30 +78,35 @@ export const ImageContainer = styled('div', {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
-    borderRadius: '1.5rem',
   },
 })
 
 export const DescriptionContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
   width: '50%',
   maxWidth: '50%',
   height: 'auto',
-  gap: '1,5rem',
+  paddingTop: '1.5rem',
+  paddingBottom: '1.5rem',
+  paddingRight: '1.5rem',
+  gap: '0.75',
+  flex: '1 0 0',
   p: {
+    alignItems: 'flex-start',
+    height: '5rem',
     fontFamily: '$default',
-    fontSize: '1.3rem',
+    fontSize: '1rem',
     fontWeight: '$regular',
     lineHeight: 'shorter',
-    color: 'White',
-    marginBottom: '$4',
+    color: '$neutral-4',
   },
   h3: {
-    textAlign: 'initial',
+    alignItems: 'flex-start',
     fontFamily: '$default',
-    fontSize: '2rem',
+    fontSize: '1.5rem',
     fontWeight: '$semibold',
     lineHeight: '$short',
-    color: 'White',
-    marginBottom: '$5',
+    color: '$neutral-4',
   },
 })
