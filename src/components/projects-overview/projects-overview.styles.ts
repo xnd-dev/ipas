@@ -77,15 +77,17 @@ export const CardContainer = styled('div', {
 })
 
 export const ImageContainer = styled('div', {
+  boxSizing: 'border-box',
   flex: '1 0 0',
   alignSelf: 'stretch',
-  width: '100%',
+  width: 'auto',
   height: 'auto',
   img: {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
-    borderRadius: '1.5rem',
+    borderTopLeftRadius: '1.5rem',
+    borderBottomLeftRadius: '1.5rem',
   },
 })
 
