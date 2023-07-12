@@ -1,9 +1,15 @@
-import { Section2 } from '@/components/projects-overview/projects-overview'
+import { Header } from '@/components/header/header'
+import { HeroBanner } from '@/components/hero-banner'
+import { NumbersDisplay } from '@/components/numbers-display'
+import { ProjectOverview } from '@/components/projects-overview'
 
 export default function Home() {
   return (
-    <main>
-      <Section2 />
-    </main>
+    <div>
+      <Header />
+      <HeroBanner />
+      <NumbersDisplay />
+      <ProjectOverview />
+    </div>
   )
 }

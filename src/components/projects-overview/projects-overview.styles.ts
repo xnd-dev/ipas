@@ -2,68 +2,72 @@ import { styled } from '@/lib/stitches'
 
 export const SectionContainer = styled('section', {
   display: 'flex',
-  width: '100vw',
-  Height: '100vh',
+  boxSizing: 'border-box',
+  width: '100%',
+  Height: '63rem',
+  padding: '5rem 14.25rem',
   backgroundColor: '$tertiary-variant',
+  backgroundSize: 'cover',
   color: '$neutral-0',
   alignItems: 'center',
-  justifyContent: 'center',
   fontFamily: '$default',
-  gap: '2.5rem',
+  gap: '1.5rem',
 })
 
 export const ContentContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
   boxSizing: 'border-box',
-  width: '100%',
-  height: '100%',
+  width: '61.5rem',
+  height: '53.125rem',
   alignItems: 'center',
-  justifyContent: 'center',
-  marginTop: '$16',
+  gap: '1.5rem',
 })
 
-export const TitleContainer = styled('div', {
+export const TitleAndSubtitleContainer = styled('div', {
   display: 'flex',
-  width: 'fit-content',
-  margin: '0 auto',
-  marginBottom: '1.5rem',
   flexDirection: 'column',
-  gap: '0.75rem',
-  textAlign: 'center',
   alignItems: 'center',
-  h2: {
-    height: '3rem',
-    fontFamily: '$default',
-    fontWeight: '$semibold',
-    fontSize: '2rem',
-    lineHeight: '$short',
-    color: '$neutral-4',
-  },
-  h4: {
-    height: '1.875rem',
-    fontFamily: '$default',
-    fontWeight: '$regular',
-    fontSize: '1.25rem',
-    lineHeight: '$base',
-    color: '$neutral-4',
-  },
+  gap: '0.75rem',
+  marginBottom: '1.5rem',
+})
+
+export const SectionTitleContainer = styled('div', {
+  width: 'auto',
+  height: 'auto',
+  flexDirection: 'column',
+  textAlign: 'center',
+  fontFamily: '$default',
+  fontWeight: '$semibold',
+  fontSize: '$3xl',
+  lineHeight: '$short',
+  color: '$neutral-4',
+})
+export const SectionSubtitleContainer = styled('div', {
+  width: 'auto',
+  height: 'auto',
+  fontFamily: '$default',
+  fontWeight: '$regular',
+  fontSize: '$xl',
+  lineHeight: '$base',
+  color: '$neutral-4',
 })
 
 export const OverviewContainer = styled('div', {
+  width: 'auto',
+  height: 'auto',
   display: 'flex',
   boxSizing: 'border-box',
   flexDirection: 'column',
-  alignItems: 'center',
-  width: '100%',
-  padding: '5rem',
+  alignItems: 'flex-start',
   gap: '1.5rem',
 })
 
 export const CardContainer = styled('div', {
   display: 'flex',
-  boxSizing: 'border-box',
-  width: '100%',
-  height: '60%',
-  padding: '0 4px',
+  width: '61.5rem',
+  height: '22.5rem',
+  alignItems: 'flex-start',
   gap: '1.5rem',
   backgroundColor: '$neutral-0',
   boxShadow: '4px 4px 4px 0px rgba(64, 64, 64, 0.1)',
@@ -71,42 +75,55 @@ export const CardContainer = styled('div', {
 })
 
 export const ImageContainer = styled('div', {
+  flex: '1 0 0',
+  alignSelf: 'stretch',
   width: '100%',
-  maxWidth: '50%',
-  height: 'auto',
+  height: '100%',
   img: {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
+    borderRadius: '1.5rem',
   },
 })
 
 export const DescriptionContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  width: '50%',
-  maxWidth: '50%',
-  height: 'auto',
-  paddingTop: '1.5rem',
-  paddingBottom: '1.5rem',
-  paddingRight: '1.5rem',
-  gap: '0.75',
+  width: '100%',
+  height: '22.5rem',
+  padding: '1.5rem 1.5rem 1.5rem 0rem',
   flex: '1 0 0',
+  gap: '0.75rem',
+  overflow: 'hidden',
+})
+
+export const TitleDescriptionContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100%',
+  height: 'auto',
+  justifyContent: 'center',
+  alignSelf: 'stretch',
+  fontFamily: '$default',
+  fontSize: '$2xl',
+  fontWeight: '$semibold',
+  lineHeight: '$short',
+  color: '$neutral-4',
+})
+
+export const TextDescriptionContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100%',
+  height: 'auto',
+  justifyContent: 'center',
   p: {
-    alignItems: 'flex-start',
-    height: '5rem',
     fontFamily: '$default',
-    fontSize: '1rem',
+    fontSize: '$md',
     fontWeight: '$regular',
     lineHeight: 'shorter',
     color: '$neutral-4',
-  },
-  h3: {
-    alignItems: 'flex-start',
-    fontFamily: '$default',
-    fontSize: '1.5rem',
-    fontWeight: '$semibold',
-    lineHeight: '$short',
-    color: '$neutral-4',
+    marginBottom: '0.5rem',
   },
 })

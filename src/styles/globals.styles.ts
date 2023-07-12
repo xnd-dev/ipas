@@ -18,7 +18,6 @@ export const globalStyles = globalCss({
 
   'body, input, textarea, button': {
     fontFamily: 'Poppins, sans-serif',
-    fontWeight: 400,
     border: 'none',
   },
 

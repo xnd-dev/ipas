@@ -4,38 +4,46 @@ import ImageProject1 from '../../../public/alimentando-vidas.png'
 import ImageProject2 from '../../../public/acao-voluntaria.png'
 import Image from 'next/image'
 
-export function Section2() {
+export function ProjectOverview() {
   return (
     <>
       <S.SectionContainer id="03">
         <S.ContentContainer>
-          <S.TitleContainer>
-            <h2>Nossos Projetos Sociais:</h2>
-            <h4>Compromisso em transformar realidades</h4>
-          </S.TitleContainer>
+          <S.TitleAndSubtitleContainer>
+            <S.SectionTitleContainer>
+              Nossos Projetos Sociais:
+            </S.SectionTitleContainer>
+            <S.SectionSubtitleContainer>
+              Compromisso em transformar realidades
+            </S.SectionSubtitleContainer>
+          </S.TitleAndSubtitleContainer>
           <S.OverviewContainer>
             <S.CardContainer>
               <S.ImageContainer>
                 <Image src={ImageProject1} alt="" sizes="100vw" />
               </S.ImageContainer>
               <S.DescriptionContainer>
-                <h3>Alimentando Vidas</h3>
-                <p>
-                  O projeto &quot;Alimentando Vidas&quot; tem como objetivo
-                  combater a fome e a insegurança alimentar nas comunidades
-                  carentes.
-                </p>
-                <p>
-                  Através de parcerias e campanhas de arrecadação, o projeto
-                  coleta alimentos e faz doações para famílias em situação de
-                  vulnerabilidade social.
-                </p>
-                <p>
-                  Com o apoio da comunidade e de voluntários, o projeto
-                  &quot;Alimentando Vidas&quot; tem impactado positivamente a
-                  vida de inúmeras pessoas, garantindo que elas tenham acesso a
-                  uma alimentação adequada e nutritiva.
-                </p>
+                <S.TitleDescriptionContainer>
+                  Alimentando Vidas
+                </S.TitleDescriptionContainer>
+                <S.TextDescriptionContainer>
+                  <p>
+                    O projeto &quot;Alimentando Vidas&quot; tem como objetivo
+                    combater a fome e a insegurança alimentar nas comunidades
+                    carentes.
+                  </p>
+                  <p>
+                    Através de parcerias e campanhas de arrecadação, o projeto
+                    coleta alimentos e faz doações para famílias em situação de
+                    vulnerabilidade social.
+                  </p>
+                  <p>
+                    Com o apoio da comunidade e de voluntários, o projeto
+                    &quot;Alimentando Vidas&quot; tem impactado positivamente a
+                    vida de inúmeras pessoas, garantindo que elas tenham acesso
+                    a uma alimentação adequada e nutritiva.
+                  </p>
+                </S.TextDescriptionContainer>
               </S.DescriptionContainer>
             </S.CardContainer>
             <S.CardContainer>
@@ -43,8 +51,10 @@ export function Section2() {
                 <Image src={ImageProject2} alt="" sizes="100vw" />
               </S.ImageContainer>
               <S.DescriptionContainer>
-                <h3>Ações voluntárias</h3>
-                <h5>
+                <S.TitleDescriptionContainer>
+                  Ações voluntárias
+                </S.TitleDescriptionContainer>
+                <S.TextDescriptionContainer>
                   <p>
                     Nossas Ações Voluntárias são realizadas em datas
                     comemorativas como o Natal e o Dia das Crianças, e têm como
@@ -62,7 +72,7 @@ export function Section2() {
                     presentes, celebrações e interações afetuosas, promovemos o
                     amor ao próximo e fortalecemos os laços comunitários.
                   </p>
-                </h5>
+                </S.TextDescriptionContainer>
               </S.DescriptionContainer>
             </S.CardContainer>
           </S.OverviewContainer>
