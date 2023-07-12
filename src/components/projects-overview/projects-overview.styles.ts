@@ -5,11 +5,12 @@ export const SectionContainer = styled('section', {
   boxSizing: 'border-box',
   width: '100%',
   Height: '63rem',
-  padding: '5rem 14.25rem',
+  padding: '5rem 19.25rem',
   backgroundColor: '$tertiary-variant',
   backgroundSize: 'cover',
   color: '$neutral-0',
   alignItems: 'center',
+  justifyContent: 'center',
   fontFamily: '$default',
   gap: '1.5rem',
 })
@@ -18,8 +19,8 @@ export const ContentContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   boxSizing: 'border-box',
-  width: '61.5rem',
-  height: '53.125rem',
+  width: 'auto',
+  height: 'auto',
   alignItems: 'center',
   gap: '1.5rem',
 })
@@ -65,8 +66,9 @@ export const OverviewContainer = styled('div', {
 
 export const CardContainer = styled('div', {
   display: 'flex',
-  width: '61.5rem',
-  height: '22.5rem',
+  boxSizing: 'border-box',
+  width: 'auto',
+  height: 'auto',
   alignItems: 'flex-start',
   gap: '1.5rem',
   backgroundColor: '$neutral-0',
@@ -78,7 +80,7 @@ export const ImageContainer = styled('div', {
   flex: '1 0 0',
   alignSelf: 'stretch',
   width: '100%',
-  height: '100%',
+  height: 'auto',
   img: {
     width: '100%',
     height: '100%',
@@ -89,18 +91,16 @@ export const ImageContainer = styled('div', {
 
 export const DescriptionContainer = styled('div', {
   display: 'flex',
+  alignSelf: 'stretch',
   flexDirection: 'column',
   width: '100%',
-  height: '22.5rem',
+  height: 'auto',
   padding: '1.5rem 1.5rem 1.5rem 0rem',
   flex: '1 0 0',
   gap: '0.75rem',
-  overflow: 'hidden',
 })
 
 export const TitleDescriptionContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
   width: '100%',
   height: 'auto',
   justifyContent: 'center',
@@ -113,17 +113,11 @@ export const TitleDescriptionContainer = styled('div', {
 })
 
 export const TextDescriptionContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
   width: '100%',
   height: 'auto',
-  justifyContent: 'center',
-  p: {
-    fontFamily: '$default',
-    fontSize: '$md',
-    fontWeight: '$regular',
-    lineHeight: 'shorter',
-    color: '$neutral-4',
-    marginBottom: '0.5rem',
-  },
+  fontFamily: '$default',
+  fontSize: '$sm',
+  fontWeight: '$regular',
+  lineHeight: 'shorter',
+  color: '$neutral-4',
 })

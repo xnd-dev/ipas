@@ -27,22 +27,20 @@ export function ProjectOverview() {
                   Alimentando Vidas
                 </S.TitleDescriptionContainer>
                 <S.TextDescriptionContainer>
-                  <p>
-                    O projeto &quot;Alimentando Vidas&quot; tem como objetivo
-                    combater a fome e a insegurança alimentar nas comunidades
-                    carentes.
-                  </p>
-                  <p>
-                    Através de parcerias e campanhas de arrecadação, o projeto
-                    coleta alimentos e faz doações para famílias em situação de
-                    vulnerabilidade social.
-                  </p>
-                  <p>
-                    Com o apoio da comunidade e de voluntários, o projeto
-                    &quot;Alimentando Vidas&quot; tem impactado positivamente a
-                    vida de inúmeras pessoas, garantindo que elas tenham acesso
-                    a uma alimentação adequada e nutritiva.
-                  </p>
+                  O projeto &quot;Alimentando Vidas&quot; tem como objetivo
+                  combater a fome e a insegurança alimentar nas comunidades
+                  carentes.
+                </S.TextDescriptionContainer>
+                <S.TextDescriptionContainer>
+                  Através de parcerias e campanhas de arrecadação, o projeto
+                  coleta alimentos e faz doações para famílias em situação de
+                  vulnerabilidade social.
+                </S.TextDescriptionContainer>
+                <S.TextDescriptionContainer>
+                  Com o apoio da comunidade e de voluntários, o projeto
+                  &quot;Alimentando Vidas&quot; tem impactado positivamente a
+                  vida de inúmeras pessoas, garantindo que elas tenham acesso a
+                  uma alimentação adequada e nutritiva.
                 </S.TextDescriptionContainer>
               </S.DescriptionContainer>
             </S.CardContainer>
@@ -55,23 +53,19 @@ export function ProjectOverview() {
                   Ações voluntárias
                 </S.TitleDescriptionContainer>
                 <S.TextDescriptionContainer>
-                  <p>
-                    Nossas Ações Voluntárias são realizadas em datas
-                    comemorativas como o Natal e o Dia das Crianças, e têm como
-                    objetivo levar alegria, apoio e solidariedade para aqueles
-                    que mais precisam.
-                  </p>
-                  <p>
-                    Nestes momentos especiais, nos unimos para proporcionar
-                    experiências positivas e inesquecíveis para crianças,
-                    jovens, adultos e idosos em situação de vulnerabilidade
-                    social.
-                  </p>
-                  <p>
-                    Por meio de atividades recreativas, distribuição de
-                    presentes, celebrações e interações afetuosas, promovemos o
-                    amor ao próximo e fortalecemos os laços comunitários.
-                  </p>
+                  Nossas Ações Voluntárias são realizadas em datas comemorativas
+                  como o Natal e o Dia das Crianças, e têm como objetivo levar
+                  alegria, apoio e solidariedade para aqueles que mais precisam.
+                </S.TextDescriptionContainer>
+                <S.TextDescriptionContainer>
+                  Nestes momentos especiais, nos unimos para proporcionar
+                  experiências positivas e inesquecíveis para crianças, jovens,
+                  adultos e idosos em situação de vulnerabilidade social.
+                </S.TextDescriptionContainer>
+                <S.TextDescriptionContainer>
+                  Por meio de atividades recreativas, distribuição de presentes,
+                  celebrações e interações afetuosas, promovemos o amor ao
+                  próximo e fortalecemos os laços comunitários.
                 </S.TextDescriptionContainer>
               </S.DescriptionContainer>
             </S.CardContainer>
