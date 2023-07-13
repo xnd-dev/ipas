@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import * as S from './carousel.styles'
 import { useCarousel } from './carousel.hook'
-import { slidesData } from './carousel.constants'
 
 export function Carousel() {
-  const { currentItem, swipeHandlers, setActiveIndex } = useCarousel(slidesData)
+  const { currentItem, swipeHandlers, setActiveIndex, slidesData } =
+    useCarousel()
 
   return (
     <S.SectionContainer id="carousel" {...swipeHandlers}>
