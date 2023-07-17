@@ -1,5 +1,5 @@
 import * as S from './footer.styles'
-import ipasLogoFooter from '../../../public/APRESENTAÇÃO-1-1 1.svg'
+import ipasLogoFooter from '../../../public/ipas-logo-footer.svg'
 import Image from 'next/image'
 import {
   InstagramLogo,
