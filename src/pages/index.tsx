@@ -2,7 +2,7 @@ import { Header } from '@/components/header/header'
 import { HeroBanner } from '@/components/hero-banner'
 import { NumbersDisplay } from '@/components/numbers-display'
 import { ProjectOverview } from '@/components/projects-overview'
-import { Cta } from '@/components/cta'
+import { CallToAction } from '@/components/cta'
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <HeroBanner />
       <NumbersDisplay />
       <ProjectOverview />
-      <Cta />
+      <CallToAction />
     </div>
   )
 }

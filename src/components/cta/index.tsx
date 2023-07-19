@@ -1,1 +1,1 @@
-export { Cta } from './cta'
+export { CallToAction } from './cta'

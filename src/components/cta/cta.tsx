@@ -1,10 +1,10 @@
 import * as S from './cta.styles'
 import { Handshake } from '@phosphor-icons/react'
 
-export function Cta() {
+export function CallToAction() {
   return (
     <>
-      <S.SectionContainer id="06">
+      <S.SectionContainer id="seja-um-voluntario">
         <S.ContentContainer>
           <S.TitleContainer>
             Faça a diferença, seja voluntário no IPAS!
