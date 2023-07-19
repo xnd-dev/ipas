@@ -9,7 +9,7 @@ import {
 
 export function Footer() {
   return (
-    <S.HeaderContainer>
+    <S.FooterContainer>
       <S.HorizontalContainer>
         <Image src={ipasLogoFooter} alt="" />
         <S.OptionsContainer>
@@ -24,19 +24,29 @@ export function Footer() {
         </S.OptionsContainer>
         <S.SocialAndContactsContainer>
           <S.ContactsContainer>
-            <S.TitleContainer>Contato</S.TitleContainer>
+            <S.TitleContainer>Contatos</S.TitleContainer>
             <S.InfoContactsContainer>
-              <S.EmailContainer>contato@ipas.com</S.EmailContainer>
-              <S.PhoneContainer>(82) 99662-1031</S.PhoneContainer>
+              <S.EmailContainer>
+                <a href="mailto:contato@ipas.com">contato@ipas.com</a>
+              </S.EmailContainer>
+              <S.PhoneContainer>
+                <a href="tel:(82) 99662-1031">(82) 99662-1031</a>
+              </S.PhoneContainer>
             </S.InfoContactsContainer>
             <S.SocialsContainer>
-              <InstagramLogo size={'1.5rem'} />
-              <LinkedinLogo size={'1.5rem'} />
-              <FacebookLogo size={'1.5rem'} />
+              <a href="https://instagram.com">
+                <InstagramLogo size={'1.5rem'} />
+              </a>
+              <a href="https://linkedin.com">
+                <LinkedinLogo size={'1.5rem'} />
+              </a>
+              <a href="https://facebook.com">
+                <FacebookLogo size={'1.5rem'} />
+              </a>
             </S.SocialsContainer>
           </S.ContactsContainer>
         </S.SocialAndContactsContainer>
       </S.HorizontalContainer>
-    </S.HeaderContainer>
+    </S.FooterContainer>
   )
 }

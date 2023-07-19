@@ -1,6 +1,6 @@
 import { styled } from '@/lib/stitches'
 
-export const HeaderContainer = styled('footer', {
+export const FooterContainer = styled('footer', {
   display: 'flex',
   boxSizing: 'border-box',
   width: '100vw',
@@ -79,7 +79,7 @@ export const InfoContactsContainer = styled('div', {
   height: 'auto',
 })
 
-export const EmailContainer = styled('p', {
+export const EmailContainer = styled('a', {
   fontFamily: '$default',
   fontSize: '$md',
   fontStyle: 'normal',
@@ -87,7 +87,7 @@ export const EmailContainer = styled('p', {
   lineHeight: '$shorter',
 })
 
-export const PhoneContainer = styled('p', {
+export const PhoneContainer = styled('a', {
   fontFamily: '$default',
   fontSize: '$md',
   fontStyle: 'normal',
