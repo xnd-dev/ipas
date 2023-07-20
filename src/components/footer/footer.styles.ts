@@ -79,7 +79,7 @@ export const InfoContactsContainer = styled('div', {
   height: 'auto',
 })
 
-export const EmailContainer = styled('a', {
+export const EmailContainer = styled('div', {
   fontFamily: '$default',
   fontSize: '$md',
   fontStyle: 'normal',
@@ -87,7 +87,7 @@ export const EmailContainer = styled('a', {
   lineHeight: '$shorter',
 })
 
-export const PhoneContainer = styled('a', {
+export const PhoneContainer = styled('div', {
   fontFamily: '$default',
   fontSize: '$md',
   fontStyle: 'normal',
