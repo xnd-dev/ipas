@@ -1,8 +1,8 @@
 import { Header } from '@/components/header/header'
 import { HeroBanner } from '@/components/hero-banner'
 import { NumbersDisplay } from '@/components/numbers-display'
-import { Carousel } from '@/components/carousel'
 import { ProjectOverview } from '@/components/projects-overview'
+import { Carousel } from '@/components/carousel'
 
 export default function Home() {
   return (
