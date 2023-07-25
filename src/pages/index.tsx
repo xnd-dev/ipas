@@ -3,6 +3,7 @@ import { HeroBanner } from '@/components/hero-banner'
 import { NumbersDisplay } from '@/components/numbers-display'
 import { ProjectOverview } from '@/components/projects-overview'
 import { Footer } from '@/components/footer'
+import { CallToAction } from '@/components/cta'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <NumbersDisplay />
       <ProjectOverview />
       <Footer />
+      <CallToAction />
     </div>
   )
 }
