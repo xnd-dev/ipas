@@ -3,6 +3,8 @@ import { HeroBanner } from '@/components/hero-banner'
 import { NumbersDisplay } from '@/components/numbers-display'
 import { ProjectOverview } from '@/components/projects-overview'
 import { Carousel } from '@/components/carousel'
+import { CallToAction } from '@/components/cta'
+import { Footer } from '@/components/footer'
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <NumbersDisplay />
       <ProjectOverview />
       <Carousel />
+      <CallToAction />
+      <Footer />
     </div>
   )
 }
