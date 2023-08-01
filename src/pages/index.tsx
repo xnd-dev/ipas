@@ -9,18 +9,15 @@ import { Footer } from '@/components/footer'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       <HeroBanner />
       <NumbersDisplay />
       <ProjectOverview />
-<<<<<<< HEAD
       <PixPage />
-=======
       <Carousel />
       <CallToAction />
       <Footer />
->>>>>>> 6fe97097d5185602f31a46e2f92f4fcdf6b87147
-    </div>
+    </>
   )
 }
