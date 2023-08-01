@@ -3,7 +3,7 @@ import * as S from './hero-banner.styles'
 
 export function HeroBanner() {
   return (
-    <S.SectionContainer id="01">
+    <S.SectionContainer id="hero-banner">
       <S.ContentContainer>
         <S.TitleContainer>
           IPAS - Instituto Profissionalizante e de Assistência Social

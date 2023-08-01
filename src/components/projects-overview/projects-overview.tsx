@@ -7,7 +7,7 @@ import Image from 'next/image'
 export function ProjectOverview() {
   return (
     <>
-      <S.SectionContainer id="03">
+      <S.SectionContainer id="nossos-projetos">
         <S.ContentContainer>
           <S.TitleAndSubtitleContainer>
             <S.SectionTitleContainer>
