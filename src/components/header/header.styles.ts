@@ -4,22 +4,29 @@ export const HeaderContainer = styled('header', {
   display: 'flex',
   boxSizing: 'border-box',
   width: '100vw',
-  height: '5rem',
-  padding: '$4 $56',
+  height: '5.5rem',
+  padding: '$6 $56',
   gap: '$72',
-  backgroundColor: '$primary',
+  backgroundColor: '$neutral-0',
   alignItems: 'center',
   justifyContent: 'center',
   position: 'fixed',
+  borderBottom: '1px solid',
+  borderColor: '$neutral-4',
 })
 
 export const HorizontalContainer = styled('div', {
   display: 'flex',
   boxSizing: 'border-box',
   width: '80rem',
-  height: '3rem',
+  height: '2.5rem',
   alignItems: 'center',
   justifyContent: 'space-between',
+})
+
+export const ImageContainer = styled('div', {
+  width: '9rem',
+  height: '2.5rem',
 })
 
 export const OptionsContainer = styled('div', {
@@ -32,7 +39,7 @@ export const OptionsContainer = styled('div', {
 })
 
 export const NavContainer = styled('a', {
-  color: '$neutral-0',
+  color: '$neutral-4',
   fontFamily: '$default',
   fontSize: '$md',
   fontWeight: '$regular',
@@ -47,24 +54,26 @@ export const ButtonContainer = styled('button', {
   padding: '$3 $6',
   gap: '$1',
   border: 'none',
-  borderRadius: '$xl',
+  borderRadius: '$full',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '$tertiary',
+  color: '$neutral-0',
+  backgroundColor: '$primary',
+  cursor: 'pointer',
 
   '&:hover': {
-    backgroundColor: '$tertiary-variant',
+    backgroundColor: '$primary-variant-2',
   },
 
   '&:active': {
-    backgroundColor: '$tertiary',
+    backgroundColor: '$primary-variant-1',
   },
 })
 
 export const InsideTextContainer = styled('span', {
   width: '5,3125rem',
   height: '1,1875rem',
-  color: '$neutral-4',
+  color: '$neutral-0',
   fontFamily: '$default',
   fontSize: '$md',
   fontWeight: '$semibold',

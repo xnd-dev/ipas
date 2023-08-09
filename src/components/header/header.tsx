@@ -2,12 +2,13 @@ import {
   ButtonContainer,
   HeaderContainer,
   HorizontalContainer,
+  ImageContainer,
   InsideTextContainer,
   NavContainer,
   OptionsContainer,
 } from './header.styles'
 
-import ipasLogo from '../../../public/ipas-logo.svg'
+import ipasLogo from '../../../public/ipas-logo-azul.svg'
 
 import { HandCoins } from '@phosphor-icons/react'
 import Image from 'next/image'
@@ -16,7 +17,9 @@ export function Header() {
   return (
     <HeaderContainer>
       <HorizontalContainer>
-        <Image src={ipasLogo} alt="" />
+        <ImageContainer>
+          <Image src={ipasLogo} alt="" />
+        </ImageContainer>
         <OptionsContainer>
           <NavContainer href="#nossos-projetos">Nossos Projetos</NavContainer>
           <NavContainer href="#como-ajudar">Como ajudar</NavContainer>
