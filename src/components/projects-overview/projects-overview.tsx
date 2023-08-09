@@ -1,7 +1,7 @@
 import * as S from './projects-overview.styles'
 
-import ImageProject1 from '../../../public/alimentando-vidas.png'
-import ImageProject2 from '../../../public/acao-voluntaria.png'
+import ImageProject1 from '../../../public/alimentando-vidas.svg'
+import ImageProject2 from '../../../public/acao-voluntaria.svg'
 import Image from 'next/image'
 
 export function ProjectOverview() {
@@ -20,52 +20,73 @@ export function ProjectOverview() {
           <S.OverviewContainer>
             <S.CardContainer>
               <S.ImageContainer>
-                <Image src={ImageProject1} alt="" sizes="100vw" />
+                <Image src={ImageProject1} alt="" />
               </S.ImageContainer>
               <S.DescriptionContainer>
                 <S.TitleDescriptionContainer>
                   Alimentando Vidas
                 </S.TitleDescriptionContainer>
                 <S.TextDescriptionContainer>
-                  O projeto &quot;Alimentando Vidas&quot; tem como objetivo
-                  combater a fome e a insegurança alimentar nas comunidades
-                  carentes.
-                </S.TextDescriptionContainer>
-                <S.TextDescriptionContainer>
-                  Através de parcerias e campanhas de arrecadação, o projeto
-                  coleta alimentos e faz doações para famílias em situação de
-                  vulnerabilidade social.
-                </S.TextDescriptionContainer>
-                <S.TextDescriptionContainer>
-                  Com o apoio da comunidade e de voluntários, o projeto
-                  &quot;Alimentando Vidas&quot; tem impactado positivamente a
-                  vida de inúmeras pessoas, garantindo que elas tenham acesso a
-                  uma alimentação adequada e nutritiva.
+                  <S.StrongContainer>Objetivo</S.StrongContainer>
+                  <br />
+                  <li>
+                    Combater a fome e a insegurança alimentar nas comunidades
+                    carentes
+                  </li>
+                  <br />
+                  <S.StrongContainer>Atuação</S.StrongContainer>
+                  <br />
+
+                  <li>Parcerias e campanhas de arrecadação</li>
+                  <li>Coleta de Alimentos</li>
+                  <li>Participação da comunidade e de voluntários</li>
+                  <li>Doações para famílias em situação de vulnerabilidade</li>
+
+                  <br />
+                  <S.StrongContainer>Impacto</S.StrongContainer>
+                  <br />
+
+                  <li>850 famílias atendidas mensalmente</li>
+                  <li>Garantia de alimentação adequada e nutritiva</li>
                 </S.TextDescriptionContainer>
               </S.DescriptionContainer>
             </S.CardContainer>
             <S.CardContainer>
               <S.ImageContainer>
-                <Image src={ImageProject2} alt="" sizes="100vw" />
+                <Image src={ImageProject2} alt="" />
               </S.ImageContainer>
               <S.DescriptionContainer>
                 <S.TitleDescriptionContainer>
-                  Ações voluntárias
+                  Ações Voluntárias
                 </S.TitleDescriptionContainer>
                 <S.TextDescriptionContainer>
-                  Nossas Ações Voluntárias são realizadas em datas comemorativas
-                  como o Natal e o Dia das Crianças, e têm como objetivo levar
-                  alegria, apoio e solidariedade para aqueles que mais precisam.
-                </S.TextDescriptionContainer>
-                <S.TextDescriptionContainer>
-                  Nestes momentos especiais, nos unimos para proporcionar
-                  experiências positivas e inesquecíveis para crianças, jovens,
-                  adultos e idosos em situação de vulnerabilidade social.
-                </S.TextDescriptionContainer>
-                <S.TextDescriptionContainer>
-                  Por meio de atividades recreativas, distribuição de presentes,
-                  celebrações e interações afetuosas, promovemos o amor ao
-                  próximo e fortalecemos os laços comunitários.
+                  <S.StrongContainer>Objetivo</S.StrongContainer>
+                  <br />
+
+                  <li>
+                    Levar alegria, apoio e solidariedade para aqueles que mais
+                    precisam
+                  </li>
+
+                  <br />
+                  <S.StrongContainer>Atuação</S.StrongContainer>
+
+                  <br />
+
+                  <li>Ações em datas comemorativas</li>
+                  <li>Atividades Recreativa e distribuição de presentes</li>
+                  <li>Celebração e interações afetuosas</li>
+
+                  <br />
+                  <S.StrongContainer>Impacto</S.StrongContainer>
+                  <br />
+
+                  <li>Promoção do amor ao próximo</li>
+                  <li>Fortalecimento dos laços comunitários</li>
+                  <li>
+                    Experiências felizes para pessoas em situação de
+                    vulnerabilidade social
+                  </li>
                 </S.TextDescriptionContainer>
               </S.DescriptionContainer>
             </S.CardContainer>

@@ -3,88 +3,86 @@ import { styled } from '@/lib/stitches'
 export const SectionContainer = styled('section', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: '100%',
-  Height: '63rem',
-  padding: '5rem 19.25rem',
-  backgroundColor: '$tertiary-variant',
+  width: '100vw',
+  Height: '69.375rem',
+  padding: '$20 $80',
+  color: '$neutral-4',
+  backgroundColor: '$neutral-0',
   backgroundSize: 'cover',
-  color: '$neutral-0',
   alignItems: 'center',
   justifyContent: 'center',
   fontFamily: '$default',
-  gap: '1.5rem',
+  gap: '$6',
 })
 
 export const ContentContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   boxSizing: 'border-box',
-  width: 'auto',
-  height: 'auto',
+  width: '61.5rem',
+  height: '64.375rem',
   alignItems: 'center',
-  gap: '1.5rem',
+  gap: '$6',
 })
 
 export const TitleAndSubtitleContainer = styled('div', {
   display: 'flex',
+  height: '5.125rem',
   flexDirection: 'column',
   alignItems: 'center',
-  gap: '0.75rem',
-  marginBottom: '1.5rem',
+  gap: '$3',
 })
 
 export const SectionTitleContainer = styled('div', {
-  width: 'auto',
-  height: 'auto',
+  width: '61.5rem',
+  height: '2.625rem',
   flexDirection: 'column',
   textAlign: 'center',
-  fontFamily: '$default',
   fontWeight: '$semibold',
   fontSize: '$3xl',
   lineHeight: '$short',
-  color: '$neutral-4',
 })
+
 export const SectionSubtitleContainer = styled('div', {
   width: 'auto',
-  height: 'auto',
-  fontFamily: '$default',
+  height: '1.75rem',
   fontWeight: '$regular',
   fontSize: '$xl',
   lineHeight: '$base',
-  color: '$neutral-4',
 })
 
 export const OverviewContainer = styled('div', {
-  width: 'auto',
-  height: 'auto',
+  width: '61.5rem',
+  height: '57.75rem',
   display: 'flex',
   boxSizing: 'border-box',
   flexDirection: 'column',
   alignItems: 'flex-start',
-  gap: '1.5rem',
+  gap: '$6',
 })
 
 export const CardContainer = styled('div', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: 'auto',
-  height: 'auto',
+  width: '61.5rem',
+  height: '28.125rem',
   alignItems: 'flex-start',
-  gap: '1.5rem',
+  gap: '$6',
   backgroundColor: '$neutral-0',
-  boxShadow: '4px 4px 4px 0px rgba(64, 64, 64, 0.1)',
-  borderRadius: '1.5rem',
+  border: '1px solid',
+  borderColor: '$neutral-4',
+  borderRadius: '$xl',
 })
 
 export const ImageContainer = styled('div', {
   boxSizing: 'border-box',
-  flex: '1 0 0',
   alignSelf: 'stretch',
-  width: 'auto',
-  height: 'auto',
+  width: '20rem',
+  height: '28.125rem',
+
   img: {
-    width: '100%',
-    height: '100%',
+    width: '20rem',
+    height: '28.125rem',
     objectFit: 'cover',
     borderTopLeftRadius: '1.5rem',
     borderBottomLeftRadius: '1.5rem',
@@ -93,33 +91,38 @@ export const ImageContainer = styled('div', {
 
 export const DescriptionContainer = styled('div', {
   display: 'flex',
-  alignSelf: 'stretch',
+  justifyContent: 'center',
   flexDirection: 'column',
-  width: '100%',
-  height: 'auto',
-  padding: '1.5rem 1.5rem 1.5rem 0rem',
-  flex: '1 0 0',
-  gap: '0.75rem',
+  width: '40rem',
+  height: '25.75rem',
+  padding: '$6 $0',
+  gap: '$6',
 })
 
 export const TitleDescriptionContainer = styled('div', {
-  width: '100%',
-  height: 'auto',
+  width: '38.5rem',
+  height: '2rem',
   justifyContent: 'center',
   alignSelf: 'stretch',
-  fontFamily: '$default',
   fontSize: '$2xl',
   fontWeight: '$semibold',
   lineHeight: '$short',
-  color: '$neutral-4',
+})
+
+export const StrongContainer = styled('div', {
+  fontSize: '$xl',
+  fontWeight: '$semibold',
+  lineHeight: '$short',
 })
 
 export const TextDescriptionContainer = styled('div', {
-  width: '100%',
-  height: 'auto',
-  fontFamily: '$default',
-  fontSize: '$sm',
+  width: '40rem',
+  height: '19.3125rem',
+  fontSize: '$md',
   fontWeight: '$regular',
-  lineHeight: 'shorter',
-  color: '$neutral-4',
+  lineHeight: '$shorter',
+
+  li: {
+    marginLeft: 12,
+  },
 })

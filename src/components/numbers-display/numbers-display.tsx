@@ -17,30 +17,30 @@ export function NumbersDisplay() {
           </S.SubtitleContainer>
         </S.TextsContainer>
         <S.CardsContainer>
-          <S.VariantContainer>
+          <S.CardContainer>
             <Smiley size={'2rem'} />
             <S.StrongContainer> 6000 </S.StrongContainer>
             <S.InsideTextContainer> Pessoas impactadas </S.InsideTextContainer>
-          </S.VariantContainer>
-          <S.VariantContainer>
+          </S.CardContainer>
+          <S.CardContainer>
             <UsersThree size={'2rem'} />
             <S.StrongContainer>850</S.StrongContainer>
             <S.InsideTextContainer>
               Famílias atendidas mensalmente
             </S.InsideTextContainer>
-          </S.VariantContainer>
-          <S.VariantContainer>
+          </S.CardContainer>
+          <S.CardContainer>
             <HandHeart size={'2rem'} />
             <S.StrongContainer>1500</S.StrongContainer>
             <S.InsideTextContainer>
               Pessoas ajudadas em abril de 2023
             </S.InsideTextContainer>
-          </S.VariantContainer>
-          <S.VariantContainer>
+          </S.CardContainer>
+          <S.CardContainer>
             <CalendarBlank size={'2rem'} />
             <S.StrongContainer>13</S.StrongContainer>
             <S.InsideTextContainer> Anos de história </S.InsideTextContainer>
-          </S.VariantContainer>
+          </S.CardContainer>
         </S.CardsContainer>
       </S.ContentContainer>
     </S.SectionContainer>

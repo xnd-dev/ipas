@@ -3,13 +3,14 @@ import { styled } from '@/lib/stitches'
 export const SectionContainer = styled('section', {
   display: 'flex',
   width: '100vw',
-  height: '35.5rem',
+  height: '30.5rem',
   backgroundColor: '$neutral-0',
   color: '$neutral-4',
   alignItems: 'center',
   justifyContent: 'center',
   fontFamily: '$default',
   gap: '$3',
+  padding: '$20 $96 $10 $96',
 })
 
 export const ContentContainer = styled('div', {
@@ -22,6 +23,7 @@ export const ContentContainer = styled('div', {
   gap: '$3',
   textAlign: 'center',
   marginTop: '$20',
+  marginBot: '$10',
 })
 
 export const TitleContainer = styled('h1', {
