@@ -6,7 +6,7 @@ export const SectionContainer = styled('section', {
   boxSizing: 'border-box',
   width: '100vw',
   height: 'auto',
-  backgroundColor: '$primary',
+  backgroundColor: '$neutral-0',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
@@ -31,7 +31,7 @@ export const TitleContainer = styled('h2', {
   fontStyle: 'normal',
   fontWeight: '$semibold',
   lineHeight: '$short',
-  color: '$neutral-0',
+  color: '$neutral-4',
 })
 
 export const TextContainer = styled('p', {
@@ -42,7 +42,7 @@ export const TextContainer = styled('p', {
   fontStyle: 'normal',
   fontWeight: '$regular',
   lineHeight: '$short',
-  color: '$neutral-0',
+  color: '$neutral-4',
 })
 
 export const ButtonContainer = styled('button', {
@@ -53,8 +53,8 @@ export const ButtonContainer = styled('button', {
   justifyContent: 'center',
   alignItems: 'center',
   gap: '0.5rem',
-  color: '$neutral-4',
-  backgroundColor: '$tertiary',
+  color: '$neutral-0',
+  backgroundColor: '$primary',
   borderRadius: '18.75rem',
   boxShadow: '4px 4px 4px 0px rgba(64,64,64,0.10)',
   border: 'none',
@@ -66,10 +66,10 @@ export const ButtonContainer = styled('button', {
   lineHeight: '$shorter',
 
   '&:hover': {
-    backgroundColor: '$tertiary-variant',
+    backgroundColor: '$primary-variant-2',
   },
 
   '&:active': {
-    backgroundColor: '$tertiary',
+    backgroundColor: '$primary-variant-1',
   },
 })

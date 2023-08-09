@@ -1,5 +1,5 @@
 import * as S from './footer.styles'
-import ipasLogoFooter from '../../../public/ipas-logo-footer.svg'
+import ipasLogoFooter from '../../../public/ipas-logo-azul-footer.svg'
 import Image from 'next/image'
 import {
   InstagramLogo,
@@ -20,29 +20,29 @@ export function Footer() {
           <S.NavContainer href="#seja-um-voluntario">
             Seja um Voluntário
           </S.NavContainer>
-          <S.NavContainer href="#contato">Contato</S.NavContainer>
+          <S.NavContainer id="contato">Contato</S.NavContainer>
         </S.OptionsContainer>
         <S.SocialAndContactsContainer>
           <S.ContactsContainer>
             <S.TitleContainer>Contatos</S.TitleContainer>
             <S.InfoContactsContainer>
-              <S.EmailContainer>
-                <a href="mailto:contato@ipas.com">contato@ipas.com</a>
+              <S.EmailContainer href="mailto:contato@ipas.com">
+                contato@ipas.com
               </S.EmailContainer>
-              <S.PhoneContainer>
-                <a href="tel:(82) 99662-1031">(82) 99662-1031</a>
+              <S.PhoneContainer href="tel:(82) 99662-1031">
+                (82) 99662-1031
               </S.PhoneContainer>
             </S.InfoContactsContainer>
             <S.SocialsContainer>
-              <a href="https://instagram.com">
+              <S.SocialContainer href="https://instagram.com">
                 <InstagramLogo size={'1.5rem'} />
-              </a>
-              <a href="https://linkedin.com">
+              </S.SocialContainer>
+              <S.SocialContainer href="https://linkedin.com">
                 <LinkedinLogo size={'1.5rem'} />
-              </a>
-              <a href="https://facebook.com">
+              </S.SocialContainer>
+              <S.SocialContainer href="https://facebook.com">
                 <FacebookLogo size={'1.5rem'} />
-              </a>
+              </S.SocialContainer>
             </S.SocialsContainer>
           </S.ContactsContainer>
         </S.SocialAndContactsContainer>

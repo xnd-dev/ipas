@@ -103,8 +103,8 @@ export const ButtonContainer = styled('button', {
   justifyContent: 'center',
   alignItems: 'center',
   gap: '$2',
-  color: '$neutral-4',
-  backgroundColor: '$tertiary',
+  color: '$neutral-0',
+  backgroundColor: '$primary',
   borderRadius: '$xl',
   border: 'none',
   fontSize: '$md',
@@ -113,10 +113,10 @@ export const ButtonContainer = styled('button', {
   lineHeight: '$shorter',
 
   '&:hover': {
-    backgroundColor: '$tertiary-variant',
+    backgroundColor: '$primary-variant-2',
   },
 
   '&:active': {
-    backgroundColor: '$tertiary',
+    backgroundColor: '$primary-variant-1',
   },
 })

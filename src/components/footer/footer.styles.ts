@@ -6,18 +6,18 @@ export const FooterContainer = styled('footer', {
   width: '100vw',
   height: 'auto',
   padding: '1.5rem 14.3rem',
-  backgroundColor: '$primary',
+  backgroundColor: '$neutral-0',
   alignItems: 'center',
-  justifyContent: 'space-between',
-  bottom: '0',
-  borderTop: '1px solid white',
+  justifyContent: 'center',
+  borderTop: '1px solid',
+  borderColor: '$neutral-4',
 })
 
 export const HorizontalContainer = styled('div', {
   display: 'flex',
   boxSizing: 'border-box',
   width: '61.5rem',
-  height: '8.875',
+  height: '8.875rem',
   alignItems: 'center',
   justifyContent: 'space-between',
   flexShrink: '0',
@@ -34,7 +34,7 @@ export const OptionsContainer = styled('div', {
 })
 
 export const NavContainer = styled('a', {
-  color: '$neutral-0',
+  color: '$neutral-4',
   fontFamily: '$default',
   fontSize: '$md',
   fontWeight: '$regular',
@@ -49,7 +49,6 @@ export const SocialAndContactsContainer = styled('div', {
   width: 'auto',
   height: 'auto',
   gap: '0.75rem',
-  color: '$neutral-0',
 })
 
 export const ContactsContainer = styled('div', {
@@ -77,22 +76,25 @@ export const InfoContactsContainer = styled('div', {
   gap: '0.5rem',
   width: 'auto',
   height: 'auto',
+  color: '$neutral-4',
 })
 
-export const EmailContainer = styled('div', {
+export const EmailContainer = styled('a', {
   fontFamily: '$default',
   fontSize: '$md',
   fontStyle: 'normal',
   fontWeight: '$regular',
   lineHeight: '$shorter',
+  color: '$neutral-4',
 })
 
-export const PhoneContainer = styled('div', {
+export const PhoneContainer = styled('a', {
   fontFamily: '$default',
   fontSize: '$md',
   fontStyle: 'normal',
   fontWeight: '$regular',
   lineHeight: '$shorter',
+  color: '$neutral-4',
 })
 
 export const SocialsContainer = styled('div', {
@@ -102,4 +104,8 @@ export const SocialsContainer = styled('div', {
   width: 'auto',
   height: 'auto',
   gap: '0.75rem',
+})
+
+export const SocialContainer = styled('a', {
+  color: '$neutral-4',
 })

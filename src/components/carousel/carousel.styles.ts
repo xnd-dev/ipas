@@ -6,7 +6,7 @@ export const SectionContainer = styled('section', {
   alignItems: 'center',
   justifyContent: 'center',
   width: '100vw',
-  height: '40rem',
+  height: '22.25rem',
   backgroundColor: '$neutral-0',
   fontFamily: '$default',
 })
@@ -54,7 +54,7 @@ export const DotContainer = styled('button', {
   width: '0.625rem',
   height: '0.625rem',
   borderRadius: '$full',
-  backgroundColor: '$secondary',
+  backgroundColor: '$primary',
   marginBottom: '$10',
 
   '&:focus': {
