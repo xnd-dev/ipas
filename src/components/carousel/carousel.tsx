@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import * as S from './carousel.styles'
 import { useCarousel } from './carousel.hook'
+import { CaretLeft, CaretRight } from '@phosphor-icons/react'
 
 export function Carousel() {
   const { currentItem, swipeHandlers, setActiveIndex, slidesData } =
@@ -11,20 +12,23 @@ export function Carousel() {
       <S.CarouselContainer>
         <S.TitleContainer>Porque ajudar o IPAS:</S.TitleContainer>
         <S.CarouselContent>
-          <S.SlideContainer>
-            <Image
-              src={currentItem.avatar}
-              alt="avatar"
-              width={160}
-              height={160}
-            />
-            <S.SpanContainer>
-              <S.SubtitleContainer>
-                {currentItem.description}
-              </S.SubtitleContainer>
-              <S.SignatureContainer>{currentItem.name}</S.SignatureContainer>
-            </S.SpanContainer>
-          </S.SlideContainer>
+          <S.SliderContainer>
+            <S.CaretContainer>
+              <CaretLeft size={'2.5rem'} />
+            </S.CaretContainer>
+            <S.SlideContainer>
+              <Image src={currentItem.avatar} alt="avatar" />
+              <S.SpanContainer>
+                <S.SubtitleContainer>
+                  {currentItem.description}
+                </S.SubtitleContainer>
+                <S.SignatureContainer>{currentItem.name}</S.SignatureContainer>
+              </S.SpanContainer>
+            </S.SlideContainer>
+            <S.CaretContainer>
+              <CaretRight size={'2.5rem'} />
+            </S.CaretContainer>
+          </S.SliderContainer>
           <S.NavigationContainer>
             {slidesData.map((_, index) => (
               <S.DotContainer

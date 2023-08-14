@@ -9,7 +9,7 @@ import {
 
 export function Footer() {
   return (
-    <S.FooterContainer>
+    <S.FooterContainer id="contato">
       <S.HorizontalContainer>
         <Image src={ipasLogoFooter} alt="" />
         <S.OptionsContainer>
@@ -20,7 +20,7 @@ export function Footer() {
           <S.NavContainer href="#seja-um-voluntario">
             Seja um Voluntário
           </S.NavContainer>
-          <S.NavContainer id="contato">Contato</S.NavContainer>
+          <S.NavContainer href="#contato">Contato</S.NavContainer>
         </S.OptionsContainer>
         <S.SocialAndContactsContainer>
           <S.ContactsContainer>
@@ -29,7 +29,7 @@ export function Footer() {
               <S.EmailContainer href="mailto:contato@ipas.com">
                 contato@ipas.com
               </S.EmailContainer>
-              <S.PhoneContainer href="tel:(82) 99662-1031">
+              <S.PhoneContainer href="https://wa.me/5582996621031">
                 (82) 99662-1031
               </S.PhoneContainer>
             </S.InfoContactsContainer>
@@ -37,7 +37,7 @@ export function Footer() {
               <S.SocialContainer href="https://instagram.com">
                 <InstagramLogo size={'1.5rem'} />
               </S.SocialContainer>
-              <S.SocialContainer href="https://linkedin.com">
+              <S.SocialContainer href="https://www.linkedin.com/company/institutoipas/">
                 <LinkedinLogo size={'1.5rem'} />
               </S.SocialContainer>
               <S.SocialContainer href="https://facebook.com">

@@ -6,7 +6,7 @@ export const SectionContainer = styled('section', {
   alignItems: 'center',
   justifyContent: 'center',
   width: '100vw',
-  height: '22.25rem',
+  height: '31.25rem',
   backgroundColor: '$neutral-0',
   fontFamily: '$default',
 })
@@ -16,10 +16,10 @@ export const CarouselContainer = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '42rem',
-  height: '20.75rem',
+  width: '61.5rem',
+  height: '21.25rem',
   flexWrap: 'nowrap',
-  gap: '$10',
+  gap: '$12',
 })
 
 export const CarouselContent = styled('div', {
@@ -27,27 +27,48 @@ export const CarouselContent = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '42rem',
-  height: '15.625rem',
-  gap: '$6',
+  width: '61.5rem',
+  height: '15rem',
+  gap: '$5',
 })
 
-export const SlideContainer = styled('div', {
+export const SliderContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '61.5rem',
+  height: '13.125rem',
+  gap: '$20',
+})
+
+export const CaretContainer = styled('span', {
+  color: '$primary',
+  width: '2.5rem',
+  height: '2.5rem',
+})
+
+export const SlideContainer = styled('span', {
   display: 'flex',
   alignItems: 'center',
-  width: '42rem',
-  height: '10.6875rem',
-  gap: '$12',
+  width: '43rem',
+  height: '13.125rem',
+  gap: '$6',
+
+  img: {
+    width: '10rem',
+    height: '11rem',
+    borderRadius: '$lg',
+  },
 })
 
 export const NavigationContainer = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'center',
-  width: '42rem',
+  width: '61.5rem',
   height: '0.625rem',
-  gap: '0.625rem',
-  marginTop: '$2',
+  gap: '$2',
 })
 
 export const DotContainer = styled('button', {
@@ -63,35 +84,35 @@ export const DotContainer = styled('button', {
 })
 
 export const TitleContainer = styled('h2', {
-  width: '21.625rem',
-  height: '2.625rem',
-  fontSize: '$3xl',
+  width: '61.5rem',
+  height: '3.25rem',
+  fontSize: '$4xl',
   fontWeight: '$semibold',
-  lineHeight: '$shorter',
+  lineHeight: '$short',
   whiteSpace: 'nowrap',
 })
 
 export const SpanContainer = styled('span', {
   display: 'flex',
   flexDirection: 'column',
-  width: '29rem',
+  width: '30.5rem',
   height: '10.6875rem',
   alignItems: 'flex-start',
   gap: '$6',
 })
 
 export const SubtitleContainer = styled('h3', {
-  width: '29rem',
-  height: '8.3125rem',
-  fontSize: '$md',
+  width: '30.5rem',
+  height: '8.4375rem',
+  fontSize: '$lg',
   fontWeight: '$regular',
-  lineHeight: '$shorter',
+  lineHeight: '$short',
 })
 
 export const SignatureContainer = styled('h4', {
-  width: '13.1875rem',
-  height: '0.875rem',
-  fontSize: '$xs',
+  width: '30.5rem',
+  height: '1.5rem',
+  fontSize: '$md',
   fontWeight: '$regular',
-  lineHeight: '$shorter',
+  lineHeight: '$short',
 })
