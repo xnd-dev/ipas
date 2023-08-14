@@ -76,10 +76,17 @@ export const DotContainer = styled('button', {
   height: '0.625rem',
   borderRadius: '$full',
   backgroundColor: '$primary',
-  marginBottom: '$10',
 
-  '&:focus': {
+  focus: {
     backgroundColor: '$neutral-4',
+  },
+
+  variants: {
+    active: {
+      true: {
+        backgroundColor: '$neutral-4',
+      },
+    },
   },
 })
 

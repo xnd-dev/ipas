@@ -4,8 +4,13 @@ import { useCarousel } from './carousel.hook'
 import { CaretLeft, CaretRight } from '@phosphor-icons/react'
 
 export function Carousel() {
-  const { currentItem, swipeHandlers, setActiveIndex, slidesData } =
-    useCarousel()
+  const {
+    currentItem,
+    swipeHandlers,
+    activeIndex,
+    setActiveIndex,
+    slidesData,
+  } = useCarousel()
 
   return (
     <S.SectionContainer id="carousel" {...swipeHandlers}>
@@ -14,7 +19,14 @@ export function Carousel() {
         <S.CarouselContent>
           <S.SliderContainer>
             <S.CaretContainer>
-              <CaretLeft size={'2.5rem'} />
+              <CaretLeft
+                size={'2.5rem'}
+                onClick={() =>
+                  setActiveIndex(
+                    activeIndex === 0 ? slidesData.length - 1 : activeIndex - 1,
+                  )
+                }
+              />
             </S.CaretContainer>
             <S.SlideContainer>
               <Image src={currentItem.avatar} alt="avatar" />
@@ -26,13 +38,21 @@ export function Carousel() {
               </S.SpanContainer>
             </S.SlideContainer>
             <S.CaretContainer>
-              <CaretRight size={'2.5rem'} />
+              <CaretRight
+                size={'2.5rem'}
+                onClick={() =>
+                  setActiveIndex(
+                    activeIndex === slidesData.length - 1 ? 0 : activeIndex + 1,
+                  )
+                }
+              />
             </S.CaretContainer>
           </S.SliderContainer>
           <S.NavigationContainer>
             {slidesData.map((_, index) => (
               <S.DotContainer
                 key={index}
+                active={index === activeIndex}
                 onClick={() => setActiveIndex(index)}
               ></S.DotContainer>
             ))}

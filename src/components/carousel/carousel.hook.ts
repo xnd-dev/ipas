@@ -12,13 +12,13 @@ export function useCarousel() {
 
   const handleSwipe = (updateCount: UPDATE_COUNT) => {
     if (updateCount === UPDATE_COUNT.DECREMENT) {
-      activeIndex === 0
-        ? setActiveIndex(slidesData.length - 1)
-        : setActiveIndex((oldIndexState) => oldIndexState - 1)
+      setActiveIndex((oldIndexState) =>
+        oldIndexState === 0 ? slidesData.length - 1 : oldIndexState - 1,
+      )
     } else {
-      activeIndex === slidesData.length - 1
-        ? setActiveIndex(0)
-        : setActiveIndex((oldIndexState) => oldIndexState + 1)
+      setActiveIndex((oldIndexState) =>
+        oldIndexState === slidesData.length - 1 ? 0 : oldIndexState + 1,
+      )
     }
   }
 
@@ -32,6 +32,7 @@ export function useCarousel() {
   return {
     currentItem,
     swipeHandlers,
+    activeIndex,
     setActiveIndex,
     slidesData,
   }
