@@ -8,7 +8,7 @@ import {
   OptionsContainer,
 } from './header.styles'
 
-import ipasLogo from '../../../public/ipas-logo-azul.svg'
+import ipasLogo from '../../../public/ipas-blue-logo.svg'
 
 import { HandCoins } from '@phosphor-icons/react'
 import Image from 'next/image'

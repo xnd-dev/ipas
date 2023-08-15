@@ -1,7 +1,7 @@
 import * as S from './projects-overview.styles'
 
-import ImageProject1 from '../../../public/alimentando-vidas.svg'
-import ImageProject2 from '../../../public/acao-voluntaria.svg'
+import ImageProject1 from '../../../public/feeding.svg'
+import ImageProject2 from '../../../public/voluntary.svg'
 import Image from 'next/image'
 
 export function ProjectOverview() {
@@ -10,12 +10,10 @@ export function ProjectOverview() {
       <S.SectionContainer id="nossos-projetos">
         <S.ContentContainer>
           <S.TitleAndSubtitleContainer>
-            <S.SectionTitleContainer>
-              Nossos Projetos Sociais:
-            </S.SectionTitleContainer>
-            <S.SectionSubtitleContainer>
+            <S.TitleContainer>Nossos Projetos Sociais:</S.TitleContainer>
+            <S.SubtitleContainer>
               Compromisso em transformar realidades
-            </S.SectionSubtitleContainer>
+            </S.SubtitleContainer>
           </S.TitleAndSubtitleContainer>
           <S.OverviewContainer>
             <S.CardContainer>

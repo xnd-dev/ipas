@@ -19,7 +19,7 @@ export const ContentContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   boxSizing: 'border-box',
-  width: '61.5rem',
+  width: '63rem',
   height: '64.375rem',
   alignItems: 'center',
   gap: '$6',
@@ -27,35 +27,35 @@ export const ContentContainer = styled('div', {
 
 export const TitleAndSubtitleContainer = styled('div', {
   display: 'flex',
+  width: '63rem',
   height: '5.125rem',
   flexDirection: 'column',
   alignItems: 'center',
   gap: '$3',
 })
 
-export const SectionTitleContainer = styled('div', {
-  width: '61.5rem',
+export const TitleContainer = styled('div', {
+  width: '63rem',
   height: '2.625rem',
-  flexDirection: 'column',
   textAlign: 'center',
   fontWeight: '$semibold',
   fontSize: '$3xl',
   lineHeight: '$short',
 })
 
-export const SectionSubtitleContainer = styled('div', {
-  width: 'auto',
+export const SubtitleContainer = styled('div', {
+  width: '63rem',
   height: '1.75rem',
+  textAlign: 'center',
   fontWeight: '$regular',
   fontSize: '$xl',
-  lineHeight: '$base',
+  lineHeight: '$short',
 })
 
 export const OverviewContainer = styled('div', {
-  width: '61.5rem',
-  height: '57.75rem',
   display: 'flex',
-  boxSizing: 'border-box',
+  width: '63rem',
+  height: '57.75rem',
   flexDirection: 'column',
   alignItems: 'flex-start',
   gap: '$6',
@@ -64,7 +64,7 @@ export const OverviewContainer = styled('div', {
 export const CardContainer = styled('div', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: '61.5rem',
+  width: '63rem',
   height: '28.125rem',
   alignItems: 'flex-start',
   gap: '$6',
@@ -76,7 +76,6 @@ export const CardContainer = styled('div', {
 
 export const ImageContainer = styled('div', {
   boxSizing: 'border-box',
-  alignSelf: 'stretch',
   width: '20rem',
   height: '28.125rem',
 
@@ -93,14 +92,14 @@ export const DescriptionContainer = styled('div', {
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'column',
-  width: '40rem',
+  width: '35rem',
   height: '25.75rem',
   padding: '$6 $0',
   gap: '$6',
 })
 
 export const TitleDescriptionContainer = styled('div', {
-  width: '38.5rem',
+  width: '35rem',
   height: '2rem',
   justifyContent: 'center',
   alignSelf: 'stretch',
@@ -116,13 +115,13 @@ export const StrongContainer = styled('div', {
 })
 
 export const TextDescriptionContainer = styled('div', {
-  width: '40rem',
+  width: '35rem',
   height: '19.3125rem',
   fontSize: '$md',
   fontWeight: '$regular',
   lineHeight: '$shorter',
 
   li: {
-    marginLeft: 12,
+    marginLeft: '0.75rem',
   },
 })
