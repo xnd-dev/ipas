@@ -1,48 +1,45 @@
 import * as S from './footer.styles'
-import ipasLogoFooter from '../../../public/ipas-logo-footer.svg'
+import ipasLogoFooter from '../../../public/ipas-blue-footer-logo.svg'
 import Image from 'next/image'
 import {
   InstagramLogo,
   LinkedinLogo,
   FacebookLogo,
 } from '@phosphor-icons/react'
+import { links } from './footer.constants'
 
 export function Footer() {
   return (
-    <S.FooterContainer>
+    <S.FooterContainer id="contact">
       <S.HorizontalContainer>
         <Image src={ipasLogoFooter} alt="" />
         <S.OptionsContainer>
-          <S.NavContainer href="#nossos-projetos">
-            Nossos Projetos
-          </S.NavContainer>
-          <S.NavContainer href="#como-ajudar">Como ajudar</S.NavContainer>
-          <S.NavContainer href="#seja-um-voluntario">
-            Seja um Voluntário
-          </S.NavContainer>
-          <S.NavContainer href="#contato">Contato</S.NavContainer>
+          <S.NavContainer href="#projects">Nossos Projetos</S.NavContainer>
+          <S.NavContainer href="#help">Como ajudar</S.NavContainer>
+          <S.NavContainer href="#voluntary">Seja um Voluntário</S.NavContainer>
+          <S.NavContainer href="#contact">Contato</S.NavContainer>
         </S.OptionsContainer>
         <S.SocialAndContactsContainer>
           <S.ContactsContainer>
             <S.TitleContainer>Contatos</S.TitleContainer>
             <S.InfoContactsContainer>
-              <S.EmailContainer>
-                <a href="mailto:contato@ipas.com">contato@ipas.com</a>
+              <S.EmailContainer href={links.email}>
+                contato@ipas.com
               </S.EmailContainer>
-              <S.PhoneContainer>
-                <a href="tel:(82) 99662-1031">(82) 99662-1031</a>
+              <S.PhoneContainer href={links.whatsapp}>
+                (82) 99662-1031
               </S.PhoneContainer>
             </S.InfoContactsContainer>
             <S.SocialsContainer>
-              <a href="https://instagram.com">
+              <S.SocialContainer href={links.instagram}>
                 <InstagramLogo size={'1.5rem'} />
-              </a>
-              <a href="https://linkedin.com">
+              </S.SocialContainer>
+              <S.SocialContainer href={links.linkedin}>
                 <LinkedinLogo size={'1.5rem'} />
-              </a>
-              <a href="https://facebook.com">
+              </S.SocialContainer>
+              <S.SocialContainer href={links.facebook}>
                 <FacebookLogo size={'1.5rem'} />
-              </a>
+              </S.SocialContainer>
             </S.SocialsContainer>
           </S.ContactsContainer>
         </S.SocialAndContactsContainer>

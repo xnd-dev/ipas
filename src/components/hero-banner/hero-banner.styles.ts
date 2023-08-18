@@ -1,30 +1,29 @@
 import { styled } from '@/lib/stitches'
-import handsTogether from '../../../public/hands-together.svg'
 
 export const SectionContainer = styled('section', {
   display: 'flex',
   width: '100vw',
-  height: '45rem',
-  backgroundImage: `url(${handsTogether.src})`,
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  color: '$neutral-0',
+  height: '30.5rem',
+  backgroundColor: '$neutral-0',
+  color: '$neutral-4',
   alignItems: 'center',
   justifyContent: 'center',
   fontFamily: '$default',
+  gap: '$3',
+  padding: '$20 $96 $10 $96',
 })
 
 export const ContentContainer = styled('div', {
   display: 'flex',
-  width: '$44rem',
-  height: '24rem',
+  width: '$41.5rem',
+  height: '22rem',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  gap: '$10',
+  gap: '$3',
   textAlign: 'center',
   marginTop: '$20',
+  marginBot: '$10',
 })
 
 export const TitleContainer = styled('h1', {
@@ -41,7 +40,7 @@ export const SubtitleContainer = styled('h2', {
 })
 
 export const SpanContainer = styled('span', {
-  color: '$tertiary',
+  color: '$primary',
 })
 
 export const TextContainer = styled('h3', {
@@ -59,20 +58,21 @@ export const ButtonContainer = styled('button', {
   justifyContent: 'center',
   alignItems: 'center',
   gap: '$2',
-  color: '$neutral-4',
-  backgroundColor: '$tertiary',
-  borderRadius: '$xl',
+  color: '$neutral-0',
+  backgroundColor: '$primary',
+  borderRadius: '$full',
   border: 'none',
   fontSize: '$md',
   fontFamily: '$default',
   fontWeight: '$semibold',
   lineHeight: '$shorter',
+  cursor: 'pointer',
 
   '&:hover': {
-    backgroundColor: '$tertiary-variant',
+    backgroundColor: '$primary-variant-2',
   },
 
   '&:active': {
-    backgroundColor: '$tertiary',
+    backgroundColor: '$primary-variant-1',
   },
 })

@@ -10,16 +10,28 @@ enum UPDATE_COUNT {
 export function useCarousel() {
   const [activeIndex, setActiveIndex] = useState<number>(0)
 
-  const handleSwipe = (updateCount: UPDATE_COUNT) => {
+  function handleSwipe(updateCount: UPDATE_COUNT) {
     if (updateCount === UPDATE_COUNT.DECREMENT) {
-      activeIndex === 0
-        ? setActiveIndex(slidesData.length - 1)
-        : setActiveIndex((oldIndexState) => oldIndexState - 1)
+      setActiveIndex((oldIndexState) =>
+        oldIndexState === 0 ? slidesData.length - 1 : oldIndexState - 1,
+      )
     } else {
-      activeIndex === slidesData.length - 1
-        ? setActiveIndex(0)
-        : setActiveIndex((oldIndexState) => oldIndexState + 1)
+      setActiveIndex((oldIndexState) =>
+        oldIndexState === slidesData.length - 1 ? 0 : oldIndexState + 1,
+      )
     }
+  }
+
+  function decrement() {
+    setActiveIndex(activeIndex === 0 ? slidesData.length - 1 : activeIndex - 1)
+  }
+
+  function increment() {
+    setActiveIndex(activeIndex === slidesData.length - 1 ? 0 : activeIndex + 1)
+  }
+
+  function isSameIndex(index: number) {
+    return activeIndex === index
   }
 
   const swipeHandlers = useSwipeable({
@@ -32,6 +44,9 @@ export function useCarousel() {
   return {
     currentItem,
     swipeHandlers,
+    decrement,
+    increment,
+    isSameIndex,
     setActiveIndex,
     slidesData,
   }

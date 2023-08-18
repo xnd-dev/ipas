@@ -1,10 +1,6 @@
-import {
-  CalendarBlank,
-  HandHeart,
-  Smiley,
-  UsersThree,
-} from '@phosphor-icons/react'
+import * as React from 'react'
 import * as S from './numbers-display.styles'
+import { informationsData } from './numbers-display.constants'
 
 export function NumbersDisplay() {
   return (
@@ -17,30 +13,13 @@ export function NumbersDisplay() {
           </S.SubtitleContainer>
         </S.TextsContainer>
         <S.CardsContainer>
-          <S.VariantContainer>
-            <Smiley size={'2rem'} />
-            <S.StrongContainer> 6000 </S.StrongContainer>
-            <S.InsideTextContainer> Pessoas impactadas </S.InsideTextContainer>
-          </S.VariantContainer>
-          <S.VariantContainer>
-            <UsersThree size={'2rem'} />
-            <S.StrongContainer>850</S.StrongContainer>
-            <S.InsideTextContainer>
-              Famílias atendidas mensalmente
-            </S.InsideTextContainer>
-          </S.VariantContainer>
-          <S.VariantContainer>
-            <HandHeart size={'2rem'} />
-            <S.StrongContainer>1500</S.StrongContainer>
-            <S.InsideTextContainer>
-              Pessoas ajudadas em abril de 2023
-            </S.InsideTextContainer>
-          </S.VariantContainer>
-          <S.VariantContainer>
-            <CalendarBlank size={'2rem'} />
-            <S.StrongContainer>13</S.StrongContainer>
-            <S.InsideTextContainer> Anos de história </S.InsideTextContainer>
-          </S.VariantContainer>
+          {informationsData.map(({ icon: Icon, value, description }, index) => (
+            <S.CardContainer key={index}>
+              {<Icon size={'2rem'} />}
+              <S.StrongContainer>{value}</S.StrongContainer>
+              <S.InsideTextContainer>{description}</S.InsideTextContainer>
+            </S.CardContainer>
+          ))}
         </S.CardsContainer>
       </S.ContentContainer>
     </S.SectionContainer>

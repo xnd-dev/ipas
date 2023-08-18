@@ -6,6 +6,9 @@ export const globalStyles = globalCss({
     'max-width': '100%',
     margin: 0,
     padding: 0,
+    scrollMarginTop: '5.5rem',
+    scrollSnapMarginTop: '5.5rem',
+    scrollBehavior: 'smooth',
   },
 
   body: {
