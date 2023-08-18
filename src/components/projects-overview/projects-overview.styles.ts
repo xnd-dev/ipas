@@ -90,12 +90,12 @@ export const ImageContainer = styled('div', {
 
 export const DescriptionContainer = styled('div', {
   display: 'flex',
-  justifyContent: 'center',
   flexDirection: 'column',
-  width: '35rem',
+  width: '38.5rem',
   height: '25.75rem',
-  padding: '$6 $0',
+  paddingTop: '$6',
   gap: '$6',
+  whiteSpace: 'nowrap',
 })
 
 export const TitleDescriptionContainer = styled('div', {
@@ -112,16 +112,13 @@ export const StrongContainer = styled('div', {
   fontSize: '$xl',
   fontWeight: '$semibold',
   lineHeight: '$short',
-  marginBottom: '$4',
-})
-
-export const ListContainer = styled('ul', {
-  marginBottom: '$4',
+  marginBottom: '$6',
 })
 
 export const TextDescriptionContainer = styled('div', {
+  boxSizing: 'border-box',
   width: '35rem',
-  height: '19.3125rem',
+  height: 'fit-content',
   fontSize: '$md',
   fontWeight: '$regular',
   lineHeight: '$shorter',

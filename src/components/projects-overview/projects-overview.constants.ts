@@ -4,15 +4,16 @@ export const project1: ProjectData[] = [
   {
     title: 'Objetivo',
     list: [
-      'Levar alegria, apoio e solidariedade para aqueles que mais precisam',
+      'Combater a fome e a insegurança alimentar nas comunidades carentes',
     ],
   },
   {
     title: 'Atuação',
     list: [
-      'Ações em datas comemorativas',
-      'Atividades Recreativa e distribuição de presentes',
-      'Celebração e interações afetuosas',
+      'Parcerias e campanhas de arrecadação',
+      'Coleta de alimentos',
+      'Participação da comunidade e de voluntários',
+      'Doações para famílias em situação de vulnerabilidade',
     ],
   },
   {
@@ -28,16 +29,15 @@ export const project2: ProjectData[] = [
   {
     title: 'Objetivo',
     list: [
-      'Combater a fome e a insegurança alimentar nas comunidades carentes',
+      'Levar alegria, apoio e solidariedade para aqueles que mais precisam',
     ],
   },
   {
     title: 'Atuação',
     list: [
-      'Parcerias e campanhas de arrecadação',
-      'Coleta de alimentos',
-      'Participação da comunidade e de voluntários',
-      'Doações para famílias em situação de vulnerabilidade',
+      'Ações em datas comemorativas',
+      'Atividades Recreativa e distribuição de presentes',
+      'Celebração e interações afetuosas',
     ],
   },
   {
