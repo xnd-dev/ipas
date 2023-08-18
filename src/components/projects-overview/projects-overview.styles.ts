@@ -112,6 +112,11 @@ export const StrongContainer = styled('div', {
   fontSize: '$xl',
   fontWeight: '$semibold',
   lineHeight: '$short',
+  marginBottom: '$4',
+})
+
+export const ListContainer = styled('ul', {
+  marginBottom: '$4',
 })
 
 export const TextDescriptionContainer = styled('div', {

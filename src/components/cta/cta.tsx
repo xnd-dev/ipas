@@ -4,7 +4,7 @@ import { Handshake } from '@phosphor-icons/react'
 export function CallToAction() {
   return (
     <>
-      <S.SectionContainer id="seja-um-voluntario">
+      <S.SectionContainer id="voluntary">
         <S.ContentContainer>
           <S.TitleContainer>
             Faça a diferença, seja voluntário no IPAS!

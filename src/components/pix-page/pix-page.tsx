@@ -1,11 +1,11 @@
 import { HandCoins } from '@phosphor-icons/react'
 import * as S from './pix-page.styles'
 import Image from 'next/image'
-import Pix from '../../../public/qr-code-pix.svg'
+import Pix from '../../../public/qr-code-pix.png'
 
 export function PixPage() {
   return (
-    <S.SectionContainer id="como-ajudar">
+    <S.SectionContainer id="help">
       <S.HelpContainer>
         <S.ContentContainer>
           <S.TitleContainer>Como ajudar:</S.TitleContainer>

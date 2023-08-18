@@ -6,41 +6,38 @@ import {
   LinkedinLogo,
   FacebookLogo,
 } from '@phosphor-icons/react'
+import { links } from './footer.constants'
 
 export function Footer() {
   return (
-    <S.FooterContainer id="contato">
+    <S.FooterContainer id="contact">
       <S.HorizontalContainer>
         <Image src={ipasLogoFooter} alt="" />
         <S.OptionsContainer>
-          <S.NavContainer href="#nossos-projetos">
-            Nossos Projetos
-          </S.NavContainer>
-          <S.NavContainer href="#como-ajudar">Como ajudar</S.NavContainer>
-          <S.NavContainer href="#seja-um-voluntario">
-            Seja um Voluntário
-          </S.NavContainer>
-          <S.NavContainer href="#contato">Contato</S.NavContainer>
+          <S.NavContainer href="#projects">Nossos Projetos</S.NavContainer>
+          <S.NavContainer href="#help">Como ajudar</S.NavContainer>
+          <S.NavContainer href="#voluntary">Seja um Voluntário</S.NavContainer>
+          <S.NavContainer href="#contact">Contato</S.NavContainer>
         </S.OptionsContainer>
         <S.SocialAndContactsContainer>
           <S.ContactsContainer>
             <S.TitleContainer>Contatos</S.TitleContainer>
             <S.InfoContactsContainer>
-              <S.EmailContainer href="mailto:contato@ipas.com">
+              <S.EmailContainer href={links.email}>
                 contato@ipas.com
               </S.EmailContainer>
-              <S.PhoneContainer href="https://wa.me/5582996621031">
+              <S.PhoneContainer href={links.whatsapp}>
                 (82) 99662-1031
               </S.PhoneContainer>
             </S.InfoContactsContainer>
             <S.SocialsContainer>
-              <S.SocialContainer href="https://instagram.com">
+              <S.SocialContainer href={links.instagram}>
                 <InstagramLogo size={'1.5rem'} />
               </S.SocialContainer>
-              <S.SocialContainer href="https://www.linkedin.com/company/institutoipas/">
+              <S.SocialContainer href={links.linkedin}>
                 <LinkedinLogo size={'1.5rem'} />
               </S.SocialContainer>
-              <S.SocialContainer href="https://facebook.com">
+              <S.SocialContainer href={links.facebook}>
                 <FacebookLogo size={'1.5rem'} />
               </S.SocialContainer>
             </S.SocialsContainer>
