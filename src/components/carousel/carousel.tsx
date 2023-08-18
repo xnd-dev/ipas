@@ -7,7 +7,9 @@ export function Carousel() {
   const {
     currentItem,
     swipeHandlers,
-    activeIndex,
+    decrement,
+    increment,
+    isSameIndex,
     setActiveIndex,
     slidesData,
   } = useCarousel()
@@ -19,14 +21,7 @@ export function Carousel() {
         <S.CarouselContent>
           <S.SliderContainer>
             <S.CaretContainer>
-              <CaretLeft
-                size={'2.5rem'}
-                onClick={() =>
-                  setActiveIndex(
-                    activeIndex === 0 ? slidesData.length - 1 : activeIndex - 1,
-                  )
-                }
-              />
+              <CaretLeft size={'2.5rem'} onClick={decrement} />
             </S.CaretContainer>
             <S.SlideContainer>
               <Image src={currentItem.avatar} alt="avatar" />
@@ -38,21 +33,14 @@ export function Carousel() {
               </S.SpanContainer>
             </S.SlideContainer>
             <S.CaretContainer>
-              <CaretRight
-                size={'2.5rem'}
-                onClick={() =>
-                  setActiveIndex(
-                    activeIndex === slidesData.length - 1 ? 0 : activeIndex + 1,
-                  )
-                }
-              />
+              <CaretRight size={'2.5rem'} onClick={increment} />
             </S.CaretContainer>
           </S.SliderContainer>
           <S.NavigationContainer>
             {slidesData.map((_, index) => (
               <S.DotContainer
                 key={index}
-                active={index === activeIndex}
+                active={isSameIndex(index)}
                 onClick={() => setActiveIndex(index)}
               ></S.DotContainer>
             ))}
