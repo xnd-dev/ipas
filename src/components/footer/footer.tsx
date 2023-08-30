@@ -12,8 +12,11 @@ export function Footer() {
   return (
     <S.FooterContainer id="contact">
       <S.HorizontalContainer>
-        <Image src={ipasLogoFooter} alt="" />
+        <S.FooterLogoContainer>
+          <Image src={ipasLogoFooter} alt="" />
+        </S.FooterLogoContainer>
         <S.OptionsContainer>
+          <S.TitleContainer>Navegação</S.TitleContainer>
           <S.NavContainer href="#projects">Nossos Projetos</S.NavContainer>
           <S.NavContainer href="#help">Como ajudar</S.NavContainer>
           <S.NavContainer href="#voluntary">Seja um Voluntário</S.NavContainer>
