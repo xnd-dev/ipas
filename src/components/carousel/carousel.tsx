@@ -17,35 +17,33 @@ export function Carousel() {
   return (
     <S.SectionContainer id="carousel" {...swipeHandlers}>
       <S.CarouselContainer>
-        <S.TitleContainer>Porque ajudar o IPAS:</S.TitleContainer>
+        <S.CaretContainer>
+          <CaretLeft size={'2.5rem'} onClick={decrement} />
+        </S.CaretContainer>
         <S.CarouselContent>
           <S.SliderContainer>
-            <S.CaretContainer>
-              <CaretLeft size={'2.5rem'} onClick={decrement} />
-            </S.CaretContainer>
+            <S.TitleContainer>O que falam do IPAS</S.TitleContainer>
             <S.SlideContainer>
-              <Image src={currentItem.avatar} alt="avatar" />
-              <S.SpanContainer>
-                <S.SubtitleContainer>
-                  {currentItem.description}
-                </S.SubtitleContainer>
-                <S.SignatureContainer>{currentItem.name}</S.SignatureContainer>
-              </S.SpanContainer>
+              <S.SubtitleContainer>
+                {currentItem.description}
+              </S.SubtitleContainer>
+              <S.SignatureContainer>{currentItem.name}</S.SignatureContainer>
             </S.SlideContainer>
-            <S.CaretContainer>
-              <CaretRight size={'2.5rem'} onClick={increment} />
-            </S.CaretContainer>
+            <S.NavigationContainer>
+              {slidesData.map((_, index) => (
+                <S.DotContainer
+                  key={index}
+                  active={isSameIndex(index)}
+                  onClick={() => setActiveIndex(index)}
+                ></S.DotContainer>
+              ))}
+            </S.NavigationContainer>
           </S.SliderContainer>
-          <S.NavigationContainer>
-            {slidesData.map((_, index) => (
-              <S.DotContainer
-                key={index}
-                active={isSameIndex(index)}
-                onClick={() => setActiveIndex(index)}
-              ></S.DotContainer>
-            ))}
-          </S.NavigationContainer>
+          <Image src={currentItem.avatar} alt="avatar" />
         </S.CarouselContent>
+        <S.CaretContainer>
+          <CaretRight size={'2.5rem'} onClick={increment} />
+        </S.CaretContainer>
       </S.CarouselContainer>
     </S.SectionContainer>
   )

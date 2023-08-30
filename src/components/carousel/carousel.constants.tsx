@@ -1,7 +1,14 @@
 import avatar1 from '../../../public/avatar-1.svg'
+import smilingGirl from '../../../public/smiling-girl.svg'
 import { SlideData } from './carousel.types'
 
 export const slidesData: SlideData[] = [
+  {
+    avatar: smilingGirl,
+    description:
+      'Como doadora do IPAS, vi de perto a transformação que ele realiza na vida de tantas crianças, jovens e adultos. Estou orgulhosa de fazer parte de um movimento que combate a desigualdade e promove oportunidades para todos.',
+    name: '— Mariana Souza, Doadora do IPAS.',
+  },
   {
     avatar: avatar1,
     description:
