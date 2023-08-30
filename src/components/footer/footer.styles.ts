@@ -9,6 +9,8 @@ export const FooterContainer = styled('footer', {
   backgroundColor: '$neutral-0',
   alignItems: 'center',
   justifyContent: 'center',
+  borderTop: '1px solid',
+  borderColor: '$neutral-4',
 })
 
 export const HorizontalContainer = styled('div', {
@@ -21,23 +23,13 @@ export const HorizontalContainer = styled('div', {
   flexShrink: '0',
 })
 
-export const FooterLogoContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  width: '6rem',
-  height: 'auto',
-  gap: '0.75rem',
-  alignItems: 'center',
-  justifyContent: 'center',
-})
-
 export const OptionsContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   width: '9.625rem',
   height: 'auto',
   gap: '0.75rem',
-  alignItems: 'flex-start',
+  alignItems: 'center',
   justifyContent: 'center',
 })
 
