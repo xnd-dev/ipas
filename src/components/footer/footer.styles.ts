@@ -29,6 +29,10 @@ export const FooterLogoContainer = styled('div', {
   gap: '0.75rem',
   alignItems: 'center',
   justifyContent: 'center',
+  img: {
+    width: '6rem',
+    height: 'auto',
+  }
 })
 
 export const OptionsContainer = styled('div', {
