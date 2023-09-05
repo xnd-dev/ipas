@@ -47,8 +47,8 @@ export const CarouselContent = styled('div', {
   },
 
   '& img#avatar': {
-    width: '26rem',
-    height: '28.375rem',
+    width: '28.375rem',
+    height: '26rem',
     borderRadius: '$lg',
   },
 
