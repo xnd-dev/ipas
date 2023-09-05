@@ -5,23 +5,22 @@ import { informationsData } from './numbers-display.constants'
 export function NumbersDisplay() {
   return (
     <S.SectionContainer id="nossos-números">
-      <S.ContentContainer>
-        <S.TextsContainer>
-          <S.TitleContainer> Nossos números:</S.TitleContainer>
-          <S.SubtitleContainer>
-            Grandes números, grandes impactos
-          </S.SubtitleContainer>
-        </S.TextsContainer>
-        <S.CardsContainer>
-          {informationsData.map(({ icon: Icon, value, description }, index) => (
-            <S.CardContainer key={index}>
-              {<Icon size={'2rem'} />}
-              <S.StrongContainer>{value}</S.StrongContainer>
-              <S.InsideTextContainer>{description}</S.InsideTextContainer>
+      <S.CardsContainer>
+        {informationsData.map(
+          ({ title, value, description, backgroundImage }, index) => (
+            <S.CardContainer
+              key={index}
+              style={{ backgroundImage: `url(${backgroundImage.src})` }}
+            >
+              <S.TitleContainer>{title}</S.TitleContainer>
+              <S.SubtitleContainer>
+                <S.StrongContainer>{value}</S.StrongContainer>
+                <S.DescriptionContainer>{description}</S.DescriptionContainer>
+              </S.SubtitleContainer>
             </S.CardContainer>
-          ))}
-        </S.CardsContainer>
-      </S.ContentContainer>
+          ),
+        )}
+      </S.CardsContainer>
     </S.SectionContainer>
   )
 }

@@ -5,74 +5,88 @@ export const SectionContainer = styled('section', {
   boxSizing: 'border-box',
   alignItems: 'center',
   justifyContent: 'center',
-  height: '22.75rem',
+  height: '36.4375rem',
   width: '100vw',
-  backgroundColor: '$neutral-0',
-  color: '$neutral-4',
+  backgroundColor: '$tertiary-variant',
+  color: '$white',
   fontFamily: '$default',
+  padding: '$20 $36',
+})
+
+export const CardsContainer = styled('div', {
+  display: 'flex',
+  width: '55.875rem',
+  height: '26.4375rem',
+  alignItems: 'center',
+  gap: '$6',
+})
+
+export const CardContainer = styled('span', {
+  display: 'flex',
+  flexDirection: 'column',
+  boxSizing: 'border-box',
+  width: '17.625rem',
+  height: '26.4375rem',
+  padding: '$5',
+  gap: '$6',
+  alignItems: 'flex-start',
+  justifyContent: 'flex-start',
+  textAlign: 'center',
+  border: '1px solid $neutral-4',
+  borderRadius: '$xl',
+  lineHeight: '$short',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
 })
 
 export const ContentContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  width: '61.5rem',
-  height: '17.75rem',
-  alignItems: 'center',
-  gap: '$6',
-})
-
-export const TextsContainer = styled('div', {
-  width: '23.375rem',
-  height: '5.125rem',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  gap: '$3',
-})
-export const TitleContainer = styled('h2', {
-  fontSize: '$3xl',
-  fontWeight: '$semibold',
-  lineHeight: '$short',
-})
-
-export const SubtitleContainer = styled('h3', {
-  fontSize: '$xl',
-  fontWeight: '$regular',
-  lineHeight: '$short',
-})
-
-export const CardsContainer = styled('div', {
-  display: 'flex',
-  height: '11.125rem',
-  width: '61.5rem',
+  width: 'auto',
+  maxWidth: '17.625rem',
+  height: 'auto',
+  maxHeight: '23.4375rem',
   alignItems: 'flex-start',
-  gap: '$6',
+  justifyContent: 'flex-start',
+  gap: '$2',
+  padding: '$6',
 })
 
-export const CardContainer = styled('div', {
+export const TitleContainer = styled('h3', {
   display: 'flex',
-  boxSizing: 'border-box',
-  height: '11.125rem',
-  width: '14.25rem',
-  padding: '$5',
-  gap: '$6',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  textAlign: 'center',
-  border: '1px solid $neutral-4',
-  borderRadius: '$xl',
-  lineHeight: '$short',
-  backgroundColor: '$neutral-0',
+  justifyContent: 'flex-start',
+  textAlign: 'start',
+  maxWidth: '14.625rem',
+  height: '0.875rem',
+  fontSize: '$xs',
+  fontWeight: '$regular',
+  lineHeight: '$shorter',
+  opacity: '0.6',
+})
+
+export const SubtitleContainer = styled('div', {
+  textAlign: 'start',
+  width: 'auto',
+  maxWidth: '14.625rem',
+  height: 'auto',
+  maxHeight: '23.4375rem',
+  paddingRight: '$20',
 })
 
 export const StrongContainer = styled('strong', {
+  display: 'flex',
+  justifyContent: 'flex-start',
   fontSize: '$4xl',
-  fontWeight: '$semibold',
+  fontWeight: '$bold',
+  lineHeight: '$short',
+  letterSpacing: '-0.05rem',
 })
 
-export const InsideTextContainer = styled('h4', {
-  fontSize: '$md',
-  fontWeight: '$regular',
-  lineHeight: '$shorter',
+export const DescriptionContainer = styled('h2', {
+  display: 'flex',
+  justifyContent: 'flex-start',
+  fontSize: '$xl',
+  fontWeight: '$medium',
+  lineHeight: '$short',
 })

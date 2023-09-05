@@ -1,8 +1,6 @@
-import { IconProps } from '@phosphor-icons/react'
-import { ElementType } from 'react'
-
 export type InfoData = {
-  icon: ElementType<IconProps>
+  title: string
   value: string
   description: string
+  backgroundImage: string
 }

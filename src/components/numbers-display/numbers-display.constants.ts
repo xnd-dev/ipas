@@ -1,30 +1,25 @@
-import {
-  CalendarBlank,
-  HandHeart,
-  Smiley,
-  UsersThree,
-} from '@phosphor-icons/react'
 import { InfoData } from './numbers-display.types'
+import Card1 from '../../../public/card1.svg'
+import Card2 from '../../../public/card2.svg'
+import Card3 from '../../../public/card3.svg'
 
 export const informationsData: InfoData[] = [
   {
-    icon: Smiley,
-    value: '6000',
-    description: 'Pessoas impactadas',
+    title: 'ATUAÇÃO',
+    value: '+6000',
+    description: 'Pessoas Impactadas',
+    backgroundImage: Card1,
   },
   {
-    icon: UsersThree,
+    title: 'AJUDE',
     value: '850',
-    description: 'Famílias atendidas mensalmente',
+    description: 'Famílias Atendidas por Mês',
+    backgroundImage: Card2,
   },
   {
-    icon: HandHeart,
-    value: '1500',
-    description: 'Pessoas ajudadas em abril de 2023',
-  },
-  {
-    icon: CalendarBlank,
+    title: 'CONTINUIDADE',
     value: '13',
-    description: 'Anos de história',
+    description: 'ANOS DE ATUAÇÃO',
+    backgroundImage: Card3,
   },
 ]
