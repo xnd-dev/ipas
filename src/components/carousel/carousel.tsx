@@ -2,6 +2,9 @@ import Image from 'next/image'
 import * as S from './carousel.styles'
 import { useCarousel } from './carousel.hook'
 import { CaretLeft, CaretRight } from '@phosphor-icons/react'
+// import rectangle from '../../../public/blue-rectangle.svg'
+// import quote from '../../../public/chat-quote.svg'
+// import square from '../../../public/square-decoration.svg'
 
 export function Carousel() {
   const {
@@ -27,7 +30,14 @@ export function Carousel() {
               <S.SubtitleContainer>
                 {currentItem.description}
               </S.SubtitleContainer>
-              <S.SignatureContainer>{currentItem.name}</S.SignatureContainer>
+              <S.SignatureContainer>
+                <S.SignatureTextContainer>
+                  {currentItem.name}
+                </S.SignatureTextContainer>
+                <S.SignatureTextContainer>
+                  {currentItem.occupation}
+                </S.SignatureTextContainer>
+              </S.SignatureContainer>
             </S.SlideContainer>
             <S.NavigationContainer>
               {slidesData.map((_, index) => (
@@ -39,7 +49,10 @@ export function Carousel() {
               ))}
             </S.NavigationContainer>
           </S.SliderContainer>
-          <Image src={currentItem.avatar} alt="avatar" />
+          {/* <Image src={rectangle} alt="rectangle" id="rectangle" />
+          <Image src={quote} alt="quote" id="quote" /> */}
+          <Image src={currentItem.avatar} alt="avatar" id="avatar" />
+          {/* <Image src={square} alt="square" id="square" /> */}
         </S.CarouselContent>
         <S.CaretContainer>
           <CaretRight size={'2.5rem'} onClick={increment} />

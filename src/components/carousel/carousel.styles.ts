@@ -1,7 +1,6 @@
 import { styled } from '@/lib/stitches'
 
 export const SectionContainer = styled('section', {
-  border: '1px solid black',
   flexDirection: 'column',
   display: 'flex',
   boxSizing: 'border-box',
@@ -16,18 +15,15 @@ export const SectionContainer = styled('section', {
 })
 
 export const CarouselContainer = styled('div', {
-  border: '1px solid red',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   width: '80rem',
   height: '26rem',
   gap: '$6',
-  // flexWrap: 'nowrap',
 })
 
 export const CarouselContent = styled('div', {
-  border: '1px solid red',
   flexDirection: 'row',
   display: 'flex',
   alignItems: 'center',
@@ -35,15 +31,37 @@ export const CarouselContent = styled('div', {
   height: '26rem',
   gap: '$20',
 
-  img: {
+  '& img#rectangle': {
+    marginTop: '-10rem',
     width: '26rem',
-    height: '26rem',
-    borderRadius: '$xs',
+    height: '28.375rem',
+    position: 'relative',
+  },
+
+  '& img#quote': {
+    width: '3rem',
+    height: '3rem',
+    position: 'absolute',
+    top: '10%',
+    left: '10%',
+  },
+
+  '& img#avatar': {
+    width: '26rem',
+    height: '28.375rem',
+    borderRadius: '$lg',
+  },
+
+  '& img#square': {
+    width: '9.7rem',
+    height: '9.7rem',
+    position: 'absolute',
+    top: '20%',
+    left: '20%',
   },
 })
 
 export const SliderContainer = styled('div', {
-  border: '1px solid red',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
@@ -53,7 +71,6 @@ export const SliderContainer = styled('div', {
 })
 
 export const SlideContainer = styled('span', {
-  border: '1px solid blue',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -91,7 +108,6 @@ export const DotContainer = styled('button', {
 
     active: {
       true: {
-        width: '2rem',
         backgroundColor: '$primary',
       },
     },
@@ -99,7 +115,6 @@ export const DotContainer = styled('button', {
 })
 
 export const TitleContainer = styled('h2', {
-  border: '1px solid blue',
   width: '28.375rem',
   height: '3.75rem',
   fontSize: '$4xl',
@@ -109,17 +124,26 @@ export const TitleContainer = styled('h2', {
 })
 
 export const SubtitleContainer = styled('h3', {
-  border: '1px solid blue',
-  width: '28.375rem',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  alignSelf: 'stretch',
+  width: '27.375rem',
   height: '6.875rem',
   fontSize: '$md',
   fontWeight: '$regular',
   lineHeight: '$short',
+  gap: '$4',
 })
 
-export const SignatureContainer = styled('h4', {
+export const SignatureContainer = styled('div', {
   width: '28.375rem',
   height: '3.125rem',
+})
+
+export const SignatureTextContainer = styled('h4', {
+  height: '1.55rem',
+  width: '28.375rem',
   fontSize: '$md',
   fontWeight: '$regular',
   lineHeight: '$short',
