@@ -32,7 +32,6 @@ export const CardContainer = styled('span', {
   alignItems: 'flex-start',
   justifyContent: 'flex-start',
   textAlign: 'center',
-  border: '1px solid $neutral-4',
   borderRadius: '$xl',
   lineHeight: '$short',
   backgroundRepeat: 'no-repeat',
@@ -50,7 +49,6 @@ export const ContentContainer = styled('div', {
   alignItems: 'flex-start',
   justifyContent: 'flex-start',
   gap: '$2',
-  padding: '$6',
 })
 
 export const TitleContainer = styled('h3', {
@@ -71,11 +69,12 @@ export const SubtitleContainer = styled('div', {
   maxWidth: '14.625rem',
   height: 'auto',
   maxHeight: '23.4375rem',
-  paddingRight: '$20',
+  paddingRight: '$30',
 })
 
 export const StrongContainer = styled('strong', {
   display: 'flex',
+  alignItems: 'flex-start',
   justifyContent: 'flex-start',
   fontSize: '$4xl',
   fontWeight: '$bold',

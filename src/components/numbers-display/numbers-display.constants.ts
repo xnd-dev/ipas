@@ -19,7 +19,7 @@ export const informationsData: InfoData[] = [
   {
     title: 'CONTINUIDADE',
     value: '13',
-    description: 'ANOS DE ATUAÇÃO',
+    description: 'Anos de Atuação',
     backgroundImage: Card3,
   },
 ]

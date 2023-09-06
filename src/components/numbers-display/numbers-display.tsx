@@ -12,11 +12,13 @@ export function NumbersDisplay() {
               key={index}
               style={{ backgroundImage: `url(${backgroundImage.src})` }}
             >
-              <S.TitleContainer>{title}</S.TitleContainer>
-              <S.SubtitleContainer>
-                <S.StrongContainer>{value}</S.StrongContainer>
-                <S.DescriptionContainer>{description}</S.DescriptionContainer>
-              </S.SubtitleContainer>
+              <S.ContentContainer>
+                <S.TitleContainer>{title}</S.TitleContainer>
+                <S.SubtitleContainer>
+                  <S.StrongContainer>{value}</S.StrongContainer>
+                  <S.DescriptionContainer>{description}</S.DescriptionContainer>
+                </S.SubtitleContainer>
+              </S.ContentContainer>
             </S.CardContainer>
           ),
         )}
