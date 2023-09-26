@@ -10,13 +10,10 @@ export function CallToAction() {
             Faça a diferença, seja voluntário no IPAS!
           </S.TitleContainer>
           <S.TextContainer>
-            Desperte seu espírito solidário e faça parte do nosso movimento de
-            transformação social. Juntos, podemos criar um mundo mais justo e
-            contribuir para a mudança positiva na vida das pessoas mais
-            vulneráveis.
+            Ajude a transformar uma vida, para que essa semente germine, cresça e se transforme num futuro de sucesso.
           </S.TextContainer>
           <S.ButtonContainer>
-            Quero ajudar <Handshake size={'1rem'} />
+            <Handshake size={'1rem'} />Quero ajudar
           </S.ButtonContainer>
         </S.ContentContainer>
       </S.SectionContainer>

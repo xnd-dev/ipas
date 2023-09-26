@@ -5,14 +5,16 @@ export const SectionContainer = styled('section', {
   flexDirection: 'column',
   boxSizing: 'border-box',
   width: '100vw',
-  height: 'auto',
+  height: '34.23rem',
   backgroundColor: '$neutral-0',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   alignItems: 'center',
+  justifyContent: 'center',
   gap: '1.5rem',
-  padding: '5rem 24.1rem 5rem 24.1rem',
+  padding: '5rem 14.9rem',
+  border: '1px solid $black'
 })
 
 export const ContentContainer = styled('div', {
@@ -26,7 +28,7 @@ export const ContentContainer = styled('div', {
 
 export const TitleContainer = styled('h2', {
   textAlign: 'center',
-  fontSize: '$3xl',
+  fontSize: '$4xl',
   fontFamily: '$default',
   fontStyle: 'normal',
   fontWeight: '$semibold',
@@ -35,8 +37,8 @@ export const TitleContainer = styled('h2', {
 })
 
 export const TextContainer = styled('p', {
-  width: '40rem',
-  fontSize: '$xl',
+  width: '35rem',
+  fontSize: '$lg',
   textAlign: 'center',
   fontFamily: '$default',
   fontStyle: 'normal',
