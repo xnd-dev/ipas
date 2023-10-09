@@ -19,4 +19,6 @@ export const colors = {
   'neutral-2': '#808080',
   'neutral-3': '#404040',
   'neutral-4': '#333333',
+
+  'blue-gray' : '#0F172A',
 }
