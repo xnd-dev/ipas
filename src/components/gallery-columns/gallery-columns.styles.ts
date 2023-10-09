@@ -7,9 +7,8 @@ export const GalleryColumnsContainer = styled('section', {
   gap:'$4',
   alignItems:'stretch',
   '@media (max-width: 768px)': {
-    padding:'0.68vw',
     height:'auto',
-    marginBottom:'6vw'
+    marginBottom:'$4'
   },
 })
 export const Column = styled('section', {

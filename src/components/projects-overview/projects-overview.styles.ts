@@ -8,7 +8,7 @@ export const SectionContainer = styled('section', {
   width: '90rem',
   padding:'0px',
   '@media (max-width: 768px)': {
-    marginTop:'11vw',
+    marginTop:'2.5rem',
   },
 })
 
@@ -20,7 +20,7 @@ export const SectionSecao = styled('section', {
   gap: '$8',
   '@media (max-width: 768px)': {
     flexDirection: 'column',
-    padding:'3vw',
+    padding:'0.72rem',
     gap: '0',
   },
 })
@@ -42,12 +42,12 @@ export const SectionTitle = styled('title', {
   color:'$neutral-4',
   marginBottom:'$8',
   '@media (max-width: 768px)': {
-    marginBottom:'9vw',
+    marginBottom:'$8',
     color:'$blue-gray',
     letterSpacing:'-0.03rem',
     lineHeight:'130%',
     textAlign:'center',
-    fontSize: '7vw',
+    fontSize: '$2xl',
   },  
 })
 
@@ -58,10 +58,10 @@ export const SectionContent = styled('div', {
   fontStyle: 'normal',
   fontWeight: '$regular',
   lineHeight: '$short',
-  margin:'$4 0rem',
+  margin:'$4 0',
   color:'$neutral-4',
   '@media (max-width: 768px)': {
-    margin:'2vw 4vw',
-    fontSize:'4vw',
+    margin:'$4 0.78rem',
+    fontSize:'$md',
   },  
 })
