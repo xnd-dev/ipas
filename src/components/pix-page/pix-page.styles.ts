@@ -9,6 +9,7 @@ export const SectionContainer = styled('section', {
   alignItems: 'center',
   gap: '$6',
   fontFamily: '$default',
+  backgroundColor: '$neutral-0',
   color: '$neutral-4',
   padding: '$16 $56',
 })
@@ -118,6 +119,7 @@ export const ButtonContainer = styled('button', {
   fontFamily: '$default',
   fontWeight: '$bold',
   lineHeight: '$short',
+  boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.12)',
 
   '&:focus': {
     backgroundColor: '$primary',
@@ -148,4 +150,20 @@ export const AltButtonContainer = styled('button', {
   fontSize: '$md',
   fontWeight: '$regular',
   lineHeight: '$short',
+  boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.12)',
+
+  '&:focus': {
+    backgroundColor: '$primary',
+    border: 'none',
+  },
+
+  '&:hover': {
+    backgroundColor: '$primary-variant-1',
+    border: 'none',
+  },
+
+  '&:active': {
+    backgroundColor: '$primary',
+    border: 'none',
+  },
 })
