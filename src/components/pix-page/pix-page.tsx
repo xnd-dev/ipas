@@ -1,6 +1,7 @@
 import * as S from './pix-page.styles'
 import Image from 'next/image'
 import Hands from '../../../public/hands.svg'
+import Paypal from '../../../public/paypal.svg'
 
 export function PixPage() {
   return (
@@ -26,7 +27,9 @@ export function PixPage() {
               <input type="checkbox" /> Doar mensalmente
             </S.MonthlyDonationContainer>
             <S.AltDonationContainer>
-              <S.AltButtonContainer>PayPal</S.AltButtonContainer>
+              <S.AltButtonContainer>
+                <Image src={Paypal} alt="PayPal" />
+              </S.AltButtonContainer>
               <S.AltButtonContainer>Doe com pix</S.AltButtonContainer>
             </S.AltDonationContainer>
           </S.ContentContainer>

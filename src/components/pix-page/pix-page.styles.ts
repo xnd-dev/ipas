@@ -119,8 +119,12 @@ export const ButtonContainer = styled('button', {
   fontWeight: '$bold',
   lineHeight: '$short',
 
+  '&:focus': {
+    backgroundColor: '$primary',
+  },
+
   '&:hover': {
-    backgroundColor: '$primary-variant-2',
+    backgroundColor: '$primary',
   },
 
   '&:active': {
