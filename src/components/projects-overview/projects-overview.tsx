@@ -1,16 +1,33 @@
-import * as S from './projects-overview.styles'
+import * as S from './projects-overview.styles';
+import { useState, useEffect } from 'react';
 
-import Image from 'next/image'
-import { project1 } from './projects-overview.constants'
-import { GalleryColumns } from '../gallery-columns'
+import { project1 } from './projects-overview.constants';
+import { GalleryColumns } from '../gallery-columns';
 
 export function ProjectOverview() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkIsMobile = () => {setIsMobile(document.body.clientWidth < 768);};
+    window.addEventListener('resize', checkIsMobile);
+    checkIsMobile();
+    return () => {
+      window.removeEventListener('resize', checkIsMobile);
+    };
+  }, []);
+  
   return (
     <>
       <S.SectionContainer id="projects">
       {project1.map((project, index) => (
         <S.SectionSecao key={index}>
-          {index % 2 === 0 ? (
+          {isMobile ? 
+            <>
+            <S.SectionTitle>{project.title}</S.SectionTitle>
+            <GalleryColumns images={project.fotos}></GalleryColumns>
+            {project.list.map((elemento,index)=> <S.SectionContent>{elemento}</S.SectionContent>)}
+            </>
+          :
+          index % 2 === 0 ? (
             <>
           <GalleryColumns images={project.fotos}></GalleryColumns>
           <S.SectionText>
@@ -31,8 +48,6 @@ export function ProjectOverview() {
           <GalleryColumns images={project.fotos}></GalleryColumns>
             </>
           )}
-
-          
         </S.SectionSecao>
       ))}
       </S.SectionContainer>

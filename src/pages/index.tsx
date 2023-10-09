@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <HeroBanner />
       <NumbersDisplay />
-      -<ProjectOverview />-
+      <ProjectOverview />
       <PixPage />
       <Carousel />
       <CallToAction />
