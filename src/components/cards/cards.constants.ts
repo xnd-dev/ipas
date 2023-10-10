@@ -1,4 +1,4 @@
-import { InfoData } from './numbers-display.types'
+import { InfoData } from './cards.types'
 import Card1 from '../../../public/card1.svg'
 import Card2 from '../../../public/card2.svg'
 import Card3 from '../../../public/card3.svg'

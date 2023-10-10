@@ -1,8 +1,8 @@
 import * as React from 'react'
-import * as S from './numbers-display.styles'
-import { informationsData } from './numbers-display.constants'
+import * as S from './cards.styles'
+import { informationsData } from './cards.constants'
 
-export function NumbersDisplay() {
+export function Cards() {
   return (
     <S.SectionContainer id="nossos-números">
       <S.CardsContainer>

@@ -1,6 +1,6 @@
 import { Header } from '@/components/header/header'
 import { HeroBanner } from '@/components/hero-banner'
-import { NumbersDisplay } from '@/components/numbers-display'
+import { Cards } from '@/components/cards'
 import { PixPage } from '@/components/pix-page/pix-page'
 import { ProjectOverview } from '@/components/projects-overview'
 import { Carousel } from '@/components/carousel'
@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Header />
       <HeroBanner />
-      <NumbersDisplay />
+      <Cards />
       <ProjectOverview />
       <PixPage />
       <Carousel />
