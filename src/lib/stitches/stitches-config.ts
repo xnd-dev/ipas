@@ -4,11 +4,11 @@ import {
   colors,
   fontSizes,
   fontWeights,
+  fonts,
   lineHeights,
   radii,
   space,
-  fonts,
-  media
+  media,
 } from '../../themes'
 
 export const {
@@ -31,11 +31,10 @@ export const {
     colors,
     fontSizes,
     fontWeights,
+    fonts,
     lineHeights,
     radii,
     space,
-    fonts
+    media,
   },
-
-  media
 })
