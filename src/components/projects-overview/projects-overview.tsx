@@ -14,43 +14,36 @@ export function ProjectOverview() {
       window.removeEventListener('resize', checkIsMobile);
     };
   }, []);
+
+  function order<T>(ordenacao: number[], ...elementos: T[]): T[] {
+    const new_order = ordenacao.map((indice) => elementos[indice]);
+    return new_order;
+  }
   
+  
+  const orderElements: number[][] = isMobile ? [[1, 0, 2], [1, 0, 2]] : [[0, 1, 2], [1, 2, 0]];
+
   return (
     <>
-      <S.SectionContainer id="projects">
+      <S.ProjectsOverviewContainer id="projects">
       {project1.map((project, index) => (
-        <S.SectionSecao key={index}>
-          {isMobile ? 
-            <>
-            <S.SectionTitle>{project.title}</S.SectionTitle>
-            <GalleryColumns images={project.fotos}></GalleryColumns>
-            {project.list.map((elemento,index)=> <S.SectionContent>{elemento}</S.SectionContent>)}
-            </>
-          :
-          index % 2 === 0 ? (
-            <>
-          <GalleryColumns images={project.fotos}></GalleryColumns>
-          <S.SectionText>
-          <div style={{ paddingRight: '9.19rem' }}>
-            <S.SectionTitle>{project.title}</S.SectionTitle>
-            {project.list.map((elemento,index)=> <S.SectionContent>{elemento}</S.SectionContent>)}
-          </div>  
-          </S.SectionText>
-            </>
-          ) : (
-            <>
-          <S.SectionText>
-          <div style={{ paddingLeft: '9.19rem' }}>
-            <S.SectionTitle>{project.title}</S.SectionTitle>
-            {project.list.map((elemento,index)=> <S.SectionContent>{elemento}</S.SectionContent>)}
-          </div>              
-          </S.SectionText>    
-          <GalleryColumns images={project.fotos}></GalleryColumns>
-            </>
-          )}
-        </S.SectionSecao>
+        <S.ProjectsOverviewSection key={'proj'+index} 
+         css={{ alignItems: 'flex-'+(index%2?'end':'start') }}>
+            {
+              order(
+                orderElements[index],
+                <GalleryColumns key={'gal'+index} images={project.photos}></GalleryColumns>,
+                <S.SectionTitle key={'tit'+index}>{project.title}</S.SectionTitle>,
+                <S.SectionText key={'tex'+index}>
+                  {project.list.map((elemento,index)=> 
+                    <S.SectionParagraph>{elemento}</S.SectionParagraph>)
+                  }
+                </S.SectionText>  
+              )
+            }
+        </S.ProjectsOverviewSection>
       ))}
-      </S.SectionContainer>
+      </S.ProjectsOverviewContainer>
     </>
   )
 }

@@ -8,11 +8,13 @@ export const project1: ProjectData[] = [
       'Buscamos experiências felizes para aqueles em situação de vulnerabilidade social e ajudamos a construir momentos especiais, com memórias duradouras.',
       'Incentivamos o amor ao próximo, fortalecendo a ideia de que juntos podemos fazer a diferença!'
     ],
-    fotos: [['projetos_col1_lin1.png', 'projetos_col1_lin2.png'],
-    ['projetos_col2_lin1.png', 'projetos_col2_lin2.png', 'projetos_col2_lin3.png'],
-    ['projetos_col3_lin1.png', 'projetos_col3_lin2.png', 'projetos_col3_lin3.png'],
-    ['projetos_col4_lin1.png', 'projetos_col4_lin2.png']]
-},
+    photos: [
+      ['projetos_col1_lin1.png', 'projetos_col1_lin2.png'],
+      ['projetos_col2_lin1.png', 'projetos_col2_lin2.png', 'projetos_col2_lin3.png'],
+      ['projetos_col3_lin1.png', 'projetos_col3_lin2.png', 'projetos_col3_lin3.png'],
+      ['projetos_col4_lin1.png', 'projetos_col4_lin2.png']
+    ]
+  },
   {
     title: 'Ações voluntárias',
     list: [
@@ -20,9 +22,11 @@ export const project1: ProjectData[] = [
       'Nossas ações são voltadas à entrega de alimentos, apoio na educação, cultura e profissionalização de jovens.',
       'Cultivamos cidadania, regamos com amor e colhemos futuros!'
     ],
-    fotos: [['acoesvol_col1_lin1.png', 'acoesvol_col1_lin2.png'],
-    ['acoesvol_col2_lin1.png', 'acoesvol_col2_lin2.png', 'acoesvol_col2_lin3.png'],
-    ['acoesvol_col3_lin1.png', 'acoesvol_col3_lin2.png', 'acoesvol_col3_lin3.png'],
-    ['acoesvol_col4_lin1.png', 'acoesvol_col4_lin2.png']]
+    photos: [
+      ['acoesvol_col1_lin1.png', 'acoesvol_col1_lin2.png'],
+      ['acoesvol_col2_lin1.png', 'acoesvol_col2_lin2.png', 'acoesvol_col2_lin3.png'],
+      ['acoesvol_col3_lin1.png', 'acoesvol_col3_lin2.png', 'acoesvol_col3_lin3.png'],
+      ['acoesvol_col4_lin1.png', 'acoesvol_col4_lin2.png']
+    ]
   }
 ]
