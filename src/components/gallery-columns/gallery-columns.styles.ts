@@ -6,7 +6,7 @@ export const GalleryColumnsContainer = styled('section', {
   height:'40.68rem',
   gap:'$4',
   alignItems:'stretch',
-  '@media (max-width: 768px)': {
+  '@sm': {
     height:'auto',
     marginBottom:'$4'
   },
