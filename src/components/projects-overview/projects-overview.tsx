@@ -1,65 +1,49 @@
-import * as S from './projects-overview.styles'
+import * as S from './projects-overview.styles';
+import { useState, useEffect } from 'react';
 
-import ImageProject1 from '../../../public/feeding.svg'
-import ImageProject2 from '../../../public/voluntary.svg'
-import Image from 'next/image'
-import { project1, project2 } from './projects-overview.constants'
+import { project1 } from './projects-overview.constants';
+import { GalleryColumns } from '../gallery-columns';
 
 export function ProjectOverview() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkIsMobile = () => {setIsMobile(document.body.clientWidth < 768);};
+    window.addEventListener('resize', checkIsMobile);
+    checkIsMobile();
+    return () => {
+      window.removeEventListener('resize', checkIsMobile);
+    };
+  }, []);
+
+  function order<T>(ordenacao: number[], ...elementos: T[]): T[] {
+    const new_order = ordenacao.map((indice) => elementos[indice]);
+    return new_order;
+  }
+  
+  
+  const orderElements: number[][] = isMobile ? [[1, 0, 2], [1, 0, 2]] : [[0, 1, 2], [1, 2, 0]];
+
   return (
     <>
-      <S.SectionContainer id="projects">
-        <S.ContentContainer>
-          <S.TitleAndSubtitleContainer>
-            <S.TitleContainer>Nossos Projetos Sociais:</S.TitleContainer>
-            <S.SubtitleContainer>
-              Compromisso em transformar realidades
-            </S.SubtitleContainer>
-          </S.TitleAndSubtitleContainer>
-          <S.OverviewContainer>
-            <S.CardContainer>
-              <S.ImageContainer>
-                <Image src={ImageProject1} alt="" />
-              </S.ImageContainer>
-              <S.DescriptionContainer>
-                <S.TitleDescriptionContainer>
-                  Alimentando Vidas
-                </S.TitleDescriptionContainer>
-                {project1.map(({ title, list }, index) => (
-                  <S.TextDescriptionContainer key={index}>
-                    <S.StrongContainer>{title}</S.StrongContainer>
-                    <ul>
-                      {list.map((item, itemIndex) => (
-                        <li key={itemIndex}>{item}</li>
-                      ))}
-                    </ul>
-                  </S.TextDescriptionContainer>
-                ))}
-              </S.DescriptionContainer>
-            </S.CardContainer>
-            <S.CardContainer>
-              <S.ImageContainer>
-                <Image src={ImageProject2} alt="" />
-              </S.ImageContainer>
-              <S.DescriptionContainer>
-                <S.TitleDescriptionContainer>
-                  Ações Voluntárias
-                </S.TitleDescriptionContainer>
-                {project2.map(({ title, list }, index) => (
-                  <S.TextDescriptionContainer key={index}>
-                    <S.StrongContainer>{title}</S.StrongContainer>
-                    <ul>
-                      {list.map((item, itemIndex) => (
-                        <li key={itemIndex}>{item}</li>
-                      ))}
-                    </ul>
-                  </S.TextDescriptionContainer>
-                ))}
-              </S.DescriptionContainer>
-            </S.CardContainer>
-          </S.OverviewContainer>
-        </S.ContentContainer>
-      </S.SectionContainer>
+      <S.ProjectsOverviewContainer id="projects">
+      {project1.map((project, index) => (
+        <S.ProjectsOverviewSection key={'proj'+index} 
+         css={{ alignItems: 'flex-'+(index%2?'end':'start') }}>
+            {
+              order(
+                orderElements[index],
+                <GalleryColumns key={'gal'+index} images={project.photos}></GalleryColumns>,
+                <S.SectionTitle key={'tit'+index}>{project.title}</S.SectionTitle>,
+                <S.SectionText key={'tex'+index}>
+                  {project.list.map((elemento,index)=> 
+                    <S.SectionParagraph>{elemento}</S.SectionParagraph>)
+                  }
+                </S.SectionText>  
+              )
+            }
+        </S.ProjectsOverviewSection>
+      ))}
+      </S.ProjectsOverviewContainer>
     </>
   )
 }
