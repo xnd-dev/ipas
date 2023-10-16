@@ -13,7 +13,7 @@ export const HeaderContainer = styled('header', {
   borderBottom: '1px solid',
   borderColor: '$neutral-4',
   position: 'fixed',
-  zIndex: '5',
+  zIndex: '2',
 })
 
 export const HorizontalContainer = styled('div', {

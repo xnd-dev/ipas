@@ -96,6 +96,7 @@ export const CaretContainer = styled('span', {
   color: '$primary',
   width: '3rem',
   height: '3rem',
+  zIndex: '1',
 })
 
 export const NavigationContainer = styled('div', {
