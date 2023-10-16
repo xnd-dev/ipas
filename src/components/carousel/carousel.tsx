@@ -2,9 +2,9 @@ import Image from 'next/image'
 import * as S from './carousel.styles'
 import { useCarousel } from './carousel.hook'
 import { CaretLeft, CaretRight } from '@phosphor-icons/react'
-// import rectangle from '../../../public/blue-rectangle.svg'
-// import quote from '../../../public/chat-quote.svg'
-// import square from '../../../public/square-decoration.svg'
+import rectangle from '../../../public/blue-rectangle.svg'
+import quote from '../../../public/chat-quote.svg'
+import square from '../../../public/square-decoration.svg'
 
 export function Carousel() {
   const {
@@ -25,7 +25,7 @@ export function Carousel() {
         </S.CaretContainer>
         <S.CarouselContent>
           <S.SliderContainer>
-            <S.TitleContainer>O que falam do IPAS</S.TitleContainer>
+            <S.TitleContainer>Quem faz acontecer:</S.TitleContainer>
             <S.SlideContainer>
               <S.SubtitleContainer>
                 {currentItem.description}
@@ -49,10 +49,12 @@ export function Carousel() {
               ))}
             </S.NavigationContainer>
           </S.SliderContainer>
-          {/* <Image src={rectangle} alt="rectangle" id="rectangle" />
-          <Image src={quote} alt="quote" id="quote" /> */}
-          <Image src={currentItem.avatar} alt="avatar" id="avatar" />
-          {/* <Image src={square} alt="square" id="square" /> */}
+          <S.ImageContainer>
+            <Image src={rectangle} alt="rectangle" id="rectangle" />
+            <Image src={currentItem.avatar} alt="avatar" id="avatar" />
+            <Image src={quote} alt="quote" id="quote" />
+            <Image src={square} alt="square" id="square" />
+          </S.ImageContainer>
         </S.CarouselContent>
         <S.CaretContainer>
           <CaretRight size={'2.5rem'} onClick={increment} />

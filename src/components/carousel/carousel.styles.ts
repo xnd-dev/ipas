@@ -12,6 +12,8 @@ export const SectionContainer = styled('section', {
   gap: '$20',
   backgroundColor: '$tertiary-variant',
   fontFamily: '$default',
+  overflow: 'visible',
+  zIndex: '0',
 })
 
 export const CarouselContainer = styled('div', {
@@ -30,34 +32,45 @@ export const CarouselContent = styled('div', {
   width: '61.75rem',
   height: '26rem',
   gap: '$20',
+})
+
+export const ImageContainer = styled('span', {
+  position: 'relative',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '28.375rem',
+  height: '36rem',
 
   '& img#rectangle': {
-    marginTop: '-10rem',
-    width: '26rem',
-    height: '28.375rem',
-    position: 'relative',
+    height: '120%',
+    width: '120%',
+    position: 'absolute',
+    left: '10%',
   },
 
   '& img#quote': {
     width: '3rem',
     height: '3rem',
     position: 'absolute',
-    top: '10%',
-    left: '10%',
+    left: '27%',
+    top: '-58%',
   },
 
   '& img#avatar': {
     width: '28.375rem',
     height: '26rem',
     borderRadius: '$lg',
+    position: 'absolute',
+    left: '0%',
   },
 
   '& img#square': {
     width: '9.7rem',
     height: '9.7rem',
     position: 'absolute',
-    top: '20%',
-    left: '20%',
+    left: '-15%',
+    top: '43%',
   },
 })
 
