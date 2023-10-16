@@ -14,6 +14,13 @@ export const SectionContainer = styled('section', {
   fontFamily: '$default',
   overflow: 'visible',
   zIndex: '0',
+  '& img#rectangle': {
+    height: '35rem',
+    width: '35rem',
+    marginTop: '-2rem',
+    position: 'absolute',
+    left: '50%',
+  },
 })
 
 export const CarouselContainer = styled('div', {
@@ -42,19 +49,12 @@ export const ImageContainer = styled('span', {
   width: '28.375rem',
   height: '36rem',
 
-  '& img#rectangle': {
-    height: '120%',
-    width: '120%',
-    position: 'absolute',
-    left: '10%',
-  },
-
   '& img#quote': {
     width: '3rem',
     height: '3rem',
     position: 'absolute',
-    left: '27%',
-    top: '-58%',
+    left: '60%',
+    top: '4%',
   },
 
   '& img#avatar': {
@@ -69,8 +69,8 @@ export const ImageContainer = styled('span', {
     width: '9.7rem',
     height: '9.7rem',
     position: 'absolute',
-    left: '-15%',
-    top: '43%',
+    left: '-5%',
+    top: '67%',
   },
 })
 
@@ -122,6 +122,7 @@ export const DotContainer = styled('button', {
     active: {
       true: {
         backgroundColor: '$primary',
+        width: '2rem',
       },
     },
   },
