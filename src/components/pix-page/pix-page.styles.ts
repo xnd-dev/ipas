@@ -151,6 +151,7 @@ export const AltButtonContainer = styled('button', {
   fontWeight: '$regular',
   lineHeight: '$short',
   boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.12)',
+  textWrap: 'noWrap',
 
   '&:focus': {
     backgroundColor: '$primary',
