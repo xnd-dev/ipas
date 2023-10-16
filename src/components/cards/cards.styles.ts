@@ -61,6 +61,7 @@ export const TitleContainer = styled('h3', {
   fontWeight: '$regular',
   lineHeight: '$shorter',
   opacity: '0.6',
+  textTransform: 'uppercase',
 })
 
 export const SubtitleContainer = styled('div', {
