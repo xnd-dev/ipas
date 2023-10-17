@@ -3,127 +3,168 @@ import { styled } from '@/lib/stitches'
 export const SectionContainer = styled('section', {
   display: 'flex',
   width: '100vw',
-  height: '23rem',
-  padding: '$10 $56',
+  height: '36.375rem',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
   gap: '$6',
   fontFamily: '$default',
+  backgroundColor: '$neutral-0',
   color: '$neutral-4',
+  padding: '$16 $56',
 })
 
-export const HelpContainer = styled('div', {
+export const BoxContainer = styled('div', {
   display: 'flex',
-  height: '18rem',
-  width: '61.5rem',
+  height: '27.375rem',
+  width: '62rem',
   justifyContent: 'center',
-  alignItems: 'center',
+  alignItems: 'flex-start',
   gap: '$12',
+})
+
+export const HelpContainer = styled('span', {
+  display: 'flex',
+  flexDirection: 'column',
+  height: '27.375rem',
+  width: '35rem',
+  alignItems: 'flex-start',
+  gap: '$8',
+  fontFamily: '$default',
+  color: '$neutral-4',
 })
 
 export const ContentContainer = styled('span', {
   display: 'flex',
   flexDirection: 'column',
-  height: '18rem',
-  width: '43rem',
-  justifyContent: 'center',
-  alignItems: 'center',
+  alignItems: 'flex-start',
   gap: '$6',
-  fontFamily: '$default',
-  color: '$neutral-4',
+  alignSelf: 'stretch',
+  height: '21.625rem',
+  width: '35rem',
 })
 
 export const TitleContainer = styled('h2', {
-  width: '43rem',
-  height: '2.625rem',
+  width: 'auto',
+  maxWidth: '35rem',
+  height: '3.75rem',
   textAlign: 'center',
-  fontSize: '$3xl',
+  fontSize: '$4xl',
   fontWeight: '$semibold',
-  lineHeight: '$short',
+  lineHeight: '$base',
   whiteSpace: 'nowrap',
-})
-
-export const PixContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  width: '15.5rem',
-  height: '18rem',
-  justifyContent: 'center',
-  alignItems: 'center',
-  gap: '$3',
-
-  img: {
-    width: '15.5rem',
-    height: '15.5rem',
-  },
-})
-
-export const PixTextContainer = styled('h3', {
-  width: '15.5rem',
-  height: '1.75rem',
-  textAlign: 'center',
-  fontSize: '$xl',
-  fontWeight: '$semibold',
-  lineHeight: '$short',
 })
 
 export const SubtitleContainer = styled('h4', {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
-  width: '43rem',
-  height: '7.9375rem',
-  fontSize: '$md',
+  width: '35rem',
+  height: '8.75rem',
+  fontSize: '$xl',
   fontWeight: '$regular',
-  lineHeight: '$shorter',
+  lineHeight: '$short',
 })
 
-export const AltDonationContainer = styled('div', {
-  width: '43rem',
-  heigth: '12.875rem',
+export const ValuesContainer = styled('span', {
   display: 'flex',
-  flexDirection: 'column',
+  width: '35rem',
+  height: '3.475rem',
   justifyContent: 'center',
   alignItems: 'center',
-  textAlign: 'center',
-  fontSize: '$md',
-  fontWeight: '$semibold',
-  lineHeight: '$shorter',
   gap: '$3',
 })
 
-export const AltTextContainer = styled('h5', {
-  width: '12.875rem',
-  height: '1.1875rem',
+export const AltDonationContainer = styled('div', {
+  width: '35rem',
+  heigth: '3.475rem',
+  display: 'flex',
+  alignItems: 'flex-start',
+  gap: '$6',
+})
+
+export const MonthlyDonationContainer = styled('h5', {
+  display: 'flex',
+  width: 'auto',
+  maxWidth: '35rem',
+  height: '1.5rem',
   textAlign: 'center',
+  alignItems: 'center',
   fontSize: '$md',
-  fontWeight: '$semibold',
-  lineHeight: '$shorter',
+  fontWeight: '$regular',
+  lineHeight: '$short',
+  gap: '$2',
+
+  input: {
+    width: '1.25rem',
+    height: '1.25rem',
+    border: '2px solid $neutral-4',
+    borderRadius: '$xs',
+  },
 })
 
 export const ButtonContainer = styled('button', {
   display: 'flex',
-  width: '10rem',
-  height: '2.5rem',
+  width: '8.4375rem',
+  height: '3.4375rem',
   padding: '$3 $6',
   justifyContent: 'center',
   alignItems: 'center',
   gap: '$2',
   color: '$neutral-0',
-  backgroundColor: '$primary',
-  borderRadius: '$xl',
+  backgroundColor: '$primary-variant-1',
+  borderRadius: '$xs',
   border: 'none',
-  fontSize: '$md',
+  fontSize: '$2xl',
   fontFamily: '$default',
-  fontWeight: '$semibold',
-  lineHeight: '$shorter',
+  fontWeight: '$bold',
+  lineHeight: '$short',
+  boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.12)',
+
+  '&:focus': {
+    backgroundColor: '$primary',
+  },
 
   '&:hover': {
-    backgroundColor: '$primary-variant-2',
+    backgroundColor: '$primary',
   },
 
   '&:active': {
+    backgroundColor: '$primary',
+  },
+})
+
+export const AltButtonContainer = styled('button', {
+  display: 'flex',
+  padding: '$2 $7',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '10.4375rem',
+  height: '3.4375rem',
+  gap: '$2',
+  backgroundColor: '$neutral-0',
+  border: '1px solid $neutral-4',
+  borderRadius: '$xs',
+  color: '$neutral-4',
+  fontFamily: '$default',
+  fontSize: '$md',
+  fontWeight: '$regular',
+  lineHeight: '$short',
+  boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.12)',
+  textWrap: 'noWrap',
+
+  '&:focus': {
+    backgroundColor: '$primary',
+    border: 'none',
+  },
+
+  '&:hover': {
     backgroundColor: '$primary-variant-1',
+    border: 'none',
+  },
+
+  '&:active': {
+    backgroundColor: '$primary',
+    border: 'none',
   },
 })
