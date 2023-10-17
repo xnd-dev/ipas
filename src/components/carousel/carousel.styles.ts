@@ -1,124 +1,164 @@
 import { styled } from '@/lib/stitches'
 
 export const SectionContainer = styled('section', {
+  flexDirection: 'column',
   display: 'flex',
   boxSizing: 'border-box',
   alignItems: 'center',
   justifyContent: 'center',
   width: '100vw',
-  height: '31.25rem',
-  backgroundColor: '$neutral-0',
+  height: '36rem',
+  padding: '$20',
+  gap: '$20',
+  backgroundColor: '$tertiary-variant',
   fontFamily: '$default',
+  overflow: 'visible',
+  zIndex: '0',
+  '& img#rectangle': {
+    height: '35rem',
+    width: '35rem',
+    marginTop: '-2rem',
+    position: 'absolute',
+    left: '50%',
+  },
 })
 
 export const CarouselContainer = styled('div', {
   display: 'flex',
-  flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '61.5rem',
-  height: '21.25rem',
-  flexWrap: 'nowrap',
-  gap: '$12',
+  width: '80rem',
+  height: '26rem',
+  gap: '$6',
 })
 
 export const CarouselContent = styled('div', {
+  flexDirection: 'row',
   display: 'flex',
-  flexDirection: 'column',
   alignItems: 'center',
+  width: '61.75rem',
+  height: '26rem',
+  gap: '$20',
+})
+
+export const ImageContainer = styled('span', {
+  position: 'relative',
+  display: 'flex',
   justifyContent: 'center',
-  width: '61.5rem',
-  height: '15rem',
-  gap: '$5',
+  alignItems: 'center',
+  width: '28.375rem',
+  height: '36rem',
+
+  '& img#quote': {
+    width: '3rem',
+    height: '3rem',
+    position: 'absolute',
+    left: '60%',
+    top: '4%',
+  },
+
+  '& img#avatar': {
+    width: '28.375rem',
+    height: '26rem',
+    borderRadius: '$lg',
+    position: 'absolute',
+    left: '0%',
+  },
+
+  '& img#square': {
+    width: '9.7rem',
+    height: '9.7rem',
+    position: 'absolute',
+    left: '-5%',
+    top: '67%',
+  },
 })
 
 export const SliderContainer = styled('div', {
   display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '61.5rem',
-  height: '13.125rem',
-  gap: '$20',
-})
-
-export const CaretContainer = styled('span', {
-  color: '$primary',
-  width: '2.5rem',
-  height: '2.5rem',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  width: '28.375rem',
+  height: '19.25rem',
+  gap: '$8',
 })
 
 export const SlideContainer = styled('span', {
   display: 'flex',
+  flexDirection: 'column',
   alignItems: 'center',
-  width: '43rem',
-  height: '13.125rem',
-  gap: '$6',
+  width: '28.375rem',
+  height: '11rem',
+  gap: '$4',
+})
 
-  img: {
-    width: '10rem',
-    height: '11rem',
-    borderRadius: '$lg',
-  },
+export const CaretContainer = styled('span', {
+  color: '$primary',
+  width: '3rem',
+  height: '3rem',
+  zIndex: '1',
 })
 
 export const NavigationContainer = styled('div', {
   display: 'flex',
   flexDirection: 'row',
-  justifyContent: 'center',
-  width: '61.5rem',
-  height: '0.625rem',
+  width: '19.25rem',
+  height: '0.5rem',
   gap: '$2',
 })
 
 export const DotContainer = styled('button', {
-  width: '0.625rem',
-  height: '0.625rem',
+  width: '0.5rem',
+  height: '0.5rem',
   borderRadius: '$full',
-  backgroundColor: '$primary',
-
-  focus: {
-    backgroundColor: '$neutral-4',
-  },
+  backgroundColor: '$neutral-4',
 
   variants: {
+    focus: {
+      true: {
+        backgroundColor: '$primary',
+      },
+    },
+
     active: {
       true: {
-        backgroundColor: '$neutral-4',
+        backgroundColor: '$primary',
+        width: '2rem',
       },
     },
   },
 })
 
 export const TitleContainer = styled('h2', {
-  width: '61.5rem',
-  height: '3.25rem',
+  width: '28.375rem',
+  height: '3.75rem',
   fontSize: '$4xl',
   fontWeight: '$semibold',
-  lineHeight: '$short',
+  lineHeight: '$base',
   whiteSpace: 'nowrap',
 })
 
-export const SpanContainer = styled('span', {
+export const SubtitleContainer = styled('h3', {
   display: 'flex',
   flexDirection: 'column',
-  width: '30.5rem',
-  height: '10.6875rem',
   alignItems: 'flex-start',
-  gap: '$6',
-})
-
-export const SubtitleContainer = styled('h3', {
-  width: '30.5rem',
-  height: '8.4375rem',
-  fontSize: '$lg',
+  alignSelf: 'stretch',
+  width: '27.375rem',
+  height: '6.875rem',
+  fontSize: '$md',
   fontWeight: '$regular',
   lineHeight: '$short',
+  gap: '$4',
 })
 
-export const SignatureContainer = styled('h4', {
-  width: '30.5rem',
-  height: '1.5rem',
+export const SignatureContainer = styled('div', {
+  width: '28.375rem',
+  height: '3.125rem',
+})
+
+export const SignatureTextContainer = styled('h4', {
+  height: '1.55rem',
+  width: '28.375rem',
   fontSize: '$md',
   fontWeight: '$regular',
   lineHeight: '$short',

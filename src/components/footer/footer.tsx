@@ -30,7 +30,7 @@ export function Footer() {
                 contato@ipas.com
               </S.EmailContainer>
               <S.PhoneContainer href={links.whatsapp}>
-                (82) 99662-1031
+                (82) 99142-8156
               </S.PhoneContainer>
             </S.InfoContactsContainer>
             <S.SocialsContainer>
