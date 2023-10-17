@@ -12,7 +12,7 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    backgroundColor: '$white',
+    backgroundColor: '$neutral-0',
     color: '$black',
     margin: 0,
     padding: 0,
