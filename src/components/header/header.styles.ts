@@ -24,6 +24,11 @@ export const HorizontalContainer = styled('div', {
   height: '2.5rem',
   alignItems: 'center',
   justifyContent: 'space-between',
+  '@sm': {
+    width:'22.56rem',
+    minWidth:'22.56rem',
+  },
+
 })
 
 export const ImageContainer = styled('div', {

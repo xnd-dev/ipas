@@ -7,6 +7,10 @@ export const ProjectsOverviewContainer = styled('section', {
   width: '90rem',
   minWidth: '90rem',
   padding:'0px',
+  '@sm': {
+    width:'22.5rem',
+    minWidth: '22.5rem',
+  }
 })
 
 export const ProjectsOverviewSection = styled('section', {
@@ -48,8 +52,6 @@ export const SectionTitle = styled('title', {
   marginTop:'$10',
   '@sm': {
     display:'block',
-    marginBottom:'0',
-    marginTop:'0',
     color:'$blue-gray',
     width:'100%',
     letterSpacing:'-0.03rem',
@@ -70,7 +72,7 @@ export const SectionText = styled('div', {
 
   '@sm' : {
     marginTop:'$8',
-    width:'38.0625rem',
+    width:'19.5rem',
   }
 }) 
 

@@ -9,7 +9,9 @@ export const GalleryColumnsContainer = styled('section', {
   alignItems:'stretch',
   '@sm': {
     height:'auto',
-    marginBottom:'$4'
+    marginBottom:'$4',
+    width:'22.56rem',
+    minWidth:'22.56rem',
   },
 })
 export const Column = styled('section', {
