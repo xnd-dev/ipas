@@ -19,7 +19,8 @@ export const HeaderContainer = styled('header', {
 export const HorizontalContainer = styled('div', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: '80rem',
+  width: '61.5rem',
+  minWidth: '61.5rem',
   height: '2.5rem',
   alignItems: 'center',
   justifyContent: 'space-between',

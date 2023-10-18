@@ -5,18 +5,22 @@ export const ProjectsOverviewContainer = styled('section', {
   flexDirection: 'column',
   margin:'0 auto',
   width: '90rem',
+  minWidth: '90rem',
   padding:'0px',
 })
 
 export const ProjectsOverviewSection = styled('section', {
   display: 'flex',
-  padding: '5rem 0',
-  gap: '$8',
+  padding: '$20 14.19rem $20 $20',
   height:'50.7rem',
-  width:'90rem',
+  gap:'$8',
   flexDirection:'column',
-  //alignItems: 'flex-start',
+  alignItems: 'flex-start',
   flexWrap:'wrap',
+  '&:last-child': {
+    alignItems:'flex-end',
+    padding: '5rem 5rem 5rem 14.19rem',
+  },
   '@sm': {
     flexWrap: 'nowrap',
     flexDirection: 'column',
@@ -30,10 +34,10 @@ export const ProjectsOverviewSection = styled('section', {
 export const SectionTitle = styled('title', {
   fontFamily: '$default',
   fontSize: '$5xl',
+  width:'29.06rem',
   lineHeight: '$shortest',
-  width:'29rem',
   fontStyle: 'normal',
-  display:'block',
+  display:'flex',
   fontWeight: '$bold',
   color:'$neutral-4',
   marginBottom:'$8',
@@ -48,11 +52,14 @@ export const SectionTitle = styled('title', {
   },  
 })
 
+
+
 export const SectionText = styled('div', {
   display: 'flex',
-  width:'29rem',
+  width:'29.06rem',
   flexDirection: 'column',
   gap:'$4',
+  marginBottom:'4.47rem',
 
   '@sm' : {
     marginTop:'$8',
