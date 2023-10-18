@@ -28,6 +28,10 @@ export const ProjectsOverviewSection = styled('section', {
     height:'auto',
     padding:'0.72rem',
     gap: '0',
+    '&:last-child': {
+      alignItems:'center',
+      padding: '0.72rem',
+    },
   },
 })
 
@@ -43,6 +47,9 @@ export const SectionTitle = styled('title', {
   marginBottom:'$8',
   marginTop:'$10',
   '@sm': {
+    display:'block',
+    marginBottom:'0',
+    marginTop:'0',
     color:'$blue-gray',
     width:'100%',
     letterSpacing:'-0.03rem',
