@@ -3,19 +3,20 @@ import { styled } from '@/lib/stitches'
 export const FooterContainer = styled('footer', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: '100vw',
+  width: '90rem',
   height: 'auto',
-  padding: '1.5rem 14.3rem',
+  padding: '2.5rem 14.25rem',
   backgroundColor: '$neutral-0',
   alignItems: 'center',
   justifyContent: 'center',
+  margin: "0 auto"
 })
 
 export const HorizontalContainer = styled('div', {
   display: 'flex',
   boxSizing: 'border-box',
   width: '61.5rem',
-  height: '8.875rem',
+  height: 'auto',
   alignItems: 'center',
   justifyContent: 'space-between',
   flexShrink: '0',
@@ -25,8 +26,7 @@ export const FooterLogoContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   width: '6rem',
-  height: 'auto',
-  gap: '0.75rem',
+  height: '5.5625rem',
   alignItems: 'center',
   justifyContent: 'center',
 })
@@ -39,6 +39,7 @@ export const OptionsContainer = styled('div', {
   gap: '0.75rem',
   alignItems: 'flex-start',
   justifyContent: 'center',
+  flexShrink: '0',
 })
 
 export const NavContainer = styled('a', {

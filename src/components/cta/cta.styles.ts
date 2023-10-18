@@ -3,18 +3,15 @@ import { styled } from '@/lib/stitches'
 export const SectionContainer = styled('section', {
   display: 'flex',
   flexDirection: 'column',
-  boxSizing: 'border-box',
-  width: '100vw',
-  height: '34.23rem',
+  width: '90rem',
+  height: 'auto',
   backgroundColor: '$neutral-0',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   alignItems: 'center',
-  justifyContent: 'center',
-  gap: '1.5rem',
-  padding: '5rem 14.9rem',
-  border: '1px solid $black'
+  padding: '10rem 0',
+  margin: '0 auto'
 })
 
 export const ContentContainer = styled('div', {
@@ -23,6 +20,7 @@ export const ContentContainer = styled('div', {
   width: 'auto',
   height: 'auto',
   alignItems: 'center',
+  justifyContent: 'center',
   gap: '1.5rem',
 })
 
@@ -32,26 +30,29 @@ export const TitleContainer = styled('h2', {
   fontFamily: '$default',
   fontStyle: 'normal',
   fontWeight: '$semibold',
-  lineHeight: '$short',
+  lineHeight: '$base',
+  letterSpacing: ' -0.05rem',
   color: '$neutral-4',
+  width: '100%'
 })
 
 export const TextContainer = styled('p', {
-  width: '35rem',
-  fontSize: '$lg',
+  fontSize: '$xl',
   textAlign: 'center',
   fontFamily: '$default',
   fontStyle: 'normal',
   fontWeight: '$regular',
   lineHeight: '$short',
   color: '$neutral-4',
+  width: '75%',
+  alignSelf: 'center'
 })
 
 export const ButtonContainer = styled('button', {
   display: 'flex',
-  width: '11.25rem',
+  width: 'auto',
   height: '2.5rem',
-  padding: '0.75rem 1.5rem',
+  padding: '0.75rem 2rem',
   justifyContent: 'center',
   alignItems: 'center',
   gap: '0.5rem',
