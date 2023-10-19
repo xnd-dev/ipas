@@ -32,9 +32,9 @@ export const TitleContainer = styled('h2', {
     weight:'37.5rem',
     fontFamily: '$default',
     color: '$neutral-4',
-    fontSize: '4rem',
-    fontWeight: '700',
-    lineHeight: '4.375rem',
+    fontSize: '$6xl',
+    fontWeight: '$bold',
+    lineHeight: '$shortest',
     letterSpacing: '0',
     textAlign: 'left',
 })
@@ -45,31 +45,31 @@ export const ParagraphContainer= styled('div', {
     fontFamily: '$default',
     color: '$neutral-4',
     weight:'25rem',
-    fontSize:'1.25rem',
-    lineHeight:'2rem',
-    marginTop:'1.5rem',
+    fontSize:'$xl',
+    lineHeight:'$base',
+    marginTop:'$6',
 })
 
 export const ButtonsContainer = styled('div',{
     display:'flex',
-    marginTop:'1.5rem',
-    gap:'1.5rem',
+    marginTop:'$6',
+    gap:'$6',
 })
 
 export const ButtonContainerWhite = styled('button',{
-    padding:'1rem 2rem',
+    padding:'$4 $8',
     color:'$neutral-4',
     fontFamily: '$default',
     fontWeight:'$semibold',
-    fontSize:'1rem',
+    fontSize:'$md',
     border:'1px solid $neutral-4',
     borderRadius:'$full',
-    lineHeight:'1.2rem'
+    lineHeight:'$shorter'
 })
 
 export const ButtonContainer = styled('button', {
     display: 'flex',
-    padding: '1rem 2rem',
+    padding: '$4 $8',
     gap: '$2',
     border: 'none',
     borderRadius: '$full',
