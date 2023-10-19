@@ -11,9 +11,12 @@ export const HeaderContainer = styled('header', {
   alignItems: 'center',
   justifyContent: 'center',
   position: 'fixed',
+  left: '0',
+  right: '0',
+  marginLeft: 'auto',
+  marginRight: 'auto',
   borderBottom: '1px solid',
   borderColor: '$neutral-4',
-  margin: '0 auto'
 })
 
 export const HorizontalContainer = styled('div', {
