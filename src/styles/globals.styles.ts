@@ -21,7 +21,7 @@ export const globalStyles = globalCss({
   },
 
   'body, input, textarea, button': {
-    fontFamily: 'Poppins, sans-serif',
+    fontFamily: 'Poppins, sans-serif', 
     border: 'none',
   },
 
