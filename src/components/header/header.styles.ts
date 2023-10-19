@@ -3,9 +3,9 @@ import { styled } from '@/lib/stitches'
 export const HeaderContainer = styled('header', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: '100vw',
-  height: '5.5rem',
-  padding: '$6 $56',
+  width: '90rem',
+  height: 'auto',
+  padding: '$6 14.25rem',
   gap: '$72',
   backgroundColor: '$neutral-0',
   alignItems: 'center',
@@ -13,6 +13,7 @@ export const HeaderContainer = styled('header', {
   position: 'fixed',
   borderBottom: '1px solid',
   borderColor: '$neutral-4',
+  margin: '0 auto'
 })
 
 export const HorizontalContainer = styled('div', {
