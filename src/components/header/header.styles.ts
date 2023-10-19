@@ -1,22 +1,24 @@
 import { styled } from '@/lib/stitches'
 
+export const HeaderOverlayContainer = styled('header', {
+  width: '100vw',
+  height: 'auto',
+  backgroundColor: '$neutral-0',
+  position: 'fixed',
+  borderBottom: '1px solid',
+  borderColor: '$neutral-4',
+})
+
 export const HeaderContainer = styled('header', {
   display: 'flex',
   boxSizing: 'border-box',
   width: '90rem',
-  height: 'auto',
+  height: '100px',
   padding: '$6 14.25rem',
   gap: '$72',
-  backgroundColor: '$neutral-0',
   alignItems: 'center',
   justifyContent: 'center',
-  position: 'fixed',
-  left: '0',
-  right: '0',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  borderBottom: '1px solid',
-  borderColor: '$neutral-4',
+  margin: '0 auto'
 })
 
 export const HorizontalContainer = styled('div', {
