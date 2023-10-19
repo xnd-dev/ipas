@@ -5,8 +5,6 @@ export const HeaderOverlayContainer = styled('header', {
   height: 'auto',
   backgroundColor: '$neutral-0',
   position: 'fixed',
-  borderBottom: '1px solid',
-  borderColor: '$neutral-4',
 })
 
 export const HeaderContainer = styled('header', {
@@ -24,21 +22,21 @@ export const HeaderContainer = styled('header', {
 export const HorizontalContainer = styled('div', {
   display: 'flex',
   boxSizing: 'border-box',
-  width: '80rem',
-  height: '2.5rem',
+  width: '61.5rem',
+  maxHeight: '1rem',
   alignItems: 'center',
   justifyContent: 'space-between',
 })
 
 export const ImageContainer = styled('div', {
-  width: '9rem',
+  width: '8.96rem',
   height: '2.5rem',
 })
 
 export const OptionsContainer = styled('div', {
   display: 'flex',
-  width: '44rem',
-  height: '3rem',
+  width: 'auto',
+  height: 'auto',
   gap: '$6',
   alignItems: 'center',
   justifyContent: 'center',
