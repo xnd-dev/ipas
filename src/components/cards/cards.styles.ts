@@ -11,6 +11,12 @@ export const SectionContainer = styled('section', {
   color: '$white',
   fontFamily: '$default',
   padding: '$20 $36',
+  overflow: 'hidden',
+
+  '@sm': {
+    height:'auto',
+    padding:'$20 $6',
+  },
 })
 
 export const CardsContainer = styled('div', {
