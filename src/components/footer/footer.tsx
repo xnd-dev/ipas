@@ -7,8 +7,17 @@ import {
   FacebookLogo,
 } from '@phosphor-icons/react'
 import { links } from './footer.constants'
+import { useRouter } from 'next/router'
+
+export function checkNavLinkRoute(navLink: string, pathName: string): string {
+  if (pathName === '/') {
+    return navLink
+  }
+  return process.env.NEXT_PUBLIC_HOME_ROUTE + navLink
+}
 
 export function Footer() {
+  const { pathname } = useRouter();
   return (
     <S.FooterContainer id="contact">
       <S.HorizontalContainer>
@@ -17,10 +26,10 @@ export function Footer() {
         </S.FooterLogoContainer>
         <S.OptionsContainer>
           <S.TitleContainer>Navegação</S.TitleContainer>
-          <S.NavContainer href="#projects">Nossos Projetos</S.NavContainer>
-          <S.NavContainer href="#help">Como ajudar</S.NavContainer>
-          <S.NavContainer href="#voluntary">Seja um Voluntário</S.NavContainer>
-          <S.NavContainer href="#contact">Contato</S.NavContainer>
+          <S.NavContainer href={checkNavLinkRoute("#projects", pathname)}>Nossos Projetos</S.NavContainer>
+          <S.NavContainer href={checkNavLinkRoute("#help", pathname)}>Como ajudar</S.NavContainer>
+          <S.NavContainer href={checkNavLinkRoute("#voluntary", pathname)}>Seja um Voluntário</S.NavContainer>
+          <S.NavContainer href={checkNavLinkRoute("#contact", pathname)}>Contato</S.NavContainer>
         </S.OptionsContainer>
         <S.SocialAndContactsContainer>
           <S.ContactsContainer>

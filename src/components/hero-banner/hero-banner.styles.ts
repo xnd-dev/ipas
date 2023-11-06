@@ -10,7 +10,7 @@ export const SectionContainer = styled('section', {
   justifyContent: 'center',
   fontFamily: '$default',
   gap: '$3',
-  padding: '$20 $96 $10 $96',
+  padding: '$10 $96 $10 $96',
 })
 
 export const ContentContainer = styled('div', {

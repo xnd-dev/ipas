@@ -1,5 +1,8 @@
 import { styled } from '@/lib/stitches'
+import Link from 'next/link'
 
+
+export const SectionContainer = styled('div', {})
 export const HeaderOverlayContainer = styled('header', {
   width: '100vw',
   height: 'auto',
@@ -7,7 +10,7 @@ export const HeaderOverlayContainer = styled('header', {
   position: 'fixed',
 })
 
-export const HeaderContainer = styled('header', {
+export const HeaderContainer = styled('div', {
   display: 'flex',
   boxSizing: 'border-box',
   width: '90rem',
@@ -28,7 +31,7 @@ export const HorizontalContainer = styled('div', {
   justifyContent: 'space-between',
 })
 
-export const ImageContainer = styled('div', {
+export const ImageContainer = styled(Link, {
   width: '8.96rem',
   height: '2.5rem',
 })
@@ -42,7 +45,7 @@ export const OptionsContainer = styled('div', {
   justifyContent: 'center',
 })
 
-export const NavContainer = styled('a', {
+export const NavContainer = styled(Link, {
   color: '$neutral-4',
   fontFamily: '$default',
   fontSize: '$md',
@@ -83,4 +86,8 @@ export const InsideTextContainer = styled('span', {
   fontWeight: '$semibold',
   lineHeight: '$shorter',
   whiteSpace: 'nowrap',
+})
+
+export const HeaderSpaceContainer = styled('div', {
+  height: '100px'
 })
