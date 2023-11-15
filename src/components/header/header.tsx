@@ -40,7 +40,6 @@ export function Header() {
               <NavContainer href={checkNavLinkRoute("#voluntary", pathname)}>Seja um Voluntário</NavContainer>
               <NavContainer href={checkNavLinkRoute("#contact", pathname)}>Contato</NavContainer>
               <NavContainer href={process.env.NEXT_PUBLIC_BLOG_ROUTE ?? '/'}>Blog</NavContainer>
-              <NavContainer href={process.env.NEXT_PUBLIC_FP ?? '/'}>FisrtPost</NavContainer>
               <ButtonContainer>
                 <InsideTextContainer> Doe agora </InsideTextContainer>
                 <HandCoins size={'1rem'} />

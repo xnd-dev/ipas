@@ -1,32 +1,25 @@
+import PostPreview from "@/components/Blog/post-preview/post-preview";
 import { Footer } from "@/components/footer/footer";
 import { Header } from "@/components/header/header";
-import { Post, getSortedPostsData } from '@/lib/posts';
+import { PostType, getSortedPostsData } from '@/lib/postType';
+import { PostPreviewsContainer, SectionContainer } from "./blog.styles";
 
 type Props = {
-    allPostsData: Post[]
+    allPostsData: PostType[]
 }
 
 export default function Blog({ allPostsData }: Props) {
 
-    let aux = allPostsData.map(({ id, date, title }) => (
-        <li key={id}>
-            {title}
-            <br />
-            {id}
-            <br />
-            {date}
-        </li>
-    ))
-
     return (
         <>
             <Header />
-            <section>
-                <h2 >Blog</h2>
-                <ul>
-                    {aux}
-                </ul>
-            </section>
+            <SectionContainer>
+                <PostPreviewsContainer>
+                    {allPostsData.map(({ id, date, title, exerpt, coverImage }) => (
+                        <PostPreview title={title} date={date} coverImage={coverImage} excerpt={exerpt} slug={id} />
+                    ))}
+                </PostPreviewsContainer>
+            </SectionContainer >
             <Footer />
         </>
     )

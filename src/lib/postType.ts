@@ -8,12 +8,8 @@ export function getSortedPostsData() {
     // Get file names under /posts
 
     const fileNames = fs.readdirSync(postsDirectory);
-    const posts: Array<Post> = new Array<Post>;
+    const posts: Array<PostType> = new Array<PostType>;
     fileNames.forEach((fileName) => {
-        let post = { id: '', date: '', title: '' };
-        // Remove ".md" from file name to get id
-        post.id = fileName.replace(/\.md$/, '');
-
 
         // Read markdown file as string
         const fullPath = path.join(postsDirectory, fileName);
@@ -22,8 +18,11 @@ export function getSortedPostsData() {
         // Use gray-matter to parse the post metadata section
         const matterResult = matter(fileContents);
 
-        post.date = matter(fileContents).data.date;
-        post.title = matter(fileContents).data.title;
+        let post: PostType = matter(fileContents).data as PostType;
+
+        //removing '.md' from filename to use as ID
+        post.id = fileName.replace(/\.md$/, '');
+
 
         posts.push(post)
     });
@@ -37,8 +36,26 @@ export function getSortedPostsData() {
     });
 }
 
-export type Post = {
+export function getPostBySlug(slug: string): PostType {
+    const fullPath = path.join(postsDirectory, slug + '.md');
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+    let post: PostType = matter(fileContents).data as PostType;
+
+    //removing '.md' from filename to use as ID
+    post.id = slug;
+
+    // Use gray-matter to parse the post metadata section
+    post.content = matter(fileContents).content;
+
+    return post
+}
+
+export type PostType = {
     id: string
     date: string
     title: string
+    content: string
+    exerpt: string
+    coverImage: string
 }

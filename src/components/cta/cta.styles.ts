@@ -4,17 +4,16 @@ export const SectionContainer = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   boxSizing: 'border-box',
-  width: '100vw',
-  height: '34.23rem',
+  width: '90rem',
+  height: 'auto',
   backgroundColor: '$neutral-0',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   alignItems: 'center',
   justifyContent: 'center',
-  gap: '1.5rem',
-  padding: '5rem 14.9rem',
-  border: '1px solid $black'
+  padding: '10rem 0',
+  margin: '0 auto'
 })
 
 export const ContentContainer = styled('div', {

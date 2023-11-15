@@ -1,11 +1,12 @@
 ---
-title: 'Two Forms of Pre-rendering'
+title: 'Nossos projetos sociais'
 date: '2020-01-01'
+exerpt: 'Uma comunidade unida vale ouro! Por isso, juntamos pessoas em busca de um objetivo comum: tornar a comunidade mais acolhedora, democrática e solidária.'
+coverImage: '_next/static/media/avatar-1.04943f54.svg'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Uma comunidade unida vale ouro! Por isso, juntamos pessoas em busca de um objetivo comum: tornar a comunidade mais acolhedora, democrática e solidária.
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+Buscamos experiências felizes para aqueles em situação de vulnerabilidade social e ajudamos a construir momentos especiais, com memórias duradouras.
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+Incentivamos o amor ao próximo, fortalecendo a ideia de que juntos podemos fazer a diferença!
