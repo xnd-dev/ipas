@@ -16,8 +16,8 @@ export default function Blog({ allPostsData }: Props) {
             <Layout>
                 <SectionContainer>
                     <PostPreviewsContainer>
-                        {allPostsData.map(({ id, date, title, exerpt, coverImage }) => (
-                            <PostPreview title={title} date={date} coverImage={coverImage} excerpt={exerpt} slug={id} />
+                        {allPostsData.map((post) => (
+                            <PostPreview post={post} />
                         ))}
                     </PostPreviewsContainer>
                 </SectionContainer >
@@ -27,7 +27,7 @@ export default function Blog({ allPostsData }: Props) {
 }
 
 export async function getStaticProps() {
-    const allPostsData = getSortedPostsData();
+    const allPostsData = await getSortedPostsData();
     return {
         props: { allPostsData },
     }

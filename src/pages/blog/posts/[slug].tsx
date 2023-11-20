@@ -22,7 +22,7 @@ type Props = {
 const Post = ({ post, morePosts, preview }: Props) => {
     const router = useRouter()
 
-    console.log(post?.id);
+    console.log(post);
     if (!router.isFallback && !post?.id) {
 
         return <ErrorPage statusCode={404} />
@@ -49,7 +49,11 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
-    const post = getPostBySlug(params.slug)
+
+
+    const post = await getPostBySlug(params.slug)
+
+    console.log(post);
     // , [
     //     'title',
     //     'date',
@@ -72,9 +76,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-    const posts = getSortedPostsData()
-    console.log('entrou');
-
+    const posts = await getSortedPostsData()
 
     return {
         paths: posts.map((post: PostType) => {
