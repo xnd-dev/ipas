@@ -5,7 +5,7 @@ import {
   ImageContainer,
   InsideTextContainer,
   NavContainer,
-  OptionsContainer,
+  NavBarContainer,
   HeaderOverlayContainer,
   HeaderSpaceContainer,
   SectionContainer,
@@ -34,17 +34,17 @@ export function Header() {
             <ImageContainer href={process.env.NEXT_PUBLIC_HOME_ROUTE ?? '/'}>
               <Image src={ipasLogo} alt="" />
             </ImageContainer>
-            <OptionsContainer>
+            <NavBarContainer>
               <NavContainer href={checkNavLinkRoute("#projects", pathname)}>Nossos Projetos</NavContainer>
               <NavContainer href={checkNavLinkRoute("#help", pathname)}>Como ajudar</NavContainer>
               <NavContainer href={checkNavLinkRoute("#voluntary", pathname)}>Seja um Voluntário</NavContainer>
               <NavContainer href={checkNavLinkRoute("#contact", pathname)}>Contato</NavContainer>
               <NavContainer href={process.env.NEXT_PUBLIC_BLOG_ROUTE ?? '/'}>Blog</NavContainer>
-              <ButtonContainer>
-                <InsideTextContainer> Doe agora </InsideTextContainer>
-                <HandCoins size={'1rem'} />
-              </ButtonContainer>
-            </OptionsContainer>
+            </NavBarContainer>
+            <ButtonContainer>
+              <InsideTextContainer> Doe agora </InsideTextContainer>
+              <HandCoins size={'1rem'} />
+            </ButtonContainer>
           </HorizontalContainer>
         </HeaderContainer>
       </HeaderOverlayContainer>

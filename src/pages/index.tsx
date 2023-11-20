@@ -6,18 +6,19 @@ import { ProjectOverview } from '@/components/projects-overview'
 import { Carousel } from '@/components/carousel'
 import { CallToAction } from '@/components/cta'
 import { Footer } from '@/components/footer'
+import Layout from '@/components/ipas-layout/ipas-layout'
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <HeroBanner />
-      <NumbersDisplay />
-      <ProjectOverview />
-      <PixPage />
-      <Carousel />
-      <CallToAction />
-      <Footer />
+      <Layout>
+        <HeroBanner />
+        <NumbersDisplay />
+        <ProjectOverview />
+        <PixPage />
+        <Carousel />
+        <CallToAction />
+      </Layout>
     </>
   )
 }

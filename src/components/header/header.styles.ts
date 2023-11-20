@@ -5,9 +5,9 @@ import Link from 'next/link'
 export const SectionContainer = styled('div', {})
 export const HeaderOverlayContainer = styled('header', {
   width: '100vw',
-  height: 'auto',
   backgroundColor: '$neutral-0',
   position: 'fixed',
+  zIndex: '1'
 })
 
 export const HeaderContainer = styled('div', {
@@ -36,7 +36,7 @@ export const ImageContainer = styled(Link, {
   height: '2.5rem',
 })
 
-export const OptionsContainer = styled('div', {
+export const NavBarContainer = styled('div', {
   display: 'flex',
   width: 'auto',
   height: 'auto',

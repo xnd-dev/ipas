@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer/footer";
 import { Header } from "@/components/header/header";
 import { PostType, getSortedPostsData } from '@/lib/postType';
 import { PostPreviewsContainer, SectionContainer } from "./blog.styles";
+import Layout from "@/components/ipas-layout/ipas-layout";
 
 type Props = {
     allPostsData: PostType[]
@@ -12,15 +13,15 @@ export default function Blog({ allPostsData }: Props) {
 
     return (
         <>
-            <Header />
-            <SectionContainer>
-                <PostPreviewsContainer>
-                    {allPostsData.map(({ id, date, title, exerpt, coverImage }) => (
-                        <PostPreview title={title} date={date} coverImage={coverImage} excerpt={exerpt} slug={id} />
-                    ))}
-                </PostPreviewsContainer>
-            </SectionContainer >
-            <Footer />
+            <Layout>
+                <SectionContainer>
+                    <PostPreviewsContainer>
+                        {allPostsData.map(({ id, date, title, exerpt, coverImage }) => (
+                            <PostPreview title={title} date={date} coverImage={coverImage} excerpt={exerpt} slug={id} />
+                        ))}
+                    </PostPreviewsContainer>
+                </SectionContainer >
+            </Layout>
         </>
     )
 }
