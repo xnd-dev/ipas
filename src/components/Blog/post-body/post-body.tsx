@@ -1,4 +1,6 @@
-import markdownStyles from './markdown-styles.module.css';
+//import markdownStyles from './markdown-styles.module.css';
+
+import { ArticleContainer } from "./post-body.styles";
 
 type Props = {
     content: string;
@@ -7,12 +9,12 @@ type Props = {
 const PostBody = ({ content }: Props) => {
     console.log('content', content);
     return (
-        <div className="max-w-2xl mx-auto">
+        <ArticleContainer className="max-w-2xl mx-auto">
             <div
-                className={markdownStyles['markdown']}
+                //className={markdownStyles['markdown']}
                 dangerouslySetInnerHTML={{ __html: content }}
             />
-        </div>
+        </ArticleContainer>
     );
 };
 
