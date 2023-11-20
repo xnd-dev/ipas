@@ -12,6 +12,14 @@ export const SectionContainer = styled('section', {
   fontFamily: '$default',
   padding: '$20 $36',
   overflow: 'hidden',
+  overflowX: 'auto',
+
+  '&::-webkit-scrollbar': {
+    display: 'none',
+  },
+
+  scrollbarWidth: 'none', 
+  msOverflowStyle: 'none', 
 
   '@sm': {
     height:'auto',
