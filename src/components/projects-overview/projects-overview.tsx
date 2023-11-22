@@ -27,8 +27,7 @@ export function ProjectOverview() {
     <>
       <S.ProjectsOverviewContainer id="projects">
       {project1.map((project, index) => (
-        <S.ProjectsOverviewSection key={'proj'+index} 
-         css={{ alignItems: 'flex-'+(index%2?'end':'start') }}>
+        <S.ProjectsOverviewSection key={'proj'+index}>
             {
               order(
                 orderElements[index],

@@ -6,12 +6,14 @@ import { ProjectOverview } from '@/components/projects-overview'
 import { Carousel } from '@/components/carousel'
 import { CallToAction } from '@/components/cta'
 import { Footer } from '@/components/footer'
+import { Banner } from '@/components/banner'
+import { Floating } from '@/components/floating'
 
 export default function Home() {
   return (
     <>
       <Header />
-      <HeroBanner />
+      <Banner />
       <Cards />
       <ProjectOverview />
       <PixPage />
