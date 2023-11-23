@@ -6,7 +6,7 @@ export function Banner() {
   return (
     <S.BannerContainer>
         <Floating image={"setor-circular.svg"} 
-            left={{ default: 76.31, sm: 15.75 }} 
+            right={{ default: 0, sm: 0}} 
             top={{ default: 35.69, sm: 41.6 }}
             width={{ default: 'auto', sm: 6.8125 }} />
         <Floating image={"common_orangecircle.png"} 
