@@ -16,10 +16,11 @@ export const BannerContainer = styled('section', {
 
   '@sm': {
     backgroundImage: 'url("/hands.png")',
-    backgroundSize: 'auto 20rem',
-    backgroundPosition: '7.4rem -4.3rem',
-    paddingTop:'7.8rem',
-    height:'45.6875rem',
+    backgroundSize: '92vw auto',
+    backgroundPosition: '34vw -17.5vw',
+    paddingTop:'73.06vw',
+    height:'198.8vw',
+    width:'100vw'
   },
 })
 
@@ -27,13 +28,16 @@ export const BannerContent = styled('div', {
     position:'relative',
     display: 'block',
     width: '61.5rem',
-    marginRight:'14.25rem',
     height: '50.75rem',
     margin:'0 auto',
 
     '@sm': {
-      gap:'$6',
-      padding:'$6',
+      //gap:'$6',
+      gap:'6.7vw',
+      //padding:'$6',
+      padding: '6.7vw',
+      width:'100vw',
+      height:'auto',
       textAlign:'center',
     },      
   })
@@ -52,7 +56,10 @@ export const TitleContainer = styled('h2', {
     textAlign: 'left',
 
     '@sm': {
-      fontSize:'$3xl',
+      //fontSize:'$3xl',
+      fontSize:'8.74vw',
+      width:'100vw',
+      marginTop:'0',
       textAlign:'center',
       lineHeight:'130%',
       height:'auto',
@@ -71,7 +78,11 @@ export const ParagraphContainer= styled('div', {
 
     '@sm': {
       textAlign:'left',
+      width:'100vw',
+      marginTop:'7.6vw',
+      //marginTop:'$6',
       lineHeight:'$short',
+      fontSize: '5.5vw',
     },        
 })
 
@@ -82,7 +93,10 @@ export const ButtonsContainer = styled('div',{
 
     '@sm': {
       flexDirection:'column',
-      gap:'$6',
+      //gap:'$6',
+      //marginTop:'$6',
+      gap:'6.8vw',
+      marginTop:'6vw',
     },
 })
 
@@ -95,6 +109,11 @@ export const ButtonContainerWhite = styled('button',{
     border:'1px solid $neutral-4',
     borderRadius:'$full',
     lineHeight:'$shorter',
+
+    '@sm': {
+      padding:'4vw',
+      fontSize:'4.4vw', //1rem
+    },        
 })
 
 export const ButtonContainer = styled('button', {
@@ -110,8 +129,10 @@ export const ButtonContainer = styled('button', {
     cursor: 'pointer',
 
     '@sm': {
-      widht:'19.5rem',
-      height:'3.25rem'
+      //widht:'19.5rem',
+      width:'86.7vw',
+      //height:'3.25rem'
+      height:'14.4vw',
     },    
 
     '&:hover': {
@@ -135,7 +156,11 @@ export const ButtonContainer = styled('button', {
 
     '@sm': {
       display:'flex',
-      gap:'$2',
+      //gap:'$2',
+      gap:'2.2vw',
+      width:'auto',
+      height:'auto',
+      fontSize:'4.4vw', //1rem
       alignContent:'center',
       justifyContent: 'center',
     },        

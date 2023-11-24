@@ -18,10 +18,10 @@ export function Floating({ image, top, left, right, width, display }: FloatingPr
           right: right?.default !== undefined ? `${right.default}rem` : 'auto',
           width: width?.default !== undefined ? (typeof width.default === 'number' ? `${width.default}rem` : width.default) : 'auto',
         '@sm': {
-          top: `${top.sm}rem`,
-          left: left?.sm !== undefined ? `${left.sm}rem` : 'auto',
-          right: right?.sm !== undefined ? `${right.sm}rem` : 'auto',
-          width: width?.sm !== undefined ? (typeof width.sm === 'number' ? `${width.sm}rem` : width.sm) : 'auto',
+          top: `${top.sm}vw`,
+          left: left?.sm !== undefined ? `${left.sm}vw` : 'auto',
+          right: right?.sm !== undefined ? `${right.sm}vw` : 'auto',
+          width: width?.sm !== undefined ? (typeof width.sm === 'number' ? `${width.sm}vw` : width.sm) : 'auto',
           display: display?.sm !== undefined ? display.sm : 'block',
         },
       }}

@@ -7,16 +7,16 @@ export function Banner() {
     <S.BannerContainer>
         <Floating image={"setor-circular.svg"} 
             right={{ default: 0, sm: 0}} 
-            top={{ default: 35.69, sm: 41.6 }}
-            width={{ default: 'auto', sm: 6.8125 }} />
+            top={{ default: 35.69, sm: 185.29 }}
+            width={{ default: 'auto', sm: 22.8 }} />
         <Floating image={"common_orangecircle.png"} 
-            left={{ default: -4.16, sm: -1.46 }} 
-            top={{ default: 46, sm: 44.69 }}
-            width={{ default: 'auto', sm: 2.9375 }}/>
+            left={{ default: -4.16, sm: -6.5 }} 
+            top={{ default: 46, sm: 194 }}
+            width={{ default: 'auto', sm: 13 }}/>
         <Floating 
             image={"common_whitecircle.png"} 
             left={{ default: 13.25, sm: 13.25 }} 
-            top={{ default: 81.25, sm: 81.25 }}
+            top={{ default: 81.25, sm: 82.25 }}
             width={{ default: 'auto', sm: 7 }}
             display={{ default: 'block', sm: 'none' }}/>
         <S.BannerContent>
