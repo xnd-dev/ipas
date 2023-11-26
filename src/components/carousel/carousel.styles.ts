@@ -17,13 +17,13 @@ export const SectionContainer = styled('section', {
   '& img#rectangle': {
     height: '35rem',
     width: '35rem',
-    marginTop: '-2rem',
+    marginTop: '-2.5rem',
     position: 'absolute',
-    left: '50%',
+    left: '50.5%',
   },
 
   '@sm': {
-    maxHeight: '47.5625rem',
+    height: '49.5625rem',
     padding: '5rem 1.5rem',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -33,11 +33,19 @@ export const SectionContainer = styled('section', {
 
     
   '& img#rectangle':{
-    position: 'absolute',
-    right: '-3.73675rem',
-    top: '-4.88238rem',
+    left: '7.5rem',
+    top: '254rem',
+    height: '24rem',
+    }, 
   },
-  }
+
+  '@xs': {
+    '& img#rectangle':{
+      left:'1.5rem',
+      top: '236rem',
+    }, 
+  },
+
 })
 
 export const CarouselContainer = styled('div', {
@@ -50,13 +58,10 @@ export const CarouselContainer = styled('div', {
   
   '@sm': {
     flexDirection: 'column',
-    height: '37.5625rem',
+    height: '39.5625rem',
     justifyContent: 'flex-start',
     gap: '2rem',
   }
-
-
-
 })
 
 export const CarouselContent = styled('div', {
@@ -67,11 +72,11 @@ export const CarouselContent = styled('div', {
   height: '26rem',
   gap: '$20',
 
-  border: '1px solid red',
 
   '@sm': {
+    flexDirection: 'column',
     width: '19.5rem',
-    height: 'auto',
+    height: '39.5625rem',
     gap: '$6',
   }
 })
@@ -85,10 +90,10 @@ export const ImageContainer = styled('span', {
   position: 'relative',
 
   '& img#quote': {
-    width: '3rem',
+    width: '3.5rem',
     height: '3rem',
     position: 'absolute',
-    left: '60%',
+    left: '61%',
     top: '4%',
   },
 
@@ -112,13 +117,24 @@ export const ImageContainer = styled('span', {
       maxHeight: '18.375rem',
       justifyContent: 'center',
       alignItems: 'center',
-      gap: '0.625rem',
-      flex: '1 0 0',
+      gap: '$2',
 
-      img: {
-        display: 'none',
+      '& img#quote': {
+        left: '84%',
+        top: '-18%',
       },
-  }
+
+      '& img#avatar': {
+        height: '18.375rem',
+        objectFit: 'cover',
+      },
+      
+      '& img#square': {
+        width: '6.82rem',
+        left: '1%',
+        top: '68%',
+      }, 
+  },
 })
 
 export const SliderContainer = styled('div', {
@@ -128,10 +144,9 @@ export const SliderContainer = styled('div', {
   width: '28.375rem',
   height: '19.25rem',
   gap: '$8',
-  border: '1px solid blue',
 
   '@sm': {
-    height: 'auto',
+    height: '37.5625rem',
     alignItems: 'flex-start',
     gap: '$6',
     alignSelf: 'stretch',
@@ -145,7 +160,6 @@ export const SlideContainer = styled('span', {
   width: '28.375rem',
   height: '11rem',
   gap: '$4',
-  border: '1px solid green',
 
   '@sm': {
     height: 'auto',
@@ -229,7 +243,6 @@ export const TitleContainer = styled('h2', {
     fontSize: '$2xl',
     lineHeight: '$shorter',
     letterSpacing: '-0.03rem',
-    border: '1px solid purple',
   }
 })
 
@@ -245,20 +258,25 @@ export const SubtitleContainer = styled('h3', {
   lineHeight: '$short',
   gap: '$4',
 
-  border: '1px solid purple',
-
   '@sm': {
-    height: 'auto',
+    height: '10.25rem',
     fontSize: '$md',
     lineHeight: '$short',
     letterSpacing: '-0.03rem',
-    border: '1px solid purple',
   }
 })
 
 export const SignatureContainer = styled('div', {
   width: '28.375rem',
   height: '3.125rem',
+  fontSize: '$xl',
+  fontWeight: '$regular',
+  lineHeight: '$short',
+
+  '@sm': {
+    height: 'auto',
+    fontSize: '$md',
+  }
 })
 
 export const SignatureTextContainer = styled('h4', {
