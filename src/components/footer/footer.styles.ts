@@ -1,34 +1,55 @@
 import { styled } from '@/lib/stitches'
+import Image from 'next/image'
 
 export const FooterContainer = styled('footer', {
   display: 'flex',
-  boxSizing: 'border-box',
   width: '90rem',
   height: 'auto',
-  padding: '2.5rem 14.25rem',
+  padding: '$10 14.25rem',
   backgroundColor: '$neutral-0',
   alignItems: 'center',
-  justifyContent: 'center',
-  margin: "0 auto"
+  justifyContent: 'space-between',
+  margin: "0 auto",
+  '@sm': {
+    padding: '$10 6.4375rem',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '3.75rem',
+  }
 })
 
-export const HorizontalContainer = styled('div', {
+export const ContentContainer = styled('div', {
   display: 'flex',
-  boxSizing: 'border-box',
   width: '61.5rem',
   height: 'auto',
   alignItems: 'center',
   justifyContent: 'space-between',
   flexShrink: '0',
+  '@sm': {
+    flexDirection: 'column',
+    width: 'auto',
+    height: '30.625rem',
+    gap: '3.75rem',
+    justifyContent: 'center',
+  }
 })
 
-export const FooterLogoContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  width: '6rem',
-  height: '5.5625rem',
-  alignItems: 'center',
-  justifyContent: 'center',
+export const FooterLogo = styled(Image, {
+  maxWidth: '6rem',
+  maxHeight: '5.5625rem',
+  '@sm': {
+    maxWidth: '7.8125rem',
+    maxHeight: '7.25rem',
+  }
+})
+
+export const TitleContainer = styled('h4', {
+  fontFamily: '$default',
+  fontSize: '$md',
+  fontStyle: 'normal',
+  fontWeight: '$semibold',
+  lineHeight: '$short',
 })
 
 export const OptionsContainer = styled('div', {
@@ -36,10 +57,15 @@ export const OptionsContainer = styled('div', {
   flexDirection: 'column',
   width: '9.625rem',
   height: 'auto',
-  gap: '0.75rem',
+  gap: '$3',
   alignItems: 'flex-start',
-  justifyContent: 'center',
   flexShrink: '0',
+  '@sm': {
+    alignItems: 'center',
+    [`& ${TitleContainer}`]: {
+      display: 'none'
+    }
+  }
 })
 
 export const NavContainer = styled('a', {
@@ -53,39 +79,33 @@ export const NavContainer = styled('a', {
 export const SocialAndContactsContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  boxSizing: 'border-box',
-  alignItems: 'center',
-  width: 'auto',
-  height: 'auto',
-  gap: '0.75rem',
+  alignItems: 'flex-end',
+  gap: '$3',
+  alignSelf: 'stretch',
+  "@sm": {
+    alignItems: 'center'
+  }
 })
 
 export const ContactsContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-end',
-  width: 'auto',
-  height: 'auto',
-  gap: '0.75rem',
-})
-
-export const TitleContainer = styled('h4', {
-  fontFamily: '$default',
-  fontSize: '$md',
-  fontStyle: 'normal',
-  fontWeight: '$semibold',
-  lineHeight: '$shorter',
+  gap: '$3',
+  '@sm': {
+    alignItems: 'center',
+  }
 })
 
 export const InfoContactsContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
+  gap: '$2',
   alignItems: 'flex-end',
-  gap: '0.5rem',
-  width: 'auto',
-  height: 'auto',
-  color: '$neutral-4',
+  '@sm': {
+    alignItems: 'center',
+  }
 })
 
 export const EmailContainer = styled('a', {
@@ -93,8 +113,8 @@ export const EmailContainer = styled('a', {
   fontSize: '$md',
   fontStyle: 'normal',
   fontWeight: '$regular',
-  lineHeight: '$shorter',
   color: '$neutral-4',
+  lineHeight: '$short',
 })
 
 export const PhoneContainer = styled('a', {
@@ -102,17 +122,18 @@ export const PhoneContainer = styled('a', {
   fontSize: '$md',
   fontStyle: 'normal',
   fontWeight: '$regular',
-  lineHeight: '$shorter',
   color: '$neutral-4',
+  lineHeight: '$short'
 })
 
 export const SocialsContainer = styled('div', {
   display: 'flex',
   justifyContent: 'flex-end',
   alignItems: 'center',
-  width: 'auto',
-  height: 'auto',
-  gap: '0.75rem',
+  gap: '$3',
+  '@sm': {
+    gap: '$4',
+  }
 })
 
 export const SocialContainer = styled('a', {
