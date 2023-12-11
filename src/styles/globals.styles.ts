@@ -12,8 +12,9 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    backgroundColor: '$white',
+    backgroundColor: '$neutral-0',
     color: '$black',
+    position:'relative',
     margin: 0,
     padding: 0,
     '-webkit-font-smoothing': 'antialiased',
