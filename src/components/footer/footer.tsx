@@ -39,9 +39,6 @@ export function Footer() {
               <S.SocialContainer href={links.linkedin}>
                 <LinkedinLogo size={'1.5rem'} />
               </S.SocialContainer>
-              <S.SocialContainer href={links.facebook}>
-                <FacebookLogo size={'1.5rem'} />
-              </S.SocialContainer>
             </S.SocialsContainer>
           </S.ContactsContainer>
         </S.SocialAndContactsContainer>
