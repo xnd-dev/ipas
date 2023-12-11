@@ -15,11 +15,9 @@ import PostBody from '@/components/Blog/post-body/post-body'
 
 type Props = {
     post: PostType
-    morePosts: PostType[]
-    preview?: boolean
 }
 
-const Post = ({ post, morePosts, preview }: Props) => {
+const Post = ({ post }: Props) => {
     const router = useRouter()
 
     console.log(post);
@@ -36,7 +34,6 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 <PostBody content={post.content}></PostBody>
             </Layout>
         </>
-
     )
 }
 
