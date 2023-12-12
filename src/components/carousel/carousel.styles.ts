@@ -14,13 +14,7 @@ export const SectionContainer = styled('section', {
   overflow: 'visible',
   zIndex: '0',
 
-  '& img#rectangle': {
-    height: '35rem',
-    width: '35rem',
-    marginTop: '-2.5rem',
-    position: 'absolute',
-    left: '50.5%',
-  },
+
 
   '@sm': {
     height: '49.5625rem',
@@ -30,20 +24,6 @@ export const SectionContainer = styled('section', {
     alignItems: 'center',
     gap: '2rem',
     alignSelf: 'stretch',
-
-    
-  '& img#rectangle':{
-    left: '7.5rem',
-    top: '254rem',
-    height: '24rem',
-    }, 
-  },
-
-  '@xs': {
-    '& img#rectangle':{
-      left:'1.5rem',
-      top: '236rem',
-    }, 
   },
 
 })
@@ -88,12 +68,21 @@ export const ImageContainer = styled('span', {
   width: '28.375rem',
   height: '36rem',
   position: 'relative',
+ 
+  
+  '& img#rectangle': {
+    height: '40rem',
+    maxWidth: '40rem',
+    marginTop: '-3rem',
+    position: 'relative',
+    left: '4%',
+  },
 
   '& img#quote': {
     width: '3.5rem',
     height: '3rem',
     position: 'absolute',
-    left: '61%',
+    left: '60%',
     top: '4%',
   },
 
@@ -113,15 +102,42 @@ export const ImageContainer = styled('span', {
     top: '67%',
   },
 
+  '@lg': {
+    '& img#rectangle':{
+      display: 'none',
+      },
+
+    '& img#quote': {
+      display: 'none',
+    },
+    
+    '& img#square': {
+      display: 'none',
+    }, 
+  },
+
     '@sm': {
       maxHeight: '18.375rem',
       justifyContent: 'center',
       alignItems: 'center',
       gap: '$2',
 
+      img: {
+        display: 'block',
+      },
+
+      '& img#rectangle':{
+        left: '6%',
+        top: '1%',
+        height: '24rem',
+        borderRadius: '$xl',
+        display: 'block',
+        },
+
       '& img#quote': {
-        left: '84%',
+        left: '83%',
         top: '-18%',
+        display: 'block',
       },
 
       '& img#avatar': {
@@ -133,6 +149,7 @@ export const ImageContainer = styled('span', {
         width: '6.82rem',
         left: '1%',
         top: '68%',
+        display: 'block',
       }, 
   },
 })
