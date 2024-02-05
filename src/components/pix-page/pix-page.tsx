@@ -38,7 +38,9 @@ export function PixPage() {
             </S.AltDonationContainer>
           </S.ContentContainer>
         </S.HelpContainer>
+        <S.ImageContainer>
         <Image src={Hands} alt="white and black hand together" />
+        </S.ImageContainer>
       </S.BoxContainer>
     </S.SectionContainer>
   )

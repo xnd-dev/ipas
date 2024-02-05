@@ -3,7 +3,7 @@ import { styled } from '@/lib/stitches'
 export const SectionContainer = styled('section', {
   display: 'flex',
   width: '100vw',
-  height: '36.375rem',
+  height: '36.625rem',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
@@ -12,6 +12,11 @@ export const SectionContainer = styled('section', {
   backgroundColor: '$neutral-0',
   color: '$neutral-4',
   padding: '$16 $56',
+
+  '@sm': {
+    height: 'auto',
+    padding: '$10 $6',
+  }
 })
 
 export const BoxContainer = styled('div', {
@@ -20,7 +25,13 @@ export const BoxContainer = styled('div', {
   width: '62rem',
   justifyContent: 'center',
   alignItems: 'flex-start',
+  position: 'relative',
   gap: '$12',
+
+  '@sm': {
+    width: '19.5rem',
+    height: '35rem',
+  }
 })
 
 export const HelpContainer = styled('span', {
@@ -32,6 +43,11 @@ export const HelpContainer = styled('span', {
   gap: '$8',
   fontFamily: '$default',
   color: '$neutral-4',
+
+  '@sm': {
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
 })
 
 export const ContentContainer = styled('span', {
@@ -42,6 +58,10 @@ export const ContentContainer = styled('span', {
   alignSelf: 'stretch',
   height: '21.625rem',
   width: '35rem',
+
+  '@sm': {
+    alignItems: 'center',
+  }
 })
 
 export const TitleContainer = styled('h2', {
@@ -53,6 +73,15 @@ export const TitleContainer = styled('h2', {
   fontWeight: '$semibold',
   lineHeight: '$base',
   whiteSpace: 'nowrap',
+
+  '@sm': {
+    height: 'auto',
+    width: '19.5rem',
+    fontSize: '$2xl',
+    lineHeight: '$shorter',
+    letterSpacing: '-0.03rem',
+    textAlign: 'center',
+  }
 })
 
 export const SubtitleContainer = styled('h4', {
@@ -64,15 +93,35 @@ export const SubtitleContainer = styled('h4', {
   fontSize: '$xl',
   fontWeight: '$regular',
   lineHeight: '$short',
+
+  p: {
+    marginBottom: '$6',
+  },
+
+  '@sm': {
+    width: '19.5rem',
+    height: 'auto',
+    fontSize: '$xl',
+    textAlign: 'start',
+  }
 })
 
 export const ValuesContainer = styled('span', {
   display: 'flex',
   width: '35rem',
   height: '3.475rem',
-  justifyContent: 'center',
-  alignItems: 'center',
+  alignItems: 'flex-start',
   gap: '$3',
+
+  '@sm': {
+    width: '19.5rem',
+    height: 'auto',
+    fontSize: '$xl',
+    gap: '$4',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems:'center',
+  }
 })
 
 export const AltDonationContainer = styled('div', {
@@ -81,6 +130,12 @@ export const AltDonationContainer = styled('div', {
   display: 'flex',
   alignItems: 'flex-start',
   gap: '$6',
+
+  '@sm': {
+    width: '19.5rem',
+    height: 'auto',
+    gap: '$3',
+  }
 })
 
 export const MonthlyDonationContainer = styled('h5', {
@@ -101,6 +156,12 @@ export const MonthlyDonationContainer = styled('h5', {
     border: '2px solid $neutral-4',
     borderRadius: '$xs',
   },
+
+  '@sm': {
+    height: 'auto',
+    width: '19.5rem',
+    gap: '$1',
+  }
 })
 
 export const ButtonContainer = styled('button', {
@@ -132,6 +193,10 @@ export const ButtonContainer = styled('button', {
   '&:active': {
     backgroundColor: '$primary',
   },
+
+  '@sm': {
+    width: '9rem',
+  }
 })
 
 export const AltButtonContainer = styled('button', {
@@ -139,9 +204,9 @@ export const AltButtonContainer = styled('button', {
   padding: '$2 $7',
   justifyContent: 'center',
   alignItems: 'center',
-  width: '10.4375rem',
+  width: '11.6875rem',
   height: '3.4375rem',
-  gap: '$2',
+  gap: '$1',
   backgroundColor: '$neutral-0',
   border: '1px solid $neutral-4',
   borderRadius: '$xs',
@@ -167,4 +232,15 @@ export const AltButtonContainer = styled('button', {
     backgroundColor: '$primary',
     border: 'none',
   },
+
+  '@sm': {
+    height: '3.4375rem',
+    width: '9.375rem',
+  }
+})
+
+export const ImageContainer = styled('div', {
+  '@sm': {
+      display: 'none',
+    }  
 })

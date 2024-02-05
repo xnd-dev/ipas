@@ -19,7 +19,6 @@ export function Carousel() {
 
   return (
     <S.SectionContainer id="carousel" {...swipeHandlers}>
-      <Image src={rectangle} alt="rectangle" id="rectangle" />
       <S.CarouselContainer>
         <S.CaretContainer>
           <CaretLeft size={'2.5rem'} onClick={decrement} />
@@ -51,6 +50,7 @@ export function Carousel() {
             </S.NavigationContainer>
           </S.SliderContainer>
           <S.ImageContainer>
+            <Image src={rectangle} alt="rectangle" id="rectangle" />
             <Image src={currentItem.avatar} alt="avatar" id="avatar" />
             <Image src={quote} alt="quote" id="quote" />
             <Image src={square} alt="square" id="square" />
