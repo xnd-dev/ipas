@@ -1,7 +1,6 @@
 import { styled } from '@/lib/stitches'
 
 export const SectionContainer = styled('section', {
-  flexDirection: 'column',
   display: 'flex',
   boxSizing: 'border-box',
   alignItems: 'center',
@@ -14,13 +13,19 @@ export const SectionContainer = styled('section', {
   fontFamily: '$default',
   overflow: 'visible',
   zIndex: '0',
-  '& img#rectangle': {
-    height: '35rem',
-    width: '35rem',
-    marginTop: '-2rem',
-    position: 'absolute',
-    left: '50%',
+
+
+
+  '@sm': {
+    height: '49.5625rem',
+    padding: '5rem 1.5rem',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '2rem',
+    alignSelf: 'stretch',
   },
+
 })
 
 export const CarouselContainer = styled('div', {
@@ -30,27 +35,51 @@ export const CarouselContainer = styled('div', {
   width: '80rem',
   height: '26rem',
   gap: '$6',
+  
+  '@sm': {
+    flexDirection: 'column',
+    height: '39.5625rem',
+    justifyContent: 'flex-start',
+    gap: '2rem',
+  }
 })
 
 export const CarouselContent = styled('div', {
-  flexDirection: 'row',
   display: 'flex',
+  flexDirection: 'row',
   alignItems: 'center',
   width: '61.75rem',
   height: '26rem',
   gap: '$20',
+
+
+  '@sm': {
+    flexDirection: 'column',
+    width: '19.5rem',
+    height: '39.5625rem',
+    gap: '$6',
+  }
 })
 
 export const ImageContainer = styled('span', {
-  position: 'relative',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   width: '28.375rem',
   height: '36rem',
+  position: 'relative',
+ 
+  
+  '& img#rectangle': {
+    height: '40rem',
+    maxWidth: '40rem',
+    marginTop: '-3rem',
+    position: 'relative',
+    left: '4%',
+  },
 
   '& img#quote': {
-    width: '3rem',
+    width: '3.5rem',
     height: '3rem',
     position: 'absolute',
     left: '60%',
@@ -72,6 +101,57 @@ export const ImageContainer = styled('span', {
     left: '-5%',
     top: '67%',
   },
+
+  '@lg': {
+    '& img#rectangle':{
+      display: 'none',
+      },
+
+    '& img#quote': {
+      display: 'none',
+    },
+    
+    '& img#square': {
+      display: 'none',
+    }, 
+  },
+
+    '@sm': {
+      maxHeight: '18.375rem',
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: '$2',
+
+      img: {
+        display: 'block',
+      },
+
+      '& img#rectangle':{
+        left: '6%',
+        top: '1%',
+        height: '24rem',
+        borderRadius: '$xl',
+        display: 'block',
+        },
+
+      '& img#quote': {
+        left: '83%',
+        top: '-18%',
+        display: 'block',
+      },
+
+      '& img#avatar': {
+        height: '18.375rem',
+        objectFit: 'cover',
+      },
+      
+      '& img#square': {
+        width: '6.82rem',
+        left: '1%',
+        top: '68%',
+        display: 'block',
+      }, 
+  },
 })
 
 export const SliderContainer = styled('div', {
@@ -81,6 +161,13 @@ export const SliderContainer = styled('div', {
   width: '28.375rem',
   height: '19.25rem',
   gap: '$8',
+
+  '@sm': {
+    height: '37.5625rem',
+    alignItems: 'flex-start',
+    gap: '$6',
+    alignSelf: 'stretch',
+  },
 })
 
 export const SlideContainer = styled('span', {
@@ -90,6 +177,13 @@ export const SlideContainer = styled('span', {
   width: '28.375rem',
   height: '11rem',
   gap: '$4',
+
+  '@sm': {
+    height: 'auto',
+    alignItems: 'flex-start',
+    gap: '$3',
+    alignSelf: 'stretch',
+  },
 })
 
 export const CaretContainer = styled('span', {
@@ -97,6 +191,10 @@ export const CaretContainer = styled('span', {
   width: '3rem',
   height: '3rem',
   zIndex: '1',
+
+  '@sm': {
+    display: 'none',
+  },
 })
 
 export const NavigationContainer = styled('div', {
@@ -127,6 +225,25 @@ export const DotContainer = styled('button', {
       },
     },
   },
+
+  '@sm': {
+    backgroundColor: '$neutral-0',
+
+    variants: {
+      focus: {
+        true: {
+          backgroundColor: '$secondary-variant',
+        },
+      },
+
+      active: {
+        true: {
+          backgroundColor: '$secondary-variant',
+          width: '2rem',
+        },
+      },
+    },
+  },
 })
 
 export const TitleContainer = styled('h2', {
@@ -136,6 +253,14 @@ export const TitleContainer = styled('h2', {
   fontWeight: '$semibold',
   lineHeight: '$base',
   whiteSpace: 'nowrap',
+
+  '@sm': {
+    height: 'auto',
+    textAlign: 'center',
+    fontSize: '$2xl',
+    lineHeight: '$shorter',
+    letterSpacing: '-0.03rem',
+  }
 })
 
 export const SubtitleContainer = styled('h3', {
@@ -149,11 +274,26 @@ export const SubtitleContainer = styled('h3', {
   fontWeight: '$regular',
   lineHeight: '$short',
   gap: '$4',
+
+  '@sm': {
+    height: '10.25rem',
+    fontSize: '$md',
+    lineHeight: '$short',
+    letterSpacing: '-0.03rem',
+  }
 })
 
 export const SignatureContainer = styled('div', {
   width: '28.375rem',
   height: '3.125rem',
+  fontSize: '$xl',
+  fontWeight: '$regular',
+  lineHeight: '$short',
+
+  '@sm': {
+    height: 'auto',
+    fontSize: '$md',
+  }
 })
 
 export const SignatureTextContainer = styled('h4', {
