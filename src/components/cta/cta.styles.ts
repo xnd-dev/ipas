@@ -1,29 +1,28 @@
 import { styled } from '@/lib/stitches'
+import Image from 'next/image'
 
 export const SectionContainer = styled('section', {
   display: 'flex',
+  width: '90rem',
+  padding: '$40 0',
   flexDirection: 'column',
-  boxSizing: 'border-box',
-  width: '100vw',
-  height: '34.23rem',
-  backgroundColor: '$neutral-0',
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  alignItems: 'center',
   justifyContent: 'center',
+  backgroundColor: '$neutral-0',
+  alignItems: 'center',
+  margin: '0 auto',
   gap: '1.5rem',
-  padding: '5rem 14.9rem',
-  border: '1px solid $black'
+  '@sm': {
+    width: '22.5rem',
+    padding: '$10 $6',
+  }
 })
 
 export const ContentContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  width: 'auto',
-  height: 'auto',
   alignItems: 'center',
   gap: '1.5rem',
+  justifyContent: 'center',
 })
 
 export const TitleContainer = styled('h2', {
@@ -32,34 +31,44 @@ export const TitleContainer = styled('h2', {
   fontFamily: '$default',
   fontStyle: 'normal',
   fontWeight: '$semibold',
-  lineHeight: '$short',
+  lineHeight: '$base',
+  letterSpacing: ' -0.05rem',
   color: '$neutral-4',
+  '@sm': {
+    fontSize: '$2xl',
+    lineHeight: '130%',
+    letterSpacing: ' -0.03rem',
+  }
 })
 
 export const TextContainer = styled('p', {
-  width: '35rem',
-  fontSize: '$lg',
+  alignSelf: 'stretch',
+  fontSize: '$xl',
   textAlign: 'center',
   fontFamily: '$default',
   fontStyle: 'normal',
   fontWeight: '$regular',
   lineHeight: '$short',
   color: '$neutral-4',
+  padding: '0 12.5%',
+  '@sm': {
+    padding: '0',
+    width: '19.5rem',
+    fontSize: '$md',
+  }
 })
 
 export const ButtonContainer = styled('button', {
   display: 'flex',
-  width: '11.25rem',
-  height: '2.5rem',
-  padding: '0.75rem 1.5rem',
+  height: '3.25rem',
+  padding: '$3 $8',
   justifyContent: 'center',
   alignItems: 'center',
-  gap: '0.5rem',
-  color: '$neutral-0',
-  backgroundColor: '$primary',
+  gap: '$2',
   borderRadius: '18.75rem',
+  backgroundColor: '$primary',
   boxShadow: '4px 4px 4px 0px rgba(64,64,64,0.10)',
-  border: 'none',
+  color: '$neutral-0',
   textAlign: 'center',
   fontSize: '$md',
   fontStyle: 'normal',
@@ -74,4 +83,14 @@ export const ButtonContainer = styled('button', {
   '&:active': {
     backgroundColor: '$primary-variant-1',
   },
+
+  '@sm': {
+    height: '$10',
+    padding: '$3 $6',
+    alignSelf: 'stretch'
+  }
+})
+
+export const Hands = styled(Image, {
+  height: '$4'
 })

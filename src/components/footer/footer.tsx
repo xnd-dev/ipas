@@ -1,6 +1,7 @@
 import * as S from './footer.styles'
-import ipasLogoFooter from '../../../public/ipas-blue-footer-logo.svg'
-import Image from 'next/image'
+
+import ipasLogoFooter from '../../../public/v5/FooterLogoV5.svg'
+
 import {
   InstagramLogo,
   LinkedinLogo,
@@ -11,10 +12,8 @@ import { links } from './footer.constants'
 export function Footer() {
   return (
     <S.FooterContainer id="contact">
-      <S.HorizontalContainer>
-        <S.FooterLogoContainer>
-          <Image src={ipasLogoFooter} alt="" />
-        </S.FooterLogoContainer>
+      <S.ContentContainer>
+        <S.FooterLogo src={ipasLogoFooter} alt="" />
         <S.OptionsContainer>
           <S.TitleContainer>Navegação</S.TitleContainer>
           <S.NavContainer href="#projects">Nossos Projetos</S.NavContainer>
@@ -30,7 +29,7 @@ export function Footer() {
                 contato@ipas.com
               </S.EmailContainer>
               <S.PhoneContainer href={links.whatsapp}>
-                (82) 99142-8156
+                (82) 99662-1031
               </S.PhoneContainer>
             </S.InfoContactsContainer>
             <S.SocialsContainer>
@@ -40,13 +39,10 @@ export function Footer() {
               <S.SocialContainer href={links.linkedin}>
                 <LinkedinLogo size={'1.5rem'} />
               </S.SocialContainer>
-              <S.SocialContainer href={links.facebook}>
-                <FacebookLogo size={'1.5rem'} />
-              </S.SocialContainer>
             </S.SocialsContainer>
           </S.ContactsContainer>
         </S.SocialAndContactsContainer>
-      </S.HorizontalContainer>
+      </S.ContentContainer>
     </S.FooterContainer>
   )
 }
