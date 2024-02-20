@@ -32,15 +32,16 @@ export function Footer() {
                 (82) 99662-1031
               </S.PhoneContainer>
             </S.InfoContactsContainer>
-            <S.SocialsContainer>
-              <S.SocialContainer href={links.instagram}>
-                <InstagramLogo size={'1.5rem'} />
-              </S.SocialContainer>
-              <S.SocialContainer href={links.linkedin}>
-                <LinkedinLogo size={'1.5rem'} />
-              </S.SocialContainer>
-            </S.SocialsContainer>
           </S.ContactsContainer>
+          <S.SocialsContainer>
+            <S.SocialContainer href={links.instagram}>
+              <InstagramLogo size={'1.5rem'} />
+            </S.SocialContainer>
+            <S.SocialContainer href={links.linkedin}>
+              <LinkedinLogo size={'1.5rem'} />
+            </S.SocialContainer>
+          </S.SocialsContainer>
+
         </S.SocialAndContactsContainer>
       </S.ContentContainer>
     </S.FooterContainer>
