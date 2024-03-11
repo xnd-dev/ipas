@@ -2,6 +2,7 @@ import { styled } from '@/lib/stitches'
 
 export const HeaderContainer = styled('header', {
   display: 'flex',
+  position:'fixed',
   boxSizing: 'border-box',
   width: '100vw',
   height: '5.5rem',
@@ -12,8 +13,12 @@ export const HeaderContainer = styled('header', {
   justifyContent: 'center',
   borderBottom: '1px solid',
   borderColor: '$neutral-4',
-  position: 'fixed',
   zIndex: '2',
+  
+  '@sm': {
+    background: 'none',
+    position:'absolute',
+  },
 })
 
 export const HorizontalContainer = styled('div', {
