@@ -12,12 +12,12 @@ import { Floating } from '@/components/floating'
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
-      {/* <Banner /> */}
-      {/* <Cards />
+      <Header />
+      <Banner />
+      <Cards />
       <ProjectOverview />
       <PixPage />
-      <Carousel /> */}
+      <Carousel />
       <CallToAction />
       <Footer />
     </>
