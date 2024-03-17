@@ -5,17 +5,19 @@ export const FooterContainer = styled('footer', {
   display: 'flex',
   width: '90rem',
   height: 'auto',
-  padding: '$10 14.25rem',
+  padding: '$10 $16',
   backgroundColor: '$neutral-0',
   alignItems: 'center',
   justifyContent: 'space-between',
   margin: "0 auto",
-  '@sm': {
+  '@xs': {
     padding: '$10 6.4375rem',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     gap: '3.75rem',
+  },
+  '@sm': {
   }
 })
 
@@ -26,7 +28,8 @@ export const ContentContainer = styled('div', {
   alignItems: 'center',
   justifyContent: 'space-between',
   flexShrink: '0',
-  '@sm': {
+  margin: "0 auto",
+  '@xs': {
     flexDirection: 'column',
     width: 'auto',
     height: '30.625rem',
@@ -38,7 +41,7 @@ export const ContentContainer = styled('div', {
 export const FooterLogo = styled(Image, {
   maxWidth: '6rem',
   maxHeight: '5.5625rem',
-  '@sm': {
+  '@xs': {
     maxWidth: '7.8125rem',
     maxHeight: '7.25rem',
   }
@@ -60,7 +63,7 @@ export const OptionsContainer = styled('div', {
   gap: '$3',
   alignItems: 'flex-start',
   flexShrink: '0',
-  '@sm': {
+  '@xs': {
     alignItems: 'center',
     [`& ${TitleContainer}`]: {
       display: 'none'
@@ -92,7 +95,7 @@ export const ContactsContainer = styled('div', {
   flexDirection: 'column',
   alignItems: 'flex-end',
   gap: '$3',
-  '@sm': {
+  '@xs': {
     alignItems: 'center',
   }
 })
@@ -100,10 +103,9 @@ export const ContactsContainer = styled('div', {
 export const InfoContactsContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
   gap: '$2',
   alignItems: 'flex-end',
-  '@sm': {
+  '@xs': {
     alignItems: 'center',
   }
 })
@@ -128,11 +130,12 @@ export const PhoneContainer = styled('a', {
 
 export const SocialsContainer = styled('div', {
   display: 'flex',
+  alignSelf: 'stretch',
   justifyContent: 'flex-end',
-  alignItems: 'center',
   gap: '$3',
-  '@sm': {
+  '@xs': {
     gap: '$4',
+    justifyContent: 'center'
   }
 })
 
