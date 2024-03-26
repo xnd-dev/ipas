@@ -51,7 +51,7 @@ export const ImageContainer = styled('div', {
 
     img: {
       height: '4rem',
-      width: '12rem',
+      width: '14rem',
     }
   },
 
