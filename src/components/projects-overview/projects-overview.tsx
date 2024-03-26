@@ -1,5 +1,5 @@
 import * as S from './projects-overview.styles';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, ReactNode, ReactElement, Children } from 'react';
 
 import { project1 } from './projects-overview.constants';
 import { GalleryColumns } from '../gallery-columns';
@@ -7,7 +7,7 @@ import { GalleryColumns } from '../gallery-columns';
 export function ProjectOverview() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    const checkIsMobile = () => {setIsMobile(document.body.clientWidth < 768);};
+    const checkIsMobile = () => {setIsMobile(document.body.clientWidth < 769);};
     window.addEventListener('resize', checkIsMobile);
     checkIsMobile();
     return () => {
@@ -15,9 +15,14 @@ export function ProjectOverview() {
     };
   }, []);
 
-  function order<T>(ordenacao: number[], ...elementos: T[]): T[] {
-    const new_order = ordenacao.map((indice) => elementos[indice]);
-    return new_order;
+  function order(ordenacao: number[], ...elementos: ReactElement[]): ReactElement[] {
+    if (isMobile && elementos[1] && React.isValidElement(elementos[1])) {
+      const filhos = Children.toArray(elementos[1]!.props.children) as ReactElement[];
+      elementos[1] = filhos[0] as ReactElement;
+      elementos[2] = filhos[2] as ReactElement;
+      return ordenacao.map((indice) => elementos[indice]);
+    }
+    else {return ordenacao.map((indice) => elementos[indice]);}
   }
   
   
@@ -32,12 +37,14 @@ export function ProjectOverview() {
               order(
                 orderElements[index],
                 <GalleryColumns key={'gal'+index} images={project.photos}></GalleryColumns>,
-                <S.SectionTitle key={'tit'+index}>{project.title}</S.SectionTitle>,
-                <S.SectionText key={'tex'+index}>
-                  {project.list.map((elemento,index)=> 
-                    <S.SectionParagraph>{elemento}</S.SectionParagraph>)
-                  }
-                </S.SectionText>  
+                <S.SectionText>
+                  <S.SectionTitle key={'tit'+index}>{project.title}</S.SectionTitle>,
+                  <S.SectionInnerText key={'tex'+index}>
+                    {project.list.map((elemento,index)=> 
+                      <S.SectionParagraph>{elemento}</S.SectionParagraph>)
+                    }
+                  </S.SectionInnerText>  
+                </S.SectionText>
               )
             }
         </S.ProjectsOverviewSection>

@@ -10,7 +10,7 @@ export function Banner() {
             top={{ default: 35.69, sm: 185.29 }}
             width={{ default: 'auto', sm: 22.8 }} />
         <Floating image={"common_orangecircle.png"} 
-            left={{ default: -4.16, sm: -6.5 }} 
+            left={{ default: -500, sm: -6.5 }} 
             top={{ default: 46, sm: 194 }}
             width={{ default: 'auto', sm: 13 }}/>
         <Floating 
