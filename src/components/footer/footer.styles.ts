@@ -10,14 +10,12 @@ export const FooterContainer = styled('footer', {
   alignItems: 'center',
   justifyContent: 'space-between',
   margin: "0 auto",
-  '@xs': {
+  '@sm': {
     padding: '$10 6.4375rem',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     gap: '3.75rem',
-  },
-  '@sm': {
   }
 })
 
@@ -29,7 +27,7 @@ export const ContentContainer = styled('div', {
   justifyContent: 'space-between',
   flexShrink: '0',
   margin: "0 auto",
-  '@xs': {
+  '@sm': {
     flexDirection: 'column',
     width: 'auto',
     height: '30.625rem',
@@ -41,7 +39,7 @@ export const ContentContainer = styled('div', {
 export const FooterLogo = styled(Image, {
   maxWidth: '6rem',
   maxHeight: '5.5625rem',
-  '@xs': {
+  '@sm': {
     maxWidth: '7.8125rem',
     maxHeight: '7.25rem',
   }
@@ -63,7 +61,7 @@ export const OptionsContainer = styled('div', {
   gap: '$3',
   alignItems: 'flex-start',
   flexShrink: '0',
-  '@xs': {
+  '@sm': {
     alignItems: 'center',
     [`& ${TitleContainer}`]: {
       display: 'none'
@@ -95,7 +93,7 @@ export const ContactsContainer = styled('div', {
   flexDirection: 'column',
   alignItems: 'flex-end',
   gap: '$3',
-  '@xs': {
+  '@sm': {
     alignItems: 'center',
   }
 })
@@ -105,7 +103,7 @@ export const InfoContactsContainer = styled('div', {
   flexDirection: 'column',
   gap: '$2',
   alignItems: 'flex-end',
-  '@xs': {
+  '@sm': {
     alignItems: 'center',
   }
 })
@@ -133,7 +131,7 @@ export const SocialsContainer = styled('div', {
   alignSelf: 'stretch',
   justifyContent: 'flex-end',
   gap: '$3',
-  '@xs': {
+  '@sm': {
     gap: '$4',
     justifyContent: 'center'
   }

@@ -34,10 +34,13 @@ export const TitleContainer = styled('h2', {
   lineHeight: '$base',
   letterSpacing: ' -0.05rem',
   color: '$neutral-4',
-  '@md': {
-    fontSize: '$2xl',
+  '@sm': {
+    fontSize: '$3xl',
     lineHeight: '130%',
     letterSpacing: ' -0.03rem',
+  },
+  '@xs': {
+    fontSize: '$2xl',
   }
 })
 
@@ -52,10 +55,10 @@ export const TextContainer = styled('p', {
   color: '$neutral-4',
   padding: '0 12.5%',
   margin: '0 auto',
-  '@md': {
+  '@sm': {
     padding: '0',
-    width: '$96',
-    fontSize: '$xl',
+    width: '30rem',
+    fontSize: '$2xl',
   },
   '@xs': {
     fontSize: '$md',
@@ -90,7 +93,7 @@ export const ButtonContainer = styled('button', {
     backgroundColor: '$primary-variant-1',
   },
 
-  '@md': {
+  '@sm': {
     height: '$10',
     padding: '$3 $6',
     alignSelf: 'stretch',
