@@ -34,7 +34,7 @@ export const HorizontalContainer = styled('div', {
 
   '@sm': {
     width:'39rem',
-    minWidth:'22.56rem',
+    minWidth:'0',
     height: 'auto',
   },
 
