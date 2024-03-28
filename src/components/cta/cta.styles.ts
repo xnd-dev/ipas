@@ -11,7 +11,7 @@ export const SectionContainer = styled('section', {
   alignItems: 'center',
   margin: '0 auto',
   gap: '1.5rem',
-  '@sm': {
+  '@xs': {
     width: '22.5rem',
     padding: '$10 $6',
   }
@@ -35,9 +35,12 @@ export const TitleContainer = styled('h2', {
   letterSpacing: ' -0.05rem',
   color: '$neutral-4',
   '@sm': {
-    fontSize: '$2xl',
+    fontSize: '$3xl',
     lineHeight: '130%',
     letterSpacing: ' -0.03rem',
+  },
+  '@xs': {
+    fontSize: '$2xl',
   }
 })
 
@@ -51,11 +54,17 @@ export const TextContainer = styled('p', {
   lineHeight: '$short',
   color: '$neutral-4',
   padding: '0 12.5%',
+  margin: '0 auto',
   '@sm': {
     padding: '0',
-    width: '19.5rem',
+    width: '30rem',
+    fontSize: '$2xl',
+  },
+  '@xs': {
     fontSize: '$md',
+    width: '19.5rem',
   }
+
 })
 
 export const ButtonContainer = styled('button', {
@@ -87,7 +96,14 @@ export const ButtonContainer = styled('button', {
   '@sm': {
     height: '$10',
     padding: '$3 $6',
-    alignSelf: 'stretch'
+    alignSelf: 'stretch',
+    margin: '0 auto',
+    fontSize: '$xl',
+  },
+
+  '@xs': {
+    fontSize: '$md',
+    margin: '0',
   }
 })
 
