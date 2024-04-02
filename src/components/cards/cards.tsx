@@ -7,9 +7,11 @@ export function Cards() {
     <S.SectionContainer id="nossos-números">
       <S.CardsContainer>
         {informationsData.map(
+          //@ts-ignore
           ({ title, value, description, backgroundImage }, index) => (
             <S.CardContainer
               key={index}
+              //@ts-ignore
               style={{ backgroundImage: `url(${backgroundImage.src})` }}
             >
               <S.ContentContainer>
