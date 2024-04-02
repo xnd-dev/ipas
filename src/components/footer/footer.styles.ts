@@ -5,7 +5,7 @@ export const FooterContainer = styled('footer', {
   display: 'flex',
   width: '90rem',
   height: 'auto',
-  padding: '$10 14.25rem',
+  padding: '$10 $16',
   backgroundColor: '$neutral-0',
   alignItems: 'center',
   justifyContent: 'space-between',
@@ -26,6 +26,7 @@ export const ContentContainer = styled('div', {
   alignItems: 'center',
   justifyContent: 'space-between',
   flexShrink: '0',
+  margin: "0 auto",
   '@sm': {
     flexDirection: 'column',
     width: 'auto',
@@ -100,7 +101,6 @@ export const ContactsContainer = styled('div', {
 export const InfoContactsContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
   gap: '$2',
   alignItems: 'flex-end',
   '@sm': {
@@ -128,11 +128,12 @@ export const PhoneContainer = styled('a', {
 
 export const SocialsContainer = styled('div', {
   display: 'flex',
+  alignSelf: 'stretch',
   justifyContent: 'flex-end',
-  alignItems: 'center',
   gap: '$3',
   '@sm': {
     gap: '$4',
+    justifyContent: 'center'
   }
 })
 
