@@ -3,7 +3,6 @@ import { styled } from '@/lib/stitches'
 export const SectionContainer = styled('section', {
   display: 'flex',
   width: '100vw',
-  border:'1px solid blue',
   height: '30.5rem',
   backgroundColor: '$neutral-0',
   color: '$neutral-4',
