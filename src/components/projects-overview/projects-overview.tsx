@@ -16,10 +16,13 @@ export function ProjectOverview() {
   }, []);
 
   function order(ordenacao: number[], ...elementos: ReactElement[]): ReactElement[] {
+    //@ts-ignore
     if (isMobile && elementos[1] && React.isValidElement(elementos[1])) {
+      //@ts-ignore
       const filhos = Children.toArray(elementos[1]!.props.children) as ReactElement[];
       elementos[1] = filhos[0] as ReactElement;
       elementos[2] = filhos[2] as ReactElement;
+      //@ts-ignore
       return ordenacao.map((indice) => elementos[indice]);
     }
     else {return ordenacao.map((indice) => elementos[indice]);}
