@@ -30,7 +30,7 @@ export function Banner() {
                 <S.ButtonContainer>
                     <S.InsideTextContainer><HandCoins size={'1rem'} /> Faça uma doação </S.InsideTextContainer>
                 </S.ButtonContainer>
-                <S.ButtonContainerWhite>Conheça nossos projetos</S.ButtonContainerWhite>
+                <S.ButtonContainerWhite href="#projects">Conheça nossos projetos</S.ButtonContainerWhite>
             </S.ButtonsContainer>
         </S.BannerContent>
     </S.BannerContainer>

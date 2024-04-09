@@ -100,7 +100,7 @@ export const ButtonsContainer = styled('div',{
     },
 })
 
-export const ButtonContainerWhite = styled('button',{
+export const ButtonContainerWhite = styled('a',{
     padding:'$4 $8',
     color:'$neutral-4',
     fontFamily: '$default',
@@ -113,10 +113,18 @@ export const ButtonContainerWhite = styled('button',{
     '@sm': {
       padding:'4vw',
       fontSize:'4.4vw', //1rem
-    },        
+    }, 
+
+    '&:hover': {
+      backgroundColor: '$neutral-1',
+    },
+  
+    '&:active': {
+      backgroundColor: '$neutral-0',
+    },           
 })
 
-export const ButtonContainer = styled('button', {
+export const ButtonContainer = styled('a', {
     display: 'flex',
     padding: '$4 $8',
     gap: '$2',
