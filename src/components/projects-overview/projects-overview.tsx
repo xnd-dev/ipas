@@ -41,7 +41,7 @@ export function ProjectOverview() {
                 orderElements[index],
                 <GalleryColumns key={'gal'+index} images={project.photos}></GalleryColumns>,
                 <S.SectionText>
-                  <S.SectionTitle key={'tit'+index}>{project.title}</S.SectionTitle>,
+                  <S.SectionTitle key={'tit'+index}>{project.title}</S.SectionTitle>
                   <S.SectionInnerText key={'tex'+index}>
                     {project.list.map((elemento,index)=> 
                       <S.SectionParagraph>{elemento}</S.SectionParagraph>)
