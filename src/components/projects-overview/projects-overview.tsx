@@ -21,7 +21,7 @@ export function ProjectOverview() {
       //@ts-ignore
       const filhos = Children.toArray(elementos[1]!.props.children) as ReactElement[];
       elementos[1] = filhos[0] as ReactElement;
-      elementos[2] = filhos[2] as ReactElement;
+      elementos[2] = filhos[1] as ReactElement;
       //@ts-ignore
       return ordenacao.map((indice) => elementos[indice]);
     }

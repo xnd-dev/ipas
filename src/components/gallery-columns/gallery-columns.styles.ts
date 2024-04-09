@@ -17,6 +17,7 @@ export const GalleryColumnsContainer = styled('section', {
     height:'auto',
     marginBottom:'$4',
     left:'0%',
+    right:'0%',
     width:'90vw',
     //width:'22.56rem',
     //minWidth:'22.56rem',
