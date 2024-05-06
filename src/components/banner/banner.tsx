@@ -27,7 +27,7 @@ export function Banner() {
                 Junte-se a nós nessa jornada de transformação social e apoie nossas iniciativas.
             </S.ParagraphContainer>
             <S.ButtonsContainer>
-                <S.ButtonContainer>
+                <S.ButtonContainer href="#help">
                     <S.InsideTextContainer><HandCoins size={'1rem'} /> Faça uma doação </S.InsideTextContainer>
                 </S.ButtonContainer>
                 <S.ButtonContainerWhite href="#projects">Conheça nossos projetos</S.ButtonContainerWhite>
