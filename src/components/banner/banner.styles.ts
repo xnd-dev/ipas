@@ -103,6 +103,7 @@ export const ButtonsContainer = styled('div',{
 export const ButtonContainerWhite = styled('a',{
     padding:'$4 $8',
     color:'$neutral-4',
+    background:'$neutral-0',
     fontFamily: '$default',
     fontWeight:'$semibold',
     fontSize:'$md',

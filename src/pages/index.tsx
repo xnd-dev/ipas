@@ -14,6 +14,14 @@ export default function Home() {
     <>
       <Header />
       <Banner />
+      <Floating image={"setor-circular.svg"} 
+            right={{ default: 0, sm: 0}} 
+            top={{ default: 35.69, sm: 185.29 }}
+            width={{ default: 'auto', sm: 22.8 }} />
+        <Floating image={"common_orangecircle.png"} 
+            left={{ default: -5, sm: -6.5 }} 
+            top={{ default: 44, sm: 194 }}
+            width={{ default: 'auto', sm: 13 }}/>
       <Cards />
       <ProjectOverview />
       <PixPage />
