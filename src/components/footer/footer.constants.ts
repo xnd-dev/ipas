@@ -1,7 +1,7 @@
 export const links = {
   email: 'mailto:contato@ipas.com',
-  whatsapp: 'https://wa.me/5582996621031',
+  whatsapp: 'https://wa.me/5582991428156',
   linkedin: 'https://www.linkedin.com/company/institutoipas/',
-  instagram: 'https://instagram.com',
+  instagram: 'https://www.instagram.com/projetoipas/',
   facebook: 'https://facebook.com',
 }

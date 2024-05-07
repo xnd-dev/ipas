@@ -13,10 +13,13 @@ export const colors = {
   tertiary: '#FFE62E',
   'tertiary-variant': '#FFF07A',
   'tertiary-variant-2': '#E8BC1E',
+  'tertiary-variant-3': '#E9C46A',
 
   'neutral-0': '#FDFDFD',
   'neutral-1': '#BFBFBF',
   'neutral-2': '#808080',
   'neutral-3': '#404040',
   'neutral-4': '#333333',
+
+  'blue-gray' : '#0F172A',
 }

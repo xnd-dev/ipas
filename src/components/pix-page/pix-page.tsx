@@ -1,34 +1,47 @@
-import { HandCoins } from '@phosphor-icons/react'
 import * as S from './pix-page.styles'
 import Image from 'next/image'
-import Pix from '../../../public/qr-code-pix.png'
+import Hands from '../../../public/hands.svg'
+import Paypal from '../../../public/paypal.svg'
+import Pix from '../../../public/pix-logo.svg'
 
 export function PixPage() {
   return (
     <S.SectionContainer id="help">
-      <S.HelpContainer>
-        <S.ContentContainer>
-          <S.TitleContainer>Como ajudar:</S.TitleContainer>
-          <S.SubtitleContainer>
-            O IPAS conta com a sua generosidade para continuar transformando
-            vidas.
-            <p /> Sua doação é fundamental para que possamos proporcionar
-            oportunidades e recursos para crianças, jovens e adultos em situação
-            de vulnerabilidade social.
-            <p /> Faça sua doação agora e faça parte dessa transformação.
-          </S.SubtitleContainer>
-          <S.AltDonationContainer>
-            <S.AltTextContainer>Ou doe de outras formas:</S.AltTextContainer>
-            <S.ButtonContainer>
-              Doe agora <HandCoins />
-            </S.ButtonContainer>
-          </S.AltDonationContainer>
-        </S.ContentContainer>
-        <S.PixContainer>
-          <S.PixTextContainer>Doe pelo nosso pix:</S.PixTextContainer>
-          <Image src={Pix} alt="pix qrcode" />
-        </S.PixContainer>
-      </S.HelpContainer>
+      <S.BoxContainer>
+        <S.HelpContainer>
+          <S.TitleContainer>Como ajudar?</S.TitleContainer>
+          <S.ContentContainer>
+            <S.SubtitleContainer>
+              Conecte-se com a nossa causa e ofereça suporte para aqueles que
+              mais precisam.
+              <p /> Sua participação é fundamental para que possamos alcançar
+              ainda mais vidas!
+            </S.SubtitleContainer>
+            <S.ValuesContainer>
+              {/* //@TODO add onclick on buttons */}
+              <S.ButtonContainer> R$20 </S.ButtonContainer>
+              <S.ButtonContainer> R$50 </S.ButtonContainer>
+              <S.ButtonContainer> R$100 </S.ButtonContainer>
+              <S.ButtonContainer> R$200 </S.ButtonContainer>
+            </S.ValuesContainer>
+
+            <S.MonthlyDonationContainer>
+              <input type="checkbox" /> Doar mensalmente
+            </S.MonthlyDonationContainer>
+            <S.AltDonationContainer>
+              <S.AltButtonContainer>
+                <Image src={Paypal} alt="PayPal" />
+              </S.AltButtonContainer>
+              <S.AltButtonContainer>
+                <Image src={Pix} alt="Pix" /> Doe com pix
+              </S.AltButtonContainer>
+            </S.AltDonationContainer>
+          </S.ContentContainer>
+        </S.HelpContainer>
+        <S.ImageContainer>
+        <Image src={Hands} alt="white and black hand together" />
+        </S.ImageContainer>
+      </S.BoxContainer>
     </S.SectionContainer>
   )
 }

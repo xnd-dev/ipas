@@ -35,6 +35,6 @@ export const {
     lineHeights,
     radii,
     space,
-    media,
   },
+  media,
 })

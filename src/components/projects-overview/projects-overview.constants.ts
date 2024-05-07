@@ -2,50 +2,31 @@ import { ProjectData } from './projects-overview.types'
 
 export const project1: ProjectData[] = [
   {
-    title: 'Objetivo',
+    title: 'Nossos projetos sociais',
     list: [
-      'Combater a fome e a insegurança alimentar nas comunidades carentes',
+      'Uma comunidade unida vale ouro! Por isso, juntamos pessoas em busca de um objetivo comum: tornar a comunidade mais acolhedora, democrática e solidária.',
+      'Buscamos experiências felizes para aqueles em situação de vulnerabilidade social e ajudamos a construir momentos especiais, com memórias duradouras.',
+      'Incentivamos o amor ao próximo, fortalecendo a ideia de que juntos podemos fazer a diferença!'
     ],
+    photos: [
+      ['projetos_col1_lin1.png', 'projetos_col1_lin2.png'],
+      ['projetos_col2_lin1.png', 'projetos_col2_lin2.png', 'projetos_col2_lin3.png'],
+      ['projetos_col3_lin1.png', 'projetos_col3_lin2.png', 'projetos_col3_lin3.png'],
+      ['projetos_col4_lin1.png', 'projetos_col4_lin2.png']
+    ]
   },
   {
-    title: 'Atuação',
+    title: 'Ações voluntárias',
     list: [
-      'Parcerias e campanhas de arrecadação',
-      'Coleta de alimentos',
-      'Participação da comunidade e de voluntários',
-      'Doações para famílias em situação de vulnerabilidade',
+      'Entendemos que uma sociedade só é bem-sucedida quando todos os agentes que a compõem possuem oportunidades de verdade, que fazem a diferença.',
+      'Nossas ações são voltadas à entrega de alimentos, apoio na educação, cultura e profissionalização de jovens.',
+      'Cultivamos cidadania, regamos com amor e colhemos futuros!'
     ],
-  },
-  {
-    title: 'Impacto',
-    list: [
-      '850 famílias atendidas mensalmente',
-      'Garantia de alimentação adequada e nutritiva',
-    ],
-  },
-]
-
-export const project2: ProjectData[] = [
-  {
-    title: 'Objetivo',
-    list: [
-      'Levar alegria, apoio e solidariedade para aqueles que mais precisam',
-    ],
-  },
-  {
-    title: 'Atuação',
-    list: [
-      'Ações em datas comemorativas',
-      'Atividades Recreativa e distribuição de presentes',
-      'Celebração e interações afetuosas',
-    ],
-  },
-  {
-    title: 'Impacto',
-    list: [
-      'Promoção do amor ao próximo',
-      'Fortalecimento dos laços comunitários',
-      'Experiências felizes para pessoas em situação de vulnerabilidade social',
-    ],
-  },
+    photos: [
+      ['acoesvol_col1_lin1.png', 'acoesvol_col1_lin2.png'],
+      ['acoesvol_col2_lin1.png', 'acoesvol_col2_lin2.png', 'acoesvol_col2_lin3.png'],
+      ['acoesvol_col3_lin1.png', 'acoesvol_col3_lin2.png', 'acoesvol_col3_lin3.png'],
+      ['acoesvol_col4_lin1.png', 'acoesvol_col4_lin2.png']
+    ]
+  }
 ]
