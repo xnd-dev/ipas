@@ -76,6 +76,11 @@ export const NavContainer = styled('a', {
   fontSize: '$md',
   fontWeight: '$regular',
   lineHeight: '$shorter',
+
+  '&:hover': {
+    color: '$primary-variant-2',
+  },
+
 })
 
 export const ButtonContainer = styled('button', {
