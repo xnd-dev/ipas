@@ -5,14 +5,6 @@ import { Floating } from '../floating'
 export function Banner() {
   return (
     <S.BannerContainer>
-        <Floating image={"setor-circular.svg"} 
-            right={{ default: 0, sm: 0}} 
-            top={{ default: 35.69, sm: 185.29 }}
-            width={{ default: 'auto', sm: 22.8 }} />
-        <Floating image={"common_orangecircle.png"} 
-            left={{ default: -500, sm: -6.5 }} 
-            top={{ default: 46, sm: 194 }}
-            width={{ default: 'auto', sm: 13 }}/>
         <Floating 
             image={"common_whitecircle.png"} 
             left={{ default: 13.25, sm: 13.25 }} 
