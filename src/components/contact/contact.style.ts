@@ -11,13 +11,14 @@ export const SectionContainer = styled('section', {
 
 export const ContactBoxContainer = styled('div', {
     display: 'flex',
-    flexDirection:'column',
+    flexDirection: 'column',
     width: '61.5rem',
     height: '37rem',
     gap: '$8',
     alignItems: 'center',
     justifyContent: 'center',
 })
+
 
 export const ContentBoxContainer = styled('div', {
     display: 'flex',
@@ -31,7 +32,7 @@ export const InfoContainer = styled('div', {
     flexDirection: 'column',
     width: '29.75rem',
     height: '29.875rem',
-    gap:'$6',
+    gap: '$6',
 })
 
 export const TitleContainer = styled('div', {
@@ -51,15 +52,15 @@ export const MapContainer = styled('div', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width:  '29.75rem',
+    width: '29.75rem',
     height: '15rem',
     border: '1px solid black',
-    borderRadius:'$xl',
+    borderRadius: '$xl',
 })
 
 export const AdressContainer = styled('div', {
-    display:'flex',
-    flexDirection:'column',
+    display: 'flex',
+    flexDirection: 'column',
     width: 'auto',
     height: 'auto',
     gap: '$3',
@@ -78,17 +79,17 @@ export const AdressContainer = styled('div', {
 })
 
 export const CommunicationContainer = styled('div', {
-    display:'flex',
+    display: 'flex',
     width: 'auto',
     height: '3.5rem',
     gap: '$24',
 })
 
 export const ChannelsContainer = styled('div', {
-    display:'flex',
+    display: 'flex',
     flexDirection: 'column',
     gap: '$3',
-    
+
     h4: {
         fontSize: '$md',
         fontWeight: '$semibold',
@@ -107,7 +108,7 @@ export const FormBoxContainer = styled('div', {
     flexDirection: 'column',
     width: '29.75rem',
     height: '29rem',
-    gap:'$6',
+    gap: '$6',
 })
 
 export const FormContainer = styled('form', {
@@ -115,11 +116,11 @@ export const FormContainer = styled('form', {
     flexDirection: 'column',
     width: '29.75rem',
     height: '25.5rem',
-    gap:'$6',
+    gap: '$6',
     alignItems: 'center',
 
     input: {
-        paddingLeft:'$7',
+        paddingLeft: '$7',
         width: '29.75rem',
         height: '2.5rem',
         borderRadius: '$xl',
@@ -127,7 +128,7 @@ export const FormContainer = styled('form', {
     },
 
     textarea: {
-        paddingLeft:'$7',
+        paddingLeft: '$7',
         paddingTop: '$2',
         width: '29.75rem',
         height: '9.5rem',
@@ -140,20 +141,20 @@ export const ButtonContainer = styled('button', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width:'10rem',
+    width: '10rem',
     height: '2.5rem',
     gap: '$2',
-    borderRadius:'$xl',
+    borderRadius: '$xl',
     backgroundColor: '$primary',
-    color:'$white',
-    fontFamily:'$default',
+    color: '$white',
+    fontFamily: '$default',
     fontSize: '$md',
     fontWeight: '$semibold',
     lineHeight: '$shorter',
     boxShadow: '4px 4px 4px 0px rgba(64,64,64,0.10)',
 })
 
-export const SocialMidiaContainer = styled('div', { 
+export const SocialMidiaContainer = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -163,7 +164,7 @@ export const SocialMidiaContainer = styled('div', {
     height: '5.125rem',
 })
 
-export const LogoContainer = styled ('div', {
+export const LogoContainer = styled('div', {
     display: 'flex',
     width: 'auto',
     height: '2.5rem',
@@ -172,4 +173,13 @@ export const LogoContainer = styled ('div', {
     a: {
         color: '$neutral-4',
     }
+})
+
+export const MapElement = styled('iframe', {
+    width: "600",
+    height: "450",
+    style: "border:0",
+    loading: "lazy",
+    referrerpolicy: "no-referrer-when-downgrade",
+    src: "https://www.google.com/maps/embed/v1/place?key=EjxSLiBQcmVmLiBKb3PDqSBMb3BlcyBEdWFydGUgLSBBdGFsYWlhLCBBTCwgNTc2OTAtMDAwLCBCcmF6aWwiLiosChQKEgnzDtfQA8oGBxFSLlW5GuNQ9RIUChIJRZkqc3fJBgcRhDFZKCr3u28",
 })
