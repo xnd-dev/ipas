@@ -151,6 +151,14 @@ export const ButtonContainer = styled('button', {
     fontWeight: '$semibold',
     lineHeight: '$shorter',
     boxShadow: '4px 4px 4px 0px rgba(64,64,64,0.10)',
+
+    '&:hover': {
+        backgroundColor: '$primary-variant-2',
+      },
+    
+      '&:active': {
+        backgroundColor: '$primary-variant-1',
+      },
 })
 
 export const SocialMidiaContainer = styled('div', { 
