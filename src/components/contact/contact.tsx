@@ -5,12 +5,14 @@ import { links } from "./contact.constants";
 import { FormData } from "./contact.types";
 
 export function Contact() {
-    const [formData, setFormData] = useState<FormData>({
+    const initialFormData: FormData = {
         name: '',
         email: '',
         phone: '',
         message: ''
-    });
+    };
+
+    const [formData, setFormData] = useState<FormData>(initialFormData);
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({
@@ -21,9 +23,18 @@ export function Contact() {
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        const { name, email, phone, message } = formData;
-        const mailtoLink = `mailto:ipasalagoas@gmail.com?subject=Contato de ${name}&body=Nome: ${name}%0D%0AE-mail: ${email}%0D%0ATelefone: ${phone}%0D%0AMensagem: ${message}`;
-        window.location.href = mailtoLink;
+
+        if (formData.name && formData.email && formData.phone && formData.message) {
+            const mailtoLink = `mailto:ipasalagoas@gmail.com?subject=Contato de ${formData.name}&body=Nome: ${formData.name}%0D%0AE-mail: ${formData.email}%0D%0ATelefone: ${formData.phone}%0D%0AMensagem: ${formData.message}`;
+            
+            setFormData(initialFormData);
+
+            alert('Mensagem enviada com sucesso!');
+            
+            window.location.href = mailtoLink;
+        } else {
+            alert('Por favor, preencha todos os campos.');
+        }
     };
 
     return (
