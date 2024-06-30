@@ -1,6 +1,6 @@
 import avatar1 from '../../../public/avatar-1.svg'
 import smilingGirl from '../../../public/smiling-girl.svg'
-import { SlideData } from './carousel.types';
+import { SlideData } from './dinamiccarousel.types';
 
 export const slidesData: SlideData[] = [
   {
