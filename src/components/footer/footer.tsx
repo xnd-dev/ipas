@@ -11,7 +11,7 @@ import { links } from './footer.constants'
 
 export function Footer() {
   return (
-    <S.FooterContainer id="contact">
+    <S.FooterContainer id="footer">
       <S.ContentContainer>
         <S.FooterLogo src={ipasLogoFooter} alt="" />
         <S.OptionsContainer>

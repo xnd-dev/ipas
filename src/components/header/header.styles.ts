@@ -83,7 +83,7 @@ export const NavContainer = styled('a', {
 
 })
 
-export const ButtonContainer = styled('button', {
+export const ButtonContainer = styled('a', {
   display: 'flex',
   boxSizing: 'boder-box',
   width: '9.5rem',
