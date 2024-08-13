@@ -30,7 +30,7 @@ export function Header() {
           <NavContainer href="#help">Como ajudar</NavContainer>
           <NavContainer href="#voluntary">Seja um Voluntário</NavContainer>
           <NavContainer href="#contact">Contato</NavContainer>
-          <ButtonContainer>
+          <ButtonContainer href="#help">
             <InsideTextContainer> Doe agora </InsideTextContainer>
             <HandCoins size={'1rem'} />
           </ButtonContainer>
