@@ -9,6 +9,7 @@ import { CallToAction } from '@/components/cta'
 import { Footer } from '@/components/footer'
 import { Banner } from '@/components/banner'
 import { Floating } from '@/components/floating'
+import { Contact } from '@/components/contact'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <PixPage />
       <DinamicCarousel />
       <CallToAction />
+      <Contact />
       <Footer />
     </>
   )
