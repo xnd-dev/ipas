@@ -45,7 +45,7 @@ export function Contact() {
                         <S.TitleContainer>
                             <h3>Informações e contato:</h3>
                         </S.TitleContainer>
-                        <S.MapContainer>Mapa</S.MapContainer>
+                        <S.MapContainer><iframe id="gmap_canvas" src="https://maps.google.com/maps?width=472&amp;height=240&amp;hl=en&amp;q=Avenida%20Prefeito%20Jos%C3%A9%20Lopes%20Duarte,%20S/N%20Atalaia+(Ipas)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://maps-generator.com/pt'>Maps-Generator</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f7aa041ead0b7087076f3ff06585a0a0ce4615e3'></script></S.MapContainer>
                         <S.AdressContainer>
                             <h4>Endereço</h4>
                             <h5>Avenida Prefeito José Lopes Duarte, S/N - Lot. Santa Inês CEP: 57690-000, Atalaia/AL</h5>
@@ -66,10 +66,10 @@ export function Contact() {
                             <h3>Envie uma mensagem:</h3>
                         </S.TitleContainer>
                         <S.FormContainer onSubmit={handleSubmit}>
-                            <input type="text" id="name" name="name" placeholder="Nome" required value={formData.name} onChange={handleChange} />
-                            <input type="email" id="email" name="email" placeholder="E-mail" required value={formData.email} onChange={handleChange} />
-                            <input type="tel" id="phone" name="phone" placeholder="Telefone" required value={formData.phone} onChange={handleChange} />
-                            <textarea id="message" name="message" placeholder="Mensagem" rows={5} required value={formData.message} onChange={handleChange} />
+                            <input type="text" id="name" name="name" placeholder="Nome*" required value={formData.name} onChange={handleChange} />
+                            <input type="email" id="email" name="email" placeholder="E-mail*" required value={formData.email} onChange={handleChange} />
+                            <input type="tel" id="phone" name="phone" placeholder="Telefone*" required value={formData.phone} onChange={handleChange} />
+                            <textarea id="message" name="message" placeholder="Mensagem*" rows={5} required value={formData.message} onChange={handleChange} />
                             <S.ButtonContainer type="submit"><Check /> Enviar</S.ButtonContainer>
                         </S.FormContainer>
                     </S.FormBoxContainer>
