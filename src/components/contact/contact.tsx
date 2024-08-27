@@ -66,10 +66,10 @@ export function Contact() {
                             <h3>Envie uma mensagem:</h3>
                         </S.TitleContainer>
                         <S.FormContainer onSubmit={handleSubmit}>
-                            <input type="text" id="name" name="name" placeholder="Nome" required value={formData.name} onChange={handleChange} />
-                            <input type="email" id="email" name="email" placeholder="E-mail" required value={formData.email} onChange={handleChange} />
-                            <input type="tel" id="phone" name="phone" placeholder="Telefone" required value={formData.phone} onChange={handleChange} />
-                            <textarea id="message" name="message" placeholder="Mensagem" rows={5} required value={formData.message} onChange={handleChange} />
+                            <input type="text" id="name" name="name" placeholder="Nome*" required value={formData.name} onChange={handleChange} />
+                            <input type="email" id="email" name="email" placeholder="E-mail*" required value={formData.email} onChange={handleChange} />
+                            <input type="tel" id="phone" name="phone" placeholder="Telefone*" required value={formData.phone} onChange={handleChange} />
+                            <textarea id="message" name="message" placeholder="Mensagem*" rows={5} required value={formData.message} onChange={handleChange} />
                             <S.ButtonContainer type="submit"><Check /> Enviar</S.ButtonContainer>
                         </S.FormContainer>
                     </S.FormBoxContainer>
