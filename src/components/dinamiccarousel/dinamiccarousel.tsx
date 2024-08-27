@@ -33,7 +33,7 @@ const DinamicCarousel: React.FC = () => {
         <S.CaretContainer>
           <CaretLeft size={'2.5rem'} onClick={prevBanner} />
         </S.CaretContainer>
-        
+        <S.TitleContainer>Quem faz acontecer:</S.TitleContainer>
         <S.CarouselContent>
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
@@ -56,21 +56,11 @@ const DinamicCarousel: React.FC = () => {
             >
               <S.SliderContainer>
                 <div>
-                  <S.TitleContainer>Quem faz acontecer:</S.TitleContainer>
                   <S.comments>{slidesData[index].description}</S.comments>
                   <S.SignatureContainer>
                     — {slidesData[index].name}<br />
                     {slidesData[index].occupation}
                   </S.SignatureContainer>
-                  <S.NavigationContainer>
-                    {slidesData.map((_, i) => (
-                      <S.DotContainer
-                        key={i}
-                        active={i === index}
-                        onClick={() => goToIndex(i)}
-                      />
-                    ))}
-                  </S.NavigationContainer>
                 </div>
                 <S.ImageContainer>
                   <Image src={rectangle} alt="rectangle" id="rectangle" />
@@ -87,7 +77,15 @@ const DinamicCarousel: React.FC = () => {
           <CaretRight size={'2.5rem'} onClick={nextBanner} />
         </S.CaretContainer>
       </S.CarouselContainer>
-
+      <S.NavigationContainer>
+        {slidesData.map((_, i) => (
+          <S.DotContainer
+            key={i}
+            active={i === index}
+            onClick={() => goToIndex(i)}
+          />
+        ))}
+      </S.NavigationContainer>
     </S.SectionContainer>
   );
 };

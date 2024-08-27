@@ -29,7 +29,8 @@ export const CarouselContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '80rem',
+  width: '100%',
+  maxWidth:'72rem',
   height: '26rem',
   gap: '$6',
   
@@ -118,6 +119,7 @@ export const ImageContainer = styled('span', {
     justifyContent: 'center',
     alignItems: 'center',
     gap: '$2',
+    top:'3rem',
 
     img: {
       display: 'block',
@@ -197,11 +199,17 @@ export const NavigationContainer = styled('div', {
   flexDirection: 'row',
   alignItems: 'center', 
   justifyContent:'left',
-  width: '100%',
+  width: '987px',
+  position:'absolute',
+  bottom:'6.375rem',
   marginTop: '20px',
 
   '@sm': {
-    width: '100%',
+    position:'absolute',
+    width: '30%',
+    bottom:'25.5rem',
+    left:'50%',
+    marginLeft:'-10rem',
   }
 })
 
@@ -238,6 +246,9 @@ export const TitleContainer = styled('h2', {
   whiteSpace: 'nowrap',
   marginBottom:'2rem',
   textAlign:'left',
+  position:'absolute',
+  top:'0rem',
+  left:'5rem',  
 
   '@sm': {
     height: 'auto',
@@ -245,6 +256,8 @@ export const TitleContainer = styled('h2', {
     fontSize: '$2xl',
     lineHeight: '$shorter',
     letterSpacing: '-0.03rem',
+    left:'0',
+    width:'100%',
   }
 })
 
@@ -263,11 +276,12 @@ export const comments = styled('h3', {
   marginBottom:'1rem',
 
   '@sm': {
-    height: '10.25rem',
+    height: '13rem',
     paddingRight:'0',
     fontSize: '$md',
     lineHeight: '$short',
     letterSpacing: '-0.03rem',
+    top:'3rem',
   }
 })
 
