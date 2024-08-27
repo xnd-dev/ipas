@@ -44,17 +44,29 @@ export const TitleContainer = styled('div', {
         fontWeight: '$semibold',
         lineHeight: '$base',
     },
-
 })
 
 export const MapContainer = styled('div', {
     display: 'flex',
+    boxSizing: 'border-box',
     alignItems: 'center',
     justifyContent: 'center',
     width:  '29.75rem',
     height: '15rem',
     border: '1px solid black',
     borderRadius:'$xl',
+
+    iframe: {
+        borderRadius:'$xl',
+        width: '30rem', 
+        height: '15rem', 
+        frameborder: '0', 
+        scrolling: 'no', 
+        marginheight: '0', 
+        marginwidth: '0',
+        marginTop: '-$1',
+        marginLeft: '-$1',
+    },
 })
 
 export const AdressContainer = styled('div', {
