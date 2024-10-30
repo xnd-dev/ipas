@@ -130,6 +130,7 @@ export const AltDonationContainer = styled('div', {
   display: 'flex',
   alignItems: 'flex-start',
   gap: '$6',
+  marginTop: '1rem',
 
   '@sm': {
     width: '19.5rem',

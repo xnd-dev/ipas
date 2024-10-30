@@ -17,8 +17,9 @@ export function PixPage() {
               <p /> Sua participação é fundamental para que possamos alcançar
               ainda mais vidas!
             </S.SubtitleContainer>
+
+            {/* 
             <S.ValuesContainer>
-              {/* //@TODO add onclick on buttons */}
               <S.ButtonContainer> R$20 </S.ButtonContainer>
               <S.ButtonContainer> R$50 </S.ButtonContainer>
               <S.ButtonContainer> R$100 </S.ButtonContainer>
@@ -28,6 +29,7 @@ export function PixPage() {
             <S.MonthlyDonationContainer>
               <input type="checkbox" /> Doar mensalmente
             </S.MonthlyDonationContainer>
+            */}
             <S.AltDonationContainer>
               <S.AltButtonContainer>
                 <Image src={Paypal} alt="PayPal" />
