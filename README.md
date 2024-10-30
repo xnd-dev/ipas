@@ -57,3 +57,12 @@ src/
 - [Next.js](https://nextjs.org/docs/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Stiches](https://stitches.dev/)
+
+# Navigation 
+ ![Navigation-gif](https://github.com/user-attachments/assets/01a10066-0dbe-4426-9cf3-4d35a80527a9)
+
+# Contact  
+![Contact-gif](https://github.com/user-attachments/assets/5fe87342-21aa-495a-b2e7-eded0df73c29)
+
+# Slider
+![Slider-gif](https://github.com/user-attachments/assets/ca9481d7-013f-426c-b259-ef187f70ae7e)
