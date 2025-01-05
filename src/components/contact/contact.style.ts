@@ -51,12 +51,11 @@ export const MapContainer = styled('div', {
     boxSizing: 'border-box',
     alignItems: 'center',
     justifyContent: 'center',
-    width:  '29.75rem',
+    width:  '30rem',
     height: '15rem',
-    border: '1px solid black',
-    borderRadius:'$xl',
 
     iframe: {
+        border: '1px solid grey',
         borderRadius:'$xl',
         width: '30rem', 
         height: '15rem', 
@@ -64,8 +63,12 @@ export const MapContainer = styled('div', {
         scrolling: 'no', 
         marginheight: '0', 
         marginwidth: '0',
-        marginTop: '-$1',
-        marginLeft: '-$1',
+        marginTop: '0',
+        marginLeft: '0',
+    },
+
+    a: {
+        overflow: 'hidden',
     },
 })
 

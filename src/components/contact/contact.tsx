@@ -45,7 +45,9 @@ export function Contact() {
                         <S.TitleContainer>
                             <h3>Informações e contato:</h3>
                         </S.TitleContainer>
-                        <S.MapContainer><iframe id="gmap_canvas" src="https://maps.google.com/maps?width=472&amp;height=240&amp;hl=en&amp;q=Avenida%20Prefeito%20Jos%C3%A9%20Lopes%20Duarte,%20S/N%20Atalaia+(Ipas)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://maps-generator.com/pt'></a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f7aa041ead0b7087076f3ff06585a0a0ce4615e3'></script></S.MapContainer>
+                        <S.MapContainer>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.9617950751267!2d-36.00117442422599!3d-9.512048899900552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x706ca03d0d70ef3%3A0xf550e31ab9552e52!2sR.%20Pref.%20Jos%C3%A9%20Lopes%20Duarte%20-%20Atalaia%2C%20AL%2C%2057690-000!5e0!3m2!1spt-BR!2sbr!4v1736120606829!5m2!1spt-BR!2sbr"></iframe>
+                        </S.MapContainer>
                         <S.AdressContainer>
                             <h4>Endereço</h4>
                             <h5>Avenida Prefeito José Lopes Duarte, S/N - Lot. Santa Inês CEP: 57690-000, Atalaia/AL</h5>
