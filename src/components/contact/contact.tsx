@@ -79,8 +79,8 @@ export function Contact() {
                 <S.SocialMidiaContainer>
                     <S.TitleContainer><h3>Acesse nossas redes:</h3></S.TitleContainer>
                     <S.LogoContainer>
-                        <a href={links.instagram}><InstagramLogo size={"2.5rem"} /></a>
-                        <a href={links.linkedin}><LinkedinLogo size={"2.5rem"} /></a>
+                        <a href={links.instagram} target="_blank" rel="noopener noreferrer"><InstagramLogo size={"2.5rem"} /></a>
+                        <a href={links.linkedin} target="_blank" rel="noopener noreferrer"><LinkedinLogo size={"2.5rem"} /></a>
                         {/* <a href={links.facebook}><FacebookLogo size={"2.5rem"} /></a> */}
                     </S.LogoContainer>
                 </S.SocialMidiaContainer>

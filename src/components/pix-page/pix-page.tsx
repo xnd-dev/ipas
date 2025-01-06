@@ -32,7 +32,8 @@ export function PixPage() {
             */}
             <S.AltDonationContainer>
               <S.AltButtonContainer>
-                <Image src={Paypal} alt="PayPal" />
+                <a href="https://www.paypal.com/br/home" target="_blank" rel="noopener noreferrer">
+                <Image src={Paypal} alt="PayPal" /></a>
               </S.AltButtonContainer>
               <S.AltButtonContainer>
                 <Image src={Pix} alt="Pix" /> Doe com pix

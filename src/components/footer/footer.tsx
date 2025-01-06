@@ -34,10 +34,10 @@ export function Footer() {
             </S.InfoContactsContainer>
           </S.ContactsContainer>
           <S.SocialsContainer>
-            <S.SocialContainer href={links.instagram}>
+            <S.SocialContainer href={links.instagram} target="_blank" rel="noopener noreferrer">
               <InstagramLogo size={'1.5rem'} />
             </S.SocialContainer>
-            <S.SocialContainer href={links.linkedin}>
+            <S.SocialContainer href={links.linkedin} target="_blank" rel="noopener noreferrer">
               <LinkedinLogo size={'1.5rem'} />
             </S.SocialContainer>
           </S.SocialsContainer>
