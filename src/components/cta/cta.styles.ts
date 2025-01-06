@@ -85,6 +85,16 @@ export const ButtonContainer = styled('button', {
   fontWeight: '$semibold',
   lineHeight: '$shorter',
 
+  a: {
+    textDecoration: 'none',
+    color: 'inherit',
+    display: 'flex',
+    height: '3.25rem',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '$2',
+    },
+
   '&:hover': {
     backgroundColor: '$primary-variant-2',
   },

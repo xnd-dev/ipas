@@ -219,18 +219,18 @@ export const AltButtonContainer = styled('button', {
   boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.12)',
   textWrap: 'noWrap',
 
-  '&:focus': {
-    backgroundColor: '$primary',
-    border: 'none',
-  },
+  // '&:focus': {
+  //   backgroundColor: '$primary-variant-1',
+  //   border: 'none',
+  // },
 
   '&:hover': {
-    backgroundColor: '$primary-variant-1',
+    backgroundColor: '$primary',
     border: 'none',
   },
 
   '&:active': {
-    backgroundColor: '$primary',
+    backgroundColor: '$primary-variant-1',
     border: 'none',
   },
 

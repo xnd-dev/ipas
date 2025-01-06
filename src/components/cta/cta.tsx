@@ -14,7 +14,9 @@ export function CallToAction() {
             Ajude a transformar uma vida, para que essa semente germine, cresça e se transforme num futuro de sucesso.
           </S.TextContainer>
           <S.ButtonContainer>
+            <a href="#help">
             <Image src={hands} alt="" width={16} height={16} />Faça uma doação
+            </a>            
           </S.ButtonContainer>
         </S.ContentContainer>
       </S.SectionContainer>

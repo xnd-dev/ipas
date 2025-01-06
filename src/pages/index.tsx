@@ -1,7 +1,7 @@
 import { Header } from '@/components/header/header'
 import { HeroBanner } from '@/components/hero-banner'
 import { Cards } from '@/components/cards'
-import { PixPage } from '@/components/pix-page/pix-page'
+import { PixPage } from '@/components/pix-page/help-page'
 import { ProjectOverview } from '@/components/projects-overview'
 import { DinamicCarousel } from '@/components/dinamiccarousel'
 import { Carousel } from '@/components/carousel'

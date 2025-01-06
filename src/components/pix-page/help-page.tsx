@@ -1,4 +1,4 @@
-import * as S from './pix-page.styles'
+import * as S from './help-page.styles'
 import Image from 'next/image'
 import Hands from '../../../public/hands.svg'
 import Paypal from '../../../public/paypal.svg'
